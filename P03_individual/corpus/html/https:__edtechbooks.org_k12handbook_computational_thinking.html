@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>EdTech Books</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/styles/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/styles/edtechbooks.css?v=1.6">
+    <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/">
+</head>
+
+<body>
+    <div id="book-nav" class="d-print-none bg-dark text-light shadow z-2 flex-column" style="display: none;">
+        <div id="book-nav-header" class="d-flex flex-row p-0 align-items-center shadow">
+            <a
+                class="btn flex-grow-1 text-start px-3 text-truncate text-light rounded-0 bi-book-fill icon-text-link">Cover</a>
+            <button class="btn ms-auto bi-caret-up text-light rounded-0 fs-5" data-bs-title="Collapse All"
+                data-bs-placement="bottom" data-action="CollapseBookNavLinks"></button>
+            <button class="btn bi-caret-down text-light rounded-0 fs-5" data-bs-title="Expand All"
+                data-bs-placement="bottom" data-action="ExpandBookNavLinks"></button>
+            <button class="btn bi-x-lg text-light rounded-0 fs-5 text-end" data-action="ToggleBookNav"></button>
+        </div>
+        <div id="book-nav-links" class="flex-grow-1 border-0 m-0 px-2 overflow-y-auto pb-4">
+        </div>
+    </div>
+    <div id="mobile-links" class="bg-dark text-light py-1 d-print-none" style="display: none;">
+        <div class="row py-0">
+            <a class="col btn text-light bi-book fs-3" id="book-cover-link" style="display: none;"></a>
+            <button class="col btn text-light d-none d-md-block bi-list fs-3" data-action="ToggleBookNav"></button>
+            <a class="col btn text-light bi-chevron-left fs-3" id="previous-chapter-link"></a>
+            <a class="col btn text-light bi-chevron-right fs-3" id="next-chapter-link"></a>
+        </div>
+    </div>
+    <div class="container-fluid px-0">
+        <div id="main-window" class="col d-flex flex-column vh-100 z-0">
+            <div id="scroll-progress-bar" class="d-block bg-dark d-print-none">
+                <div class="progress-bar d-block bg-rainbow"></div>
+            </div>
+            <nav id="main-nav" class="bg-dark shadow z-1 py-0 d-print-none">
+                <div id="main-nav-wrapper" class="container d-flex flex-row align-items-center">
+                    <div id="main-nav-left" id="headerNav" class="d-flex flex-row">
+                        <a class="btn btn-dark bi-logo-etb-simple fs-3 py-0" href="/"></a>
+                    </div>
+                    <div id="main-nav-right" class="d-flex flex-row ps-3 ms-auto align-items-center">
+                        <div class="dropdown d-lg-none">
+                            <button class="btn bi-list text-light" type="button" data-bs-toggle="dropdown"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                            <div id="mobile-menu" class="dropdown-menu dropdown-menu-end vw-100">
+                            </div>
+                        </div>
+                        <button
+                            class="btn bg-rainbow-sm text-white ms-auto d-none d-md-flex flex-row align-items-center py-1 pe-1 flex-grow-1 me-2 rounded-0 pe-3"
+                            data-target-template="modal-search" id="searchButton" data-action="ToggleModal">
+                            <i class="bi-search me-3"></i>
+                            <span class="me-5 my-auto">Search</span>
+                            <!--
+                            <span id="searchShortcut"
+                                class="rounded px-2 ms-auto d-flex flex-row align-items-center py-1 bi-command">K</span>
+                                -->
+                        </button>
+                        <button class="d-md-none btn text-light bi-search" data-action="ToggleModal"
+                            data-target-template="modal-search"></button>
+                        <button id="theme-menu-button" class="btn text-light dropdown-toggle bi-sun-fill"
+                            data-bs-toggle="dropdown"></button>
+                        <div class="dropdown-menu dropdown-menu-end">
+                            <button class="btn bi-sun-fill bi-yellow dropdown-item" data-action="LightMode">Light
+                                Mode</button>
+                            <button class="btn bi-moon-fill bi-purple dropdown-item" data-action="DarkMode">Dark
+                                Mode</button>
+                        </div>
+                        <button id="user-link" class="btn bi-teal bi-person-circle" data-target-template="modal-login"
+                            data-action="ToggleModal"></button>
+                    </div>
+                </div>
+            </nav>
+            <nav id="breadcrumb" class="d-print-none shadow-sm bg-light-subtle breadcrumb m-0" style="display: none;">
+                <ol id="breadcrumb-wrapper" class="breadcrumb container my-2 px-3 d-flex flex-row flex-nowrap">
+                </ol>
+            </nav>
+            <div id="main-frame" class="flex-grow-1 d-flex flex-column">
+                <div id="main-upper" class="bg-dark shadow text-light py-5" style="display: none;">
+                    <div class="placeholder" style="height: 300px;"></div>
+                </div>
+                <div id="main" class="flex-grow-1">
+                    <div class="placeholder" style="height: 400px;"></div>
+                </div>
+                <div id="main-lower" class="bg-dark shadow py-5" style="display: none;">
+                </div>
+                <div class="bg-rainbow mt-5 d-print-none" style="min-height: 4px;"></div>
+                <footer class="bg-dark text-light py-5 text-muted d-print-none">
+                    <div class="container">
+                        <div class="row gx-4">
+                            <div class="col-12 col-md-4 text-light px-5 mb-4">
+                                <div class="footer-heading bi-globe fs-4 text-uppercase">About</div>
+                                <div class="bg-rainbow mb-2" style="height: 1px;"></div>
+                                <div id="pages-list" class="opacity-75 d-flex flex-column">
+                                    <div class="placeholder"></div>
+                                    <div class="placeholder"></div>
+                                    <div class="placeholder w-75"></div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 text-light px-5 mb-4">
+                                <div class="footer-heading bi-award fs-4 text-uppercase">Badges</div>
+                                <div class="bg-rainbow mb-2" style="height: 1px;"></div>
+                                <div id="badges-list" class="opacity-75 d-flex flex-column">
+                                    <div class="placeholder"></div>
+                                    <div class="placeholder"></div>
+                                    <div class="placeholder w-75"></div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 text-light px-5 mb-4">
+                                <div class="footer-heading bi-chat-left-fill fs-4 text-uppercase">Contact</div>
+                                <div class="bg-rainbow mb-2" style="height: 1px;"></div>
+                                <div id="contact-list" class="opacity-75 d-flex flex-column">
+                                    <div class="placeholder"></div>
+                                    <div class="placeholder w-50"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+            <load-progress-bar class="d-block bg-dark">
+                <progress-bar class="d-block"></progress-bar>
+            </load-progress-bar>
+        </div>
+    </div>
+    <!-- Scripts -->
+    <script src="/js/jquery-3.7.1.min.js"></script>
+    <script src="/js/jquery-ui.min.js"></script>
+    <!-- removed local mathjax <script src="/js/mathjax.min.js"></script> -->
+    <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+        </script>
+    <script src="/styles/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const softwareVersion = '4.7.26';
+    </script>
+    <script src="/js/etb-script-manager.js"></script>
+    <script>
+        $(document).ready(() => {
+            LoadSiteScripts();
+        });
+    </script>
+
+</body>
+
+</html>

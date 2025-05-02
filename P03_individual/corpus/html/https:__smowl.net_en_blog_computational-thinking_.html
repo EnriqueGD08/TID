@@ -1,0 +1,1465 @@
+<!doctype html>
+<html lang="en" prefix="og: https://ogp.me/ns#">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+		<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	<link rel="alternate" href="https://smowl.net/es/blog/pensamiento-computacional/" hreflang="es" />
+<link rel="alternate" href="https://smowl.net/en/blog/computational-thinking/" hreflang="en" />
+
+<!-- Search Engine Optimization by Rank Math - https://rankmath.com/ -->
+<title>Computational thinking, what it is, phases and characteristics</title><link rel="preload" href="https://smowl.net/wp-content/cache/perfmatters/smowl.net/fonts/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y.woff2" as="font" type="font/woff2" crossorigin><style id="perfmatters-used-css">:where(.wp-block-button__link){border-radius:9999px;box-shadow:none;padding:calc(.667em + 2px) calc(1.333em + 2px);text-decoration:none;}:root :where(.wp-block-button .wp-block-button__link.is-style-outline),:root :where(.wp-block-button.is-style-outline>.wp-block-button__link){border:2px solid;padding:.667em 1.333em;}:root :where(.wp-block-button .wp-block-button__link.is-style-outline:not(.has-text-color)),:root :where(.wp-block-button.is-style-outline>.wp-block-button__link:not(.has-text-color)){color:currentColor;}:root :where(.wp-block-button .wp-block-button__link.is-style-outline:not(.has-background)),:root :where(.wp-block-button.is-style-outline>.wp-block-button__link:not(.has-background)){background-color:initial;background-image:none;}.wp-block-columns{align-items:normal !important;box-sizing:border-box;display:flex;flex-wrap:wrap !important;}@media (min-width:782px){.wp-block-columns{flex-wrap:nowrap !important;}}@media (max-width:781px){.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column{flex-basis:100% !important;}}@media (min-width:782px){.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column{flex-basis:0;flex-grow:1;}.wp-block-columns:not(.is-not-stacked-on-mobile)>.wp-block-column[style*=flex-basis]{flex-grow:0;}}:where(.wp-block-columns){margin-bottom:1.75em;}:where(.wp-block-columns.has-background){padding:1.25em 2.375em;}.wp-block-column{flex-grow:1;min-width:0;overflow-wrap:break-word;word-break:break-word;}.wp-block-column.is-vertically-aligned-center{align-self:center;}.wp-block-column.is-vertically-aligned-bottom,.wp-block-column.is-vertically-aligned-center,.wp-block-column.is-vertically-aligned-top{width:100%;}:where(.wp-block-post-comments input[type=submit]){border:none;}:where(.wp-block-cover-image:not(.has-text-color)),:where(.wp-block-cover:not(.has-text-color)){color:#fff;}:where(.wp-block-cover-image.is-light:not(.has-text-color)),:where(.wp-block-cover.is-light:not(.has-text-color)){color:#000;}:root :where(.wp-block-cover h1:not(.has-text-color)),:root :where(.wp-block-cover h2:not(.has-text-color)),:root :where(.wp-block-cover h3:not(.has-text-color)),:root :where(.wp-block-cover h4:not(.has-text-color)),:root :where(.wp-block-cover h5:not(.has-text-color)),:root :where(.wp-block-cover h6:not(.has-text-color)),:root :where(.wp-block-cover p:not(.has-text-color)){color:inherit;}:where(.wp-block-file){margin-bottom:1.5em;}:where(.wp-block-file__button){border-radius:2em;display:inline-block;padding:.5em 1em;}:where(.wp-block-file__button):is(a):active,:where(.wp-block-file__button):is(a):focus,:where(.wp-block-file__button):is(a):hover,:where(.wp-block-file__button):is(a):visited{box-shadow:none;color:#fff;opacity:.85;text-decoration:none;}:where(.wp-block-group.wp-block-group-is-layout-constrained){position:relative;}h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-background,h6.has-background{padding:1.25em 2.375em;}.wp-block-image a{display:inline-block;}.wp-block-image img{box-sizing:border-box;height:auto;max-width:100%;vertical-align:bottom;}.wp-block-image[style*=border-radius] img,.wp-block-image[style*=border-radius]>a{border-radius:inherit;}.wp-block-image :where(figcaption){margin-bottom:1em;margin-top:.5em;}.wp-block-image figure{margin:0;}@keyframes show-content-image{0%{visibility:hidden;}99%{visibility:hidden;}to{visibility:visible;}}@keyframes turn-on-visibility{0%{opacity:0;}to{opacity:1;}}@keyframes turn-off-visibility{0%{opacity:1;visibility:visible;}99%{opacity:0;visibility:visible;}to{opacity:0;visibility:hidden;}}@keyframes lightbox-zoom-in{0%{transform:translate(calc(( -100vw + var(--wp--lightbox-scrollbar-width) ) / 2 + var(--wp--lightbox-initial-left-position)),calc(-50vh + var(--wp--lightbox-initial-top-position))) scale(var(--wp--lightbox-scale));}to{transform:translate(-50%,-50%) scale(1);}}@keyframes lightbox-zoom-out{0%{transform:translate(-50%,-50%) scale(1);visibility:visible;}99%{visibility:visible;}to{transform:translate(calc(( -100vw + var(--wp--lightbox-scrollbar-width) ) / 2 + var(--wp--lightbox-initial-left-position)),calc(-50vh + var(--wp--lightbox-initial-top-position))) scale(var(--wp--lightbox-scale));visibility:hidden;}}:where(.wp-block-latest-comments:not([style*=line-height] .wp-block-latest-comments__comment)){line-height:1.1;}:where(.wp-block-latest-comments:not([style*=line-height] .wp-block-latest-comments__comment-excerpt p)){line-height:1.8;}:root :where(.wp-block-latest-posts.is-grid){padding:0;}:root :where(.wp-block-latest-posts.wp-block-latest-posts__list){padding-left:0;}ol,ul{box-sizing:border-box;}:root :where(.wp-block-list.has-background){padding:1.25em 2.375em;}:where(.wp-block-navigation.has-background .wp-block-navigation-item a:not(.wp-element-button)),:where(.wp-block-navigation.has-background .wp-block-navigation-submenu a:not(.wp-element-button)){padding:.5em 1em;}:where(.wp-block-navigation .wp-block-navigation__submenu-container .wp-block-navigation-item a:not(.wp-element-button)),:where(.wp-block-navigation .wp-block-navigation__submenu-container .wp-block-navigation-submenu a:not(.wp-element-button)),:where(.wp-block-navigation .wp-block-navigation__submenu-container .wp-block-navigation-submenu button.wp-block-navigation-item__content),:where(.wp-block-navigation .wp-block-navigation__submenu-container .wp-block-pages-list__item button.wp-block-navigation-item__content){padding:.5em 1em;}@keyframes overlay-menu__fade-in-animation{0%{opacity:0;transform:translateY(.5em);}to{opacity:1;transform:translateY(0);}}:root :where(p.has-background){padding:1.25em 2.375em;}:where(p.has-text-color:not(.has-link-color)) a{color:inherit;}:where(.wp-block-post-comments-form) input:not([type=submit]),:where(.wp-block-post-comments-form) textarea{border:1px solid #949494;font-family:inherit;font-size:1em;}:where(.wp-block-post-comments-form) input:where(:not([type=submit]):not([type=checkbox])),:where(.wp-block-post-comments-form) textarea{padding:calc(.667em + 2px);}:where(.wp-block-post-excerpt){box-sizing:border-box;margin-bottom:var(--wp--style--block-gap);margin-top:var(--wp--style--block-gap);}:where(.wp-block-preformatted.has-background){padding:1.25em 2.375em;}:where(.wp-block-search__button){border:1px solid #ccc;padding:6px 10px;}:where(.wp-block-search__input){font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;letter-spacing:inherit;line-height:inherit;text-transform:inherit;}:where(.wp-block-search__button-inside .wp-block-search__inside-wrapper){border:1px solid #949494;box-sizing:border-box;padding:4px;}:where(.wp-block-search__button-inside .wp-block-search__inside-wrapper) :where(.wp-block-search__button){padding:4px 8px;}.wp-block-separator{border:none;border-top:2px solid;}:root :where(.wp-block-separator.is-style-dots){height:auto;line-height:1;text-align:center;}:root :where(.wp-block-separator.is-style-dots):before{color:currentColor;content:"···";font-family:serif;font-size:1.5em;letter-spacing:2em;padding-left:2em;}:root :where(.wp-block-site-logo.is-style-rounded){border-radius:9999px;}:root :where(.wp-block-social-links .wp-social-link a){padding:.25em;}:root :where(.wp-block-social-links.is-style-logos-only .wp-social-link a){padding:0;}:root :where(.wp-block-social-links.is-style-pill-shape .wp-social-link a){padding-left:.66667em;padding-right:.66667em;}.wp-block-spacer{clear:both;}:root :where(.wp-block-tag-cloud.is-style-outline){display:flex;flex-wrap:wrap;gap:1ch;}:root :where(.wp-block-tag-cloud.is-style-outline a){border:1px solid;font-size:unset !important;margin-right:0;padding:1ch 2ch;text-decoration:none !important;}:root :where(.wp-block-table-of-contents){box-sizing:border-box;}:where(.wp-block-term-description){box-sizing:border-box;margin-bottom:var(--wp--style--block-gap);margin-top:var(--wp--style--block-gap);}:where(pre.wp-block-verse){font-family:inherit;}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px;}.screen-reader-text{border:0;clip:rect(1px,1px,1px,1px);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-wrap:normal !important;}.screen-reader-text:focus{background-color:#ddd;clip:auto !important;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000;}html :where(.has-border-color){border-style:solid;}html :where([style*=border-top-color]){border-top-style:solid;}html :where([style*=border-right-color]){border-right-style:solid;}html :where([style*=border-bottom-color]){border-bottom-style:solid;}html :where([style*=border-left-color]){border-left-style:solid;}html :where([style*=border-width]){border-style:solid;}html :where([style*=border-top-width]){border-top-style:solid;}html :where([style*=border-right-width]){border-right-style:solid;}html :where([style*=border-bottom-width]){border-bottom-style:solid;}html :where([style*=border-left-width]){border-left-style:solid;}html :where(img[class*=wp-image-]){height:auto;max-width:100%;}:where(figure){margin:0 0 1em;}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px);}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px;}}.jet-listing-dynamic-field{display:flex;align-items:center;}.jet-listing-dynamic-field__content{display:block;max-width:100%;}.jet-listing-dynamic-field__inline-wrap{display:inline-flex;align-items:center;max-width:100%;}.jet-listing-dynamic-field__content:has(.jet-engine-gallery-grid--masonry),.jet-listing-dynamic-field__inline-wrap:has(.jet-engine-gallery-grid--masonry){width:100% !important;}.brxe-jet-engine-listing-dynamic-field .jet-listing-dynamic-field__icon :is(svg,path){fill:currentColor;}.brxe-jet-engine-listing-dynamic-link .jet-listing-dynamic-link__icon :is(svg,path){fill:currentColor;}.jet-listing-grid__item.jet-equal-columns>.elementor>:is(.elementor-section,.e-container,.e-con){height:100%;}.jet-listing-grid__item.jet-equal-columns .jet-engine-listing-overlay-wrap>.elementor>:is(.elementor-section,.e-container,.e-con){height:100%;}@-webkit-keyframes jet-engine-spin{0%{transform:rotate(0);}100%{transform:rotate(359deg);}}@keyframes jet-engine-spin{0%{transform:rotate(0);}100%{transform:rotate(359deg);}}@-webkit-keyframes jet-engine-map-spin{0%{transform:rotate(0);}100%{transform:rotate(359deg);}}@keyframes jet-engine-map-spin{0%{transform:rotate(0);}100%{transform:rotate(359deg);}}html{line-height:1.15;-webkit-text-size-adjust:100%;}*,:after,:before{box-sizing:border-box;}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;font-size:1rem;font-weight:400;line-height:1.5;color:#333;background-color:#fff;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}h1,h2,h3,h4,h5,h6{margin-block-start:.5rem;margin-block-end:1rem;font-family:inherit;font-weight:500;line-height:1.2;color:inherit;}h1{font-size:2.5rem;}h2{font-size:2rem;}h3{font-size:1.75rem;}h4{font-size:1.5rem;}p{margin-block-start:0;margin-block-end:.9rem;}hr{box-sizing:content-box;height:0;overflow:visible;}a{background-color:transparent;text-decoration:none;color:#c36;}a:active,a:hover{color:#336;}a:not([href]):not([tabindex]),a:not([href]):not([tabindex]):focus,a:not([href]):not([tabindex]):hover{color:inherit;text-decoration:none;}a:not([href]):not([tabindex]):focus{outline:0;}b,strong{font-weight:bolder;}img{border-style:none;height:auto;max-width:100%;}[hidden],template{display:none;}@media print{*,:after,:before{background:transparent !important;color:#000 !important;box-shadow:none !important;text-shadow:none !important;}a,a:visited{text-decoration:underline;}a[href]:after{content:" (" attr(href) ")";}a[href^="#"]:after,a[href^="javascript:"]:after{content:"";}img,tr{-moz-column-break-inside:avoid;break-inside:avoid;}h2,h3,p{orphans:3;widows:3;}h2,h3{-moz-column-break-after:avoid;break-after:avoid;}}label{display:inline-block;line-height:1;vertical-align:middle;}button,input,optgroup,select,textarea{font-family:inherit;font-size:1rem;line-height:1.5;margin:0;}input[type=date],input[type=email],input[type=number],input[type=password],input[type=search],input[type=tel],input[type=text],input[type=url],select,textarea{width:100%;border:1px solid #666;border-radius:3px;padding:.5rem 1rem;transition:all .3s;}input[type=date]:focus,input[type=email]:focus,input[type=number]:focus,input[type=password]:focus,input[type=search]:focus,input[type=tel]:focus,input[type=text]:focus,input[type=url]:focus,select:focus,textarea:focus{border-color:#333;}button,input{overflow:visible;}button,select{text-transform:none;}[type=button],[type=reset],[type=submit],button{width:auto;-webkit-appearance:button;}[type=button],[type=submit],button{display:inline-block;font-weight:400;color:#c36;text-align:center;white-space:nowrap;-webkit-user-select:none;-moz-user-select:none;user-select:none;background-color:transparent;border:1px solid #c36;padding:.5rem 1rem;font-size:1rem;border-radius:3px;transition:all .3s;}[type=button]:focus:not(:focus-visible),[type=submit]:focus:not(:focus-visible),button:focus:not(:focus-visible){outline:none;}[type=button]:focus,[type=button]:hover,[type=submit]:focus,[type=submit]:hover,button:focus,button:hover{color:#fff;background-color:#c36;text-decoration:none;}[type=button]:not(:disabled),[type=submit]:not(:disabled),button:not(:disabled){cursor:pointer;}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0;}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto;}[type=search]{-webkit-appearance:textfield;outline-offset:-2px;}[type=search]::-webkit-search-decoration{-webkit-appearance:none;}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit;}dd,dl,dt,li,ol,ul{margin-block-start:0;margin-block-end:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent;}.screen-reader-text{clip:rect(1px,1px,1px,1px);height:1px;overflow:hidden;position:absolute !important;width:1px;word-wrap:normal !important;}.screen-reader-text:focus{background-color:#eee;clip:auto !important;clip-path:none;color:#333;display:block;font-size:1rem;height:auto;left:5px;line-height:normal;padding:12px 24px;text-decoration:none;top:5px;width:auto;z-index:100000;}.elementor-screen-only,.screen-reader-text,.screen-reader-text span,.ui-helper-hidden-accessible{height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;top:-10000em;width:1px;clip:rect(0,0,0,0);border:0;}.elementor *,.elementor :after,.elementor :before{box-sizing:border-box;}.elementor a{box-shadow:none;text-decoration:none;}.elementor hr{background-color:transparent;margin:0;}.elementor img{border:none;border-radius:0;box-shadow:none;height:auto;max-width:100%;}.elementor .elementor-widget:not(.elementor-widget-text-editor):not(.elementor-widget-theme-post-content) figure{margin:0;}.elementor embed,.elementor iframe,.elementor object,.elementor video{border:none;line-height:1;margin:0;max-width:100%;width:100%;}.elementor-element{--flex-direction:initial;--flex-wrap:initial;--justify-content:initial;--align-items:initial;--align-content:initial;--gap:initial;--flex-basis:initial;--flex-grow:initial;--flex-shrink:initial;--order:initial;--align-self:initial;align-self:var(--align-self);flex-basis:var(--flex-basis);flex-grow:var(--flex-grow);flex-shrink:var(--flex-shrink);order:var(--order);}.elementor-element:where(.e-con-full,.elementor-widget){align-content:var(--align-content);align-items:var(--align-items);flex-direction:var(--flex-direction);flex-wrap:var(--flex-wrap);gap:var(--row-gap) var(--column-gap);justify-content:var(--justify-content);}.elementor-align-center{text-align:center;}.elementor-align-center .elementor-button,.elementor-align-left .elementor-button,.elementor-align-right .elementor-button{width:auto;}:root{--page-title-display:block;}@keyframes eicon-spin{0%{transform:rotate(0deg);}to{transform:rotate(359deg);}}.eicon-animation-spin{animation:eicon-spin 2s linear infinite;}.elementor-widget{position:relative;}.elementor-widget:not(:last-child){margin-bottom:var(--kit-widget-spacing,20px);}.elementor-widget:not(:last-child).elementor-absolute,.elementor-widget:not(:last-child).elementor-widget__width-auto,.elementor-widget:not(:last-child).elementor-widget__width-initial{margin-bottom:0;}.elementor-grid{display:grid;grid-column-gap:var(--grid-column-gap);grid-row-gap:var(--grid-row-gap);}.elementor-grid .elementor-grid-item{min-width:0;}.elementor-grid-0 .elementor-grid{display:inline-block;margin-bottom:calc(-1 * var(--grid-row-gap));width:100%;word-spacing:var(--grid-column-gap);}.elementor-grid-0 .elementor-grid .elementor-grid-item{display:inline-block;margin-bottom:var(--grid-row-gap);word-break:break-word;}.elementor-grid-1 .elementor-grid{grid-template-columns:repeat(1,1fr);}@media (max-width:1024px){.elementor-grid-tablet-2 .elementor-grid{grid-template-columns:repeat(2,1fr);}}@media (max-width:767px){.elementor-grid-mobile-1 .elementor-grid{grid-template-columns:repeat(1,1fr);}}@media (min-width:1025px){#elementor-device-mode:after{content:"desktop";}}@media (min-width:-1){#elementor-device-mode:after{content:"widescreen";}}@media (max-width:-1){#elementor-device-mode:after{content:"laptop";content:"tablet_extra";}}@media (max-width:1024px){#elementor-device-mode:after{content:"tablet";}}@media (max-width:-1){#elementor-device-mode:after{content:"mobile_extra";}}@media (max-width:767px){#elementor-device-mode:after{content:"mobile";}}@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth;}}.e-con{--border-radius:0;--border-top-width:0px;--border-right-width:0px;--border-bottom-width:0px;--border-left-width:0px;--border-style:initial;--border-color:initial;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--content-width:min(100%,var(--container-max-width,1140px));--width:100%;--min-height:initial;--height:auto;--text-align:initial;--margin-top:0px;--margin-right:0px;--margin-bottom:0px;--margin-left:0px;--padding-top:var(--container-default-padding-top,10px);--padding-right:var(--container-default-padding-right,10px);--padding-bottom:var(--container-default-padding-bottom,10px);--padding-left:var(--container-default-padding-left,10px);--position:relative;--z-index:revert;--overflow:visible;--gap:var(--widgets-spacing,20px);--row-gap:var(--widgets-spacing-row,20px);--column-gap:var(--widgets-spacing-column,20px);--overlay-mix-blend-mode:initial;--overlay-opacity:1;--overlay-transition:.3s;--e-con-grid-template-columns:repeat(3,1fr);--e-con-grid-template-rows:repeat(2,1fr);border-radius:var(--border-radius);height:var(--height);min-height:var(--min-height);min-width:0;overflow:var(--overflow);position:var(--position);transition:background var(--background-transition,.3s),border var(--border-transition,.3s),box-shadow var(--border-transition,.3s),transform var(--e-con-transform-transition-duration,.4s);width:var(--width);z-index:var(--z-index);--flex-wrap-mobile:wrap;margin-block-end:var(--margin-block-end);margin-block-start:var(--margin-block-start);margin-inline-end:var(--margin-inline-end);margin-inline-start:var(--margin-inline-start);padding-inline-end:var(--padding-inline-end);padding-inline-start:var(--padding-inline-start);--margin-block-start:var(--margin-top);--margin-block-end:var(--margin-bottom);--margin-inline-start:var(--margin-left);--margin-inline-end:var(--margin-right);--padding-inline-start:var(--padding-left);--padding-inline-end:var(--padding-right);--padding-block-start:var(--padding-top);--padding-block-end:var(--padding-bottom);--border-block-start-width:var(--border-top-width);--border-block-end-width:var(--border-bottom-width);--border-inline-start-width:var(--border-left-width);--border-inline-end-width:var(--border-right-width);}.e-con.e-flex{--flex-direction:column;--flex-basis:auto;--flex-grow:0;--flex-shrink:1;flex:var(--flex-grow) var(--flex-shrink) var(--flex-basis);}.e-con-full,.e-con>.e-con-inner{padding-block-end:var(--padding-block-end);padding-block-start:var(--padding-block-start);text-align:var(--text-align);}.e-con-full.e-flex,.e-con.e-flex>.e-con-inner{flex-direction:var(--flex-direction);}.e-con,.e-con>.e-con-inner{display:var(--display);}.e-con-boxed.e-flex{align-content:normal;align-items:normal;flex-direction:column;flex-wrap:nowrap;justify-content:normal;}.e-con-boxed{gap:initial;text-align:initial;}.e-con.e-flex>.e-con-inner{align-content:var(--align-content);align-items:var(--align-items);align-self:auto;flex-basis:auto;flex-grow:1;flex-shrink:1;flex-wrap:var(--flex-wrap);justify-content:var(--justify-content);}.e-con>.e-con-inner{gap:var(--row-gap) var(--column-gap);height:100%;margin:0 auto;max-width:var(--content-width);padding-inline-end:0;padding-inline-start:0;width:100%;}:is(.elementor-section-wrap,[data-elementor-id])>.e-con{--margin-left:auto;--margin-right:auto;max-width:min(100%,var(--width));}.e-con .elementor-widget.elementor-widget{margin-block-end:0;}.e-con:before,.e-con>.elementor-background-slideshow:before,.e-con>.elementor-motion-effects-container>.elementor-motion-effects-layer:before,:is(.e-con,.e-con>.e-con-inner)>.elementor-background-video-container:before{border-block-end-width:var(--border-block-end-width);border-block-start-width:var(--border-block-start-width);border-color:var(--border-color);border-inline-end-width:var(--border-inline-end-width);border-inline-start-width:var(--border-inline-start-width);border-radius:var(--border-radius);border-style:var(--border-style);content:var(--background-overlay);display:block;height:max(100% + var(--border-top-width) + var(--border-bottom-width),100%);left:calc(0px - var(--border-left-width));mix-blend-mode:var(--overlay-mix-blend-mode);opacity:var(--overlay-opacity);position:absolute;top:calc(0px - var(--border-top-width));transition:var(--overlay-transition,.3s);width:max(100% + var(--border-left-width) + var(--border-right-width),100%);}.e-con:before{transition:background var(--overlay-transition,.3s),border-radius var(--border-transition,.3s),opacity var(--overlay-transition,.3s);}.e-con>.elementor-background-slideshow,:is(.e-con,.e-con>.e-con-inner)>.elementor-background-video-container{border-block-end-width:var(--border-block-end-width);border-block-start-width:var(--border-block-start-width);border-color:var(--border-color);border-inline-end-width:var(--border-inline-end-width);border-inline-start-width:var(--border-inline-start-width);border-radius:var(--border-radius);border-style:var(--border-style);height:max(100% + var(--border-top-width) + var(--border-bottom-width),100%);left:calc(0px - var(--border-left-width));top:calc(0px - var(--border-top-width));width:max(100% + var(--border-left-width) + var(--border-right-width),100%);}@media (max-width:767px){:is(.e-con,.e-con>.e-con-inner)>.elementor-background-video-container.elementor-hidden-mobile{display:none;}}:is(.e-con,.e-con>.e-con-inner)>.elementor-background-video-container:before{z-index:1;}:is(.e-con,.e-con>.e-con-inner)>.elementor-background-slideshow:before{z-index:2;}.e-con .elementor-widget{min-width:0;}.e-con>.e-con-inner>.elementor-widget>.elementor-widget-container,.e-con>.elementor-widget>.elementor-widget-container{height:100%;}.e-con.e-con>.e-con-inner>.elementor-widget,.elementor.elementor .e-con>.elementor-widget{max-width:100%;}.e-con .elementor-widget:not(:last-child){--kit-widget-spacing:0px;}@media (max-width:767px){.e-con.e-flex{--width:100%;--flex-wrap:var(--flex-wrap-mobile);}}.elementor-element .elementor-widget-container,.elementor-element:not(:has(.elementor-widget-container)){transition:background .3s,border .3s,border-radius .3s,box-shadow .3s,transform var(--e-transform-transition-duration,.4s);}.elementor-heading-title{line-height:1;margin:0;padding:0;}.elementor-button{background-color:#69727d;border-radius:3px;color:#fff;display:inline-block;font-size:15px;line-height:1;padding:12px 24px;fill:#fff;text-align:center;transition:all .3s;}.elementor-button:focus,.elementor-button:hover,.elementor-button:visited{color:#fff;}.elementor-button-content-wrapper{display:flex;flex-direction:row;gap:5px;justify-content:center;}.elementor-button-text{display:inline-block;}.elementor-button span{text-decoration:inherit;}.elementor-icon{color:#69727d;display:inline-block;font-size:50px;line-height:1;text-align:center;transition:all .3s;}.elementor-icon:hover{color:#69727d;}.elementor-icon i,.elementor-icon svg{display:block;height:1em;position:relative;width:1em;}.elementor-icon i:before,.elementor-icon svg:before{left:50%;position:absolute;transform:translateX(-50%);}.elementor-shape-rounded .elementor-icon{border-radius:10%;}.animated{animation-duration:1.25s;}.animated.animated-slow{animation-duration:2s;}.animated.animated-fast{animation-duration:.75s;}.animated.infinite{animation-iteration-count:infinite;}.animated.reverse{animation-direction:reverse;animation-fill-mode:forwards;}@media (prefers-reduced-motion:reduce){.animated{animation:none;}}.elementor-post__thumbnail__link{transition:none;}@media (max-width:767px){.elementor .elementor-hidden-mobile,.elementor .elementor-hidden-phone{display:none;}}@media (min-width:768px) and (max-width:1024px){.elementor .elementor-hidden-tablet{display:none;}}@media (min-width:1025px) and (max-width:99999px){.elementor .elementor-hidden-desktop{display:none;}}.elementor-widget-icon-box .elementor-icon-box-wrapper{display:block;text-align:center;}.elementor-widget-icon-box .elementor-icon-box-icon{margin-bottom:var(--icon-box-icon-margin,15px);margin-left:auto;margin-right:auto;}@media (min-width:768px){.elementor-widget-icon-box.elementor-vertical-align-bottom .elementor-icon-box-wrapper{align-items:flex-end;}}.elementor-widget-icon-box.elementor-position-left .elementor-icon-box-wrapper,.elementor-widget-icon-box.elementor-position-right .elementor-icon-box-wrapper{display:flex;}.elementor-widget-icon-box.elementor-position-left .elementor-icon-box-icon,.elementor-widget-icon-box.elementor-position-right .elementor-icon-box-icon{display:inline-flex;flex:0 0 auto;}.elementor-widget-icon-box.elementor-position-left .elementor-icon-box-wrapper{flex-direction:row;text-align:start;}.elementor-widget-icon-box.elementor-position-left .elementor-icon-box-icon{margin-bottom:unset;margin-left:0;margin-right:var(--icon-box-icon-margin,15px);}@media (max-width:767px){.elementor-widget-icon-box.elementor-mobile-position-left .elementor-icon-box-wrapper,.elementor-widget-icon-box.elementor-mobile-position-right .elementor-icon-box-wrapper{display:flex;}.elementor-widget-icon-box.elementor-mobile-position-left .elementor-icon-box-icon,.elementor-widget-icon-box.elementor-mobile-position-right .elementor-icon-box-icon{display:inline-flex;flex:0 0 auto;}.elementor-widget-icon-box.elementor-mobile-position-left .elementor-icon-box-wrapper{flex-direction:row;text-align:start;}.elementor-widget-icon-box.elementor-mobile-position-left .elementor-icon-box-icon{margin-bottom:unset;margin-left:0;margin-right:var(--icon-box-icon-margin,15px);}.elementor-widget-icon-box.elementor-position-left .elementor-icon-box-icon,.elementor-widget-icon-box.elementor-position-right .elementor-icon-box-icon{display:block;flex:unset;}}.elementor-widget-icon-box .elementor-icon-box-title a{color:inherit;}.elementor-widget-icon-box .elementor-icon-box-content{flex-grow:1;}.elementor-widget-image{text-align:center;}.elementor-widget-image a{display:inline-block;}.elementor-widget-image a img[src$=".svg"]{width:48px;}.elementor-widget-image img{display:inline-block;vertical-align:middle;}.elementor-item:after,.elementor-item:before{display:block;position:absolute;transition:.3s;transition-timing-function:cubic-bezier(.58,.3,.005,1);}.elementor-item:not(:hover):not(:focus):not(.elementor-item-active):not(.highlighted):after,.elementor-item:not(:hover):not(:focus):not(.elementor-item-active):not(.highlighted):before{opacity:0;}.elementor-item-active:after,.elementor-item-active:before,.elementor-item.highlighted:after,.elementor-item.highlighted:before,.elementor-item:focus:after,.elementor-item:focus:before,.elementor-item:hover:after,.elementor-item:hover:before{transform:scale(1);}.e--pointer-double-line .elementor-item:after,.e--pointer-double-line .elementor-item:before,.e--pointer-overline .elementor-item:after,.e--pointer-overline .elementor-item:before,.e--pointer-underline .elementor-item:after,.e--pointer-underline .elementor-item:before{background-color:#3f444b;height:3px;left:0;width:100%;z-index:2;}.e--pointer-double-line .elementor-item:after,.e--pointer-underline .elementor-item:after{bottom:0;content:"";}.elementor-nav-menu--main .elementor-nav-menu a{transition:.4s;}.elementor-nav-menu--main .elementor-nav-menu a,.elementor-nav-menu--main .elementor-nav-menu a.highlighted,.elementor-nav-menu--main .elementor-nav-menu a:focus,.elementor-nav-menu--main .elementor-nav-menu a:hover{padding:13px 20px;}.elementor-nav-menu--main .elementor-nav-menu a.current{background:#1f2124;color:#fff;}.elementor-nav-menu--main .elementor-nav-menu a.disabled{background:#3f444b;color:#88909b;}.elementor-nav-menu--main .elementor-nav-menu ul{border-style:solid;border-width:0;padding:0;position:absolute;width:12em;}.elementor-nav-menu--main .elementor-nav-menu span.scroll-down,.elementor-nav-menu--main .elementor-nav-menu span.scroll-up{background:#fff;display:none;height:20px;overflow:hidden;position:absolute;visibility:hidden;}.elementor-nav-menu--main .elementor-nav-menu span.scroll-down-arrow,.elementor-nav-menu--main .elementor-nav-menu span.scroll-up-arrow{border:8px dashed transparent;border-bottom:8px solid #33373d;height:0;left:50%;margin-inline-start:-8px;overflow:hidden;position:absolute;top:-2px;width:0;}.elementor-nav-menu--main .elementor-nav-menu span.scroll-down-arrow{border-color:#33373d transparent transparent;border-style:solid dashed dashed;top:6px;}.elementor-nav-menu--layout-horizontal{display:flex;}.elementor-nav-menu--layout-horizontal .elementor-nav-menu{display:flex;flex-wrap:wrap;}.elementor-nav-menu--layout-horizontal .elementor-nav-menu a{flex-grow:1;white-space:nowrap;}.elementor-nav-menu--layout-horizontal .elementor-nav-menu>li{display:flex;}.elementor-nav-menu--layout-horizontal .elementor-nav-menu>li ul,.elementor-nav-menu--layout-horizontal .elementor-nav-menu>li>.scroll-down{top:100% !important;}.elementor-nav-menu--layout-horizontal .elementor-nav-menu>li:not(:first-child)>a{margin-inline-start:var(--e-nav-menu-horizontal-menu-item-margin);}.elementor-nav-menu--layout-horizontal .elementor-nav-menu>li:not(:first-child)>.scroll-down,.elementor-nav-menu--layout-horizontal .elementor-nav-menu>li:not(:first-child)>.scroll-up,.elementor-nav-menu--layout-horizontal .elementor-nav-menu>li:not(:first-child)>ul{left:var(--e-nav-menu-horizontal-menu-item-margin) !important;}.elementor-nav-menu--layout-horizontal .elementor-nav-menu>li:not(:last-child)>a{margin-inline-end:var(--e-nav-menu-horizontal-menu-item-margin);}.elementor-nav-menu--layout-horizontal .elementor-nav-menu>li:not(:last-child):after{align-self:center;border-color:var(--e-nav-menu-divider-color,#000);border-left-style:var(--e-nav-menu-divider-style,solid);border-left-width:var(--e-nav-menu-divider-width,2px);content:var(--e-nav-menu-divider-content,none);height:var(--e-nav-menu-divider-height,35%);}.elementor-nav-menu__align-right .elementor-nav-menu{justify-content:flex-end;margin-left:auto;}.elementor-nav-menu__align-left .elementor-nav-menu{justify-content:flex-start;margin-right:auto;}.elementor-nav-menu__align-start .elementor-nav-menu{justify-content:flex-start;margin-inline-end:auto;}.elementor-nav-menu__align-end .elementor-nav-menu{justify-content:flex-end;margin-inline-start:auto;}.elementor-nav-menu__align-center .elementor-nav-menu{justify-content:center;margin-inline-end:auto;margin-inline-start:auto;}.elementor-nav-menu__align-justify .elementor-nav-menu--layout-horizontal .elementor-nav-menu{width:100%;}.elementor-widget-nav-menu:not(.elementor-nav-menu--toggle) .elementor-menu-toggle{display:none;}.elementor-widget-nav-menu .elementor-widget-container,.elementor-widget-nav-menu:not(:has(.elementor-widget-container)):not([class*=elementor-hidden-]){display:flex;flex-direction:column;}.elementor-nav-menu{position:relative;z-index:2;}.elementor-nav-menu:after{clear:both;content:" ";display:block;font:0/0 serif;height:0;overflow:hidden;visibility:hidden;}.elementor-nav-menu,.elementor-nav-menu li,.elementor-nav-menu ul{display:block;line-height:normal;list-style:none;margin:0;padding:0;-webkit-tap-highlight-color:rgba(0,0,0,0);}.elementor-nav-menu ul{display:none;}.elementor-nav-menu ul ul a,.elementor-nav-menu ul ul a:active,.elementor-nav-menu ul ul a:focus,.elementor-nav-menu ul ul a:hover{border-left:16px solid transparent;}.elementor-nav-menu ul ul ul a,.elementor-nav-menu ul ul ul a:active,.elementor-nav-menu ul ul ul a:focus,.elementor-nav-menu ul ul ul a:hover{border-left:24px solid transparent;}.elementor-nav-menu ul ul ul ul a,.elementor-nav-menu ul ul ul ul a:active,.elementor-nav-menu ul ul ul ul a:focus,.elementor-nav-menu ul ul ul ul a:hover{border-left:32px solid transparent;}.elementor-nav-menu ul ul ul ul ul a,.elementor-nav-menu ul ul ul ul ul a:active,.elementor-nav-menu ul ul ul ul ul a:focus,.elementor-nav-menu ul ul ul ul ul a:hover{border-left:40px solid transparent;}.elementor-nav-menu a,.elementor-nav-menu li{position:relative;}.elementor-nav-menu li{border-width:0;}.elementor-nav-menu a{align-items:center;display:flex;}.elementor-nav-menu a,.elementor-nav-menu a:focus,.elementor-nav-menu a:hover{line-height:20px;padding:10px 20px;}.elementor-nav-menu a.current{background:#1f2124;color:#fff;}.elementor-nav-menu a.disabled{color:#88909b;cursor:not-allowed;}.elementor-nav-menu .e-plus-icon:before{content:"+";}.elementor-nav-menu .sub-arrow{align-items:center;display:flex;line-height:1;margin-block-end:-10px;margin-block-start:-10px;padding:10px;padding-inline-end:0;}.elementor-nav-menu .sub-arrow i{pointer-events:none;}.elementor-nav-menu .sub-arrow .fa.fa-chevron-down,.elementor-nav-menu .sub-arrow .fas.fa-chevron-down{font-size:.7em;}.elementor-nav-menu .sub-arrow .e-font-icon-svg{height:1em;width:1em;}.elementor-nav-menu .sub-arrow .e-font-icon-svg.fa-svg-chevron-down{height:.7em;width:.7em;}.elementor-nav-menu--dropdown .elementor-item.elementor-item-active,.elementor-nav-menu--dropdown .elementor-item.highlighted,.elementor-nav-menu--dropdown .elementor-item:focus,.elementor-nav-menu--dropdown .elementor-item:hover,.elementor-sub-item.elementor-item-active,.elementor-sub-item.highlighted,.elementor-sub-item:focus,.elementor-sub-item:hover{background-color:#3f444b;color:#fff;}.elementor-menu-toggle{align-items:center;background-color:rgba(0,0,0,.05);border:0 solid;border-radius:3px;color:#33373d;cursor:pointer;display:flex;font-size:var(--nav-menu-icon-size,22px);justify-content:center;padding:.25em;}.elementor-menu-toggle.elementor-active .elementor-menu-toggle__icon--open,.elementor-menu-toggle:not(.elementor-active) .elementor-menu-toggle__icon--close{display:none;}.elementor-menu-toggle .e-font-icon-svg{fill:#33373d;height:1em;width:1em;}.elementor-menu-toggle svg{height:auto;width:1em;fill:var(--nav-menu-icon-color,currentColor);}span.elementor-menu-toggle__icon--close,span.elementor-menu-toggle__icon--open{line-height:1;}.elementor-nav-menu--dropdown{background-color:#fff;font-size:13px;}.elementor-nav-menu--dropdown.elementor-nav-menu__container{margin-top:10px;overflow-x:hidden;overflow-y:auto;transform-origin:top;transition:max-height .3s,transform .3s;}.elementor-nav-menu--dropdown.elementor-nav-menu__container .elementor-sub-item{font-size:.85em;}.elementor-nav-menu--dropdown a{color:#33373d;}ul.elementor-nav-menu--dropdown a,ul.elementor-nav-menu--dropdown a:focus,ul.elementor-nav-menu--dropdown a:hover{border-inline-start:8px solid transparent;text-shadow:none;}.elementor-nav-menu__text-align-center .elementor-nav-menu--dropdown .elementor-nav-menu a{justify-content:center;}.elementor-nav-menu--toggle{--menu-height:100vh;}.elementor-nav-menu--toggle .elementor-menu-toggle:not(.elementor-active)+.elementor-nav-menu__container{max-height:0;overflow:hidden;transform:scaleY(0);}.elementor-nav-menu--stretch .elementor-nav-menu__container.elementor-nav-menu--dropdown{position:absolute;z-index:9997;}@media (max-width:1024px){.elementor-nav-menu--dropdown-tablet .elementor-nav-menu--main{display:none;}}@media (min-width:1025px){.elementor-nav-menu--dropdown-tablet .elementor-menu-toggle,.elementor-nav-menu--dropdown-tablet .elementor-nav-menu--dropdown{display:none;}.elementor-nav-menu--dropdown-tablet nav.elementor-nav-menu--dropdown.elementor-nav-menu__container{overflow-y:hidden;}}@keyframes hide-scroll{0%,to{overflow:hidden;}}.elementor-sticky--active{z-index:99;}.e-con.elementor-sticky--active{z-index:var(--z-index,99);}.elementor-widget-divider{--divider-border-style:none;--divider-border-width:1px;--divider-color:#0c0d0e;--divider-icon-size:20px;--divider-element-spacing:10px;--divider-pattern-height:24px;--divider-pattern-size:20px;--divider-pattern-url:none;--divider-pattern-repeat:repeat-x;}.elementor-widget-divider .elementor-divider{display:flex;}.elementor-widget-divider .elementor-icon{font-size:var(--divider-icon-size);}.elementor-widget-divider .elementor-divider-separator{direction:ltr;display:flex;margin:0;}.elementor-widget-divider:not(.elementor-widget-divider--view-line_text):not(.elementor-widget-divider--view-line_icon) .elementor-divider-separator{border-block-start:var(--divider-border-width) var(--divider-border-style) var(--divider-color);}.e-con-inner>.elementor-widget-divider,.e-con>.elementor-widget-divider{width:var(--container-widget-width,100%);--flex-grow:var(--container-widget-flex-grow);}.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a{color:inherit;font-size:inherit;line-height:inherit;}.elementor-widget.elementor-icon-list--layout-inline .elementor-widget-container,.elementor-widget:not(:has(.elementor-widget-container)) .elementor-widget-container{overflow:hidden;}.elementor-widget .elementor-icon-list-items.elementor-inline-items{display:flex;flex-wrap:wrap;margin-left:-8px;margin-right:-8px;}.elementor-widget .elementor-icon-list-items.elementor-inline-items .elementor-inline-item{word-break:break-word;}.elementor-widget .elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item{margin-left:8px;margin-right:8px;}.elementor-widget .elementor-icon-list-items.elementor-inline-items .elementor-icon-list-item:after{border-bottom:0;border-left-width:1px;border-right:0;border-top:0;border-style:solid;height:100%;left:auto;position:relative;right:auto;right:-8px;width:auto;}.elementor-widget .elementor-icon-list-items{list-style-type:none;margin:0;padding:0;}.elementor-widget .elementor-icon-list-item{margin:0;padding:0;position:relative;}.elementor-widget .elementor-icon-list-item:after{bottom:0;position:absolute;width:100%;}.elementor-widget .elementor-icon-list-item,.elementor-widget .elementor-icon-list-item a{align-items:var(--icon-vertical-align,center);display:flex;font-size:inherit;}.elementor-widget.elementor-list-item-link-full_width a{width:100%;}.elementor-widget.elementor-align-center .elementor-icon-list-item,.elementor-widget.elementor-align-center .elementor-icon-list-item a{justify-content:center;}.elementor-widget.elementor-align-center .elementor-icon-list-item:after{margin:auto;}.elementor-widget.elementor-align-center .elementor-inline-items{justify-content:center;}.elementor-widget:not(.elementor-align-right) .elementor-icon-list-item:after{left:0;}.elementor-widget:not(.elementor-align-left) .elementor-icon-list-item:after{right:0;}@media (min-width:-1){.elementor-widget:not(.elementor-widescreen-align-right) .elementor-icon-list-item:after{left:0;}.elementor-widget:not(.elementor-widescreen-align-left) .elementor-icon-list-item:after{right:0;}}@media (max-width:-1){.elementor-widget:not(.elementor-laptop-align-right) .elementor-icon-list-item:after{left:0;}.elementor-widget:not(.elementor-laptop-align-left) .elementor-icon-list-item:after{right:0;}.elementor-widget:not(.elementor-tablet_extra-align-right) .elementor-icon-list-item:after{left:0;}.elementor-widget:not(.elementor-tablet_extra-align-left) .elementor-icon-list-item:after{right:0;}}@media (max-width:1024px){.elementor-widget:not(.elementor-tablet-align-right) .elementor-icon-list-item:after{left:0;}.elementor-widget:not(.elementor-tablet-align-left) .elementor-icon-list-item:after{right:0;}}@media (max-width:-1){.elementor-widget:not(.elementor-mobile_extra-align-right) .elementor-icon-list-item:after{left:0;}.elementor-widget:not(.elementor-mobile_extra-align-left) .elementor-icon-list-item:after{right:0;}}@media (max-width:767px){.elementor-widget:not(.elementor-mobile-align-right) .elementor-icon-list-item:after{left:0;}.elementor-widget:not(.elementor-mobile-align-left) .elementor-icon-list-item:after{right:0;}}#left-area ul.elementor-icon-list-items,.elementor .elementor-element ul.elementor-icon-list-items,.elementor-edit-area .elementor-element ul.elementor-icon-list-items{padding:0;}.elementor-widget-social-icons.elementor-grid-0 .elementor-widget-container,.elementor-widget-social-icons.elementor-grid-0:not(:has(.elementor-widget-container)),.elementor-widget-social-icons.elementor-grid-mobile-0 .elementor-widget-container,.elementor-widget-social-icons.elementor-grid-mobile-0:not(:has(.elementor-widget-container)),.elementor-widget-social-icons.elementor-grid-tablet-0 .elementor-widget-container,.elementor-widget-social-icons.elementor-grid-tablet-0:not(:has(.elementor-widget-container)){font-size:0;line-height:1;}.elementor-widget-social-icons:not(.elementor-grid-0):not(.elementor-grid-tablet-0):not(.elementor-grid-mobile-0) .elementor-grid{display:inline-grid;}.elementor-widget-social-icons .elementor-grid{grid-column-gap:var(--grid-column-gap,5px);grid-row-gap:var(--grid-row-gap,5px);grid-template-columns:var(--grid-template-columns);justify-content:var(--justify-content,center);justify-items:var(--justify-content,center);}.elementor-icon.elementor-social-icon{font-size:var(--icon-size,25px);height:calc(var(--icon-size,25px) + 2 * var(--icon-padding,.5em));line-height:var(--icon-size,25px);width:calc(var(--icon-size,25px) + 2 * var(--icon-padding,.5em));}.elementor-social-icon{--e-social-icon-icon-color:#fff;align-items:center;background-color:#69727d;cursor:pointer;display:inline-flex;justify-content:center;text-align:center;}.elementor-social-icon i{color:var(--e-social-icon-icon-color);}.elementor-social-icon svg{fill:var(--e-social-icon-icon-color);}.elementor-social-icon:last-child{margin:0;}.elementor-social-icon:hover{color:#fff;opacity:.9;}.elementor-social-icon-linkedin,.elementor-social-icon-linkedin-in{background-color:#0077b5;}.elementor-social-icon-twitter{background-color:#1da1f2;}.elementor-social-icon-youtube{background-color:#cd201f;}.elementor-widget-table-of-contents .elementor-toc__header-title{color:var(--header-color);}.elementor-widget-table-of-contents.elementor-toc--collapsed .elementor-toc__toggle-button--collapse,.elementor-widget-table-of-contents:not(.elementor-toc--collapsed) .elementor-toc__toggle-button--expand{display:none;}.elementor-widget-table-of-contents .elementor-widget-container,.elementor-widget-table-of-contents:not(:has(.elementor-widget-container)){background-color:var(--box-background-color);border:var(--box-border-width,1px) solid var(--box-border-color,#9da5ae);border-radius:var(--box-border-radius,3px);min-height:var(--box-min-height);overflow:hidden;transition:min-height .4s;}.elementor-toc__header{align-items:center;background-color:var(--header-background-color);border-bottom:var(--separator-width,1px) solid var(--box-border-color,#9da5ae);display:flex;justify-content:space-between;padding:var(--box-padding,20px);}.elementor-toc__header-title{color:var(--header-color);flex-grow:1;font-size:18px;margin:0;}.elementor-toc__toggle-button{cursor:pointer;display:inline-flex;}.elementor-toc__toggle-button i{color:var(--toggle-button-color);}.elementor-toc__toggle-button svg{height:1em;width:1em;fill:var(--toggle-button-color);}.elementor-toc__spinner-container{text-align:center;}.elementor-toc__spinner{font-size:2em;}.elementor-toc__spinner.e-font-icon-svg{height:1em;width:1em;}.elementor-toc__body{max-height:var(--toc-body-max-height);overflow-y:auto;padding:var(--box-padding,20px);}.elementor-toc__body::-webkit-scrollbar{width:7px;}.elementor-toc__body::-webkit-scrollbar-thumb{background-color:#babfc5;border-radius:10px;}.elementor-widget-archive-posts:after,.elementor-widget-posts:after{display:none;}.elementor-post__thumbnail__link{transition:none;}.elementor-posts-container:not(.elementor-posts-masonry){align-items:stretch;}.elementor-posts-container .elementor-post{margin:0;padding:0;}.elementor-posts-container .elementor-post__thumbnail{overflow:hidden;}.elementor-posts-container .elementor-post__thumbnail img{display:block;max-height:none;max-width:none;transition:filter .3s;width:100%;}.elementor-posts-container .elementor-post__thumbnail__link{display:block;position:relative;width:100%;}.elementor-posts-container.elementor-has-item-ratio .elementor-post__thumbnail{bottom:0;left:0;right:0;top:0;}.elementor-posts-container.elementor-has-item-ratio .elementor-post__thumbnail img{height:auto;left:calc(50% + 1px);position:absolute;top:calc(50% + 1px);transform:scale(1.01) translate(-50%,-50%);}.elementor-posts-container.elementor-has-item-ratio .elementor-post__thumbnail.elementor-fit-height img{height:100%;width:auto;}.elementor-posts .elementor-post{flex-direction:column;transition-duration:.25s;transition-property:background,border,box-shadow;}.elementor-posts .elementor-post__title{font-size:18px;margin:0;}.elementor-posts .elementor-post__text{display:var(--item-display,block);flex-direction:column;flex-grow:1;}.elementor-posts .elementor-post__thumbnail{position:relative;}.elementor-posts--skin-classic .elementor-post{overflow:hidden;}.elementor-posts--thumbnail-top .elementor-post__thumbnail__link{margin-bottom:20px;}.elementor-posts--thumbnail-top .elementor-post__text{width:100%;}.elementor-posts .elementor-post{display:flex;}.elementor-portfolio.elementor-has-item-ratio{transition:height .5s;}.elementor-portfolio.elementor-has-item-ratio .elementor-post__thumbnail{background-color:rgba(0,0,0,.1);position:absolute;}.elementor-portfolio.elementor-has-item-ratio .elementor-post__thumbnail__link{padding-bottom:56.25%;}.elementor-widget-archive-posts:not(:has(>.elementor-widget-container))>.elementor-button-wrapper,.elementor-widget-archive-posts>.elementor-widget-container>.elementor-button-wrapper,.elementor-widget-posts:not(:has(>.elementor-widget-container))>.elementor-button-wrapper,.elementor-widget-posts>.elementor-widget-container>.elementor-button-wrapper{}.elementor-widget-archive-posts:not(:has(>.elementor-widget-container))>.elementor-button-wrapper .elementor-button,.elementor-widget-archive-posts>.elementor-widget-container>.elementor-button-wrapper .elementor-button,.elementor-widget-posts:not(:has(>.elementor-widget-container))>.elementor-button-wrapper .elementor-button,.elementor-widget-posts>.elementor-widget-container>.elementor-button-wrapper .elementor-button{cursor:pointer;position:relative;}[data-elementor-type=popup] .elementor-section-wrap:not(:empty)+#elementor-add-new-section,[data-elementor-type=popup]:not(.elementor-edit-area){display:none;}.elementor-popup-modal.dialog-type-lightbox{background-color:transparent;display:flex;pointer-events:none;-webkit-user-select:auto;-moz-user-select:auto;user-select:auto;}.elementor-popup-modal .dialog-buttons-wrapper,.elementor-popup-modal .dialog-header{display:none;}.elementor-popup-modal .dialog-close-button{display:none;inset-inline-end:20px;margin-top:0;opacity:1;pointer-events:all;top:20px;z-index:9999;}.elementor-popup-modal .dialog-close-button svg{fill:#1f2124;height:1em;width:1em;}.elementor-popup-modal .dialog-widget-content{background-color:#fff;border-radius:0;box-shadow:none;max-height:100%;max-width:100%;overflow:visible;pointer-events:all;width:auto;}.elementor-popup-modal .dialog-message{display:flex;max-height:100vh;max-width:100vw;overflow:auto;padding:0;width:640px;}.elementor-popup-modal .elementor{width:100%;}@-webkit-keyframes spCircRot{from{-webkit-transform:rotate(0deg);transform:rotate(0deg);}to{-webkit-transform:rotate(359deg);transform:rotate(359deg);}}@keyframes spCircRot{from{-webkit-transform:rotate(0deg);transform:rotate(0deg);}to{-webkit-transform:rotate(359deg);transform:rotate(359deg);}}.jet-breadcrumbs{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;}.jet-breadcrumbs__title,.jet-breadcrumbs__content{-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;}.jet-breadcrumbs__content{font-size:0;}.jet-breadcrumbs__browse,.jet-breadcrumbs__item,.jet-breadcrumbs__item-link,.jet-breadcrumbs__item-target{display:inline-block;}.jet-breadcrumbs__wrap{display:inline;}.jet-breadcrumbs__browse,.jet-breadcrumbs__item{font-size:14px;vertical-align:middle;}.jet-breadcrumbs__item-sep{margin-left:5px;margin-right:5px;}.jet-breadcrumbs__item-sep i{display:block;width:1em;height:1em;line-height:1;text-align:center;}.cpel-switcher__nav{--cpel-switcher-space:0;display:block;}.cpel-switcher__nav .cpel-switcher__list{display:flex;list-style:none;margin:0;padding:0;line-height:normal;-webkit-tap-highlight-color:rgba(0,0,0,0);}.cpel-switcher__nav a{display:inline-block;text-decoration:none;white-space:nowrap;}.cpel-switcher--layout-dropdown{--rotate:0deg;--langs:5;}.cpel-switcher--layout-dropdown .cpel-switcher__nav{display:inline-block;position:relative;-webkit-user-select:none;-moz-user-select:none;user-select:none;}.cpel-switcher--layout-dropdown .cpel-switcher__toggle{position:relative;}.cpel-switcher--layout-dropdown .cpel-switcher__toggle:after{content:"";position:absolute;z-index:2;top:0;right:0;bottom:0;width:100%;cursor:pointer;}.cpel-switcher--layout-dropdown .cpel-switcher__toggle a i{vertical-align:middle;transform:rotateX(var(--rotate));transition:transform 0s .2s;}.cpel-switcher--layout-dropdown .cpel-switcher__list{position:absolute;z-index:10;top:100%;display:flex;flex-direction:column;justify-content:flex-end;min-width:100%;max-height:0;overflow:hidden;transition:max-height .3s ease-out;}.cpel-switcher--layout-dropdown .cpel-switcher__lang{width:100%;}.cpel-switcher--layout-dropdown .cpel-switcher__lang a{display:block;text-align:left;}.cpel-switcher__lang{margin:0;}.cpel-switcher__code,.cpel-switcher__flag,.cpel-switcher__name{display:inline-block;vertical-align:middle;}.cpel-switcher__code,.cpel-switcher__name{text-decoration:inherit;}@-webkit-keyframes fade{0%{opacity:0;}100%{opacity:1;}}@keyframes fade{0%{opacity:0;}100%{opacity:1;}}@-webkit-keyframes zoomIn{0%{opacity:0;-webkit-transform:scale(.75);transform:scale(.75);}100%{opacity:1;-webkit-transform:scale(1);transform:scale(1);}}@keyframes zoomIn{0%{opacity:0;-webkit-transform:scale(.75);transform:scale(.75);}100%{opacity:1;-webkit-transform:scale(1);transform:scale(1);}}@-webkit-keyframes zoomOut{0%{opacity:0;-webkit-transform:scale(1.1);transform:scale(1.1);}100%{opacity:1;-webkit-transform:scale(1);transform:scale(1);}}@keyframes zoomOut{0%{opacity:0;-webkit-transform:scale(1.1);transform:scale(1.1);}100%{opacity:1;-webkit-transform:scale(1);transform:scale(1);}}@-webkit-keyframes moveUp{0%{opacity:0;-webkit-transform:translateY(25px);transform:translateY(25px);}100%{opacity:1;-webkit-transform:translateY(0);transform:translateY(0);}}@keyframes moveUp{0%{opacity:0;-webkit-transform:translateY(25px);transform:translateY(25px);}100%{opacity:1;-webkit-transform:translateY(0);transform:translateY(0);}}@-webkit-keyframes columnMoveUp{0%{opacity:0;-webkit-transform:translateY(25px);transform:translateY(25px);}100%{opacity:1;-webkit-transform:translateY(0);transform:translateY(0);}}@keyframes columnMoveUp{0%{opacity:0;-webkit-transform:translateY(25px);transform:translateY(25px);}100%{opacity:1;-webkit-transform:translateY(0);transform:translateY(0);}}@-webkit-keyframes fallPerspective{0%{opacity:0;-webkit-transform:perspective(1000px) translateY(50px) translateZ(-300px) rotateX(-35deg);transform:perspective(1000px) translateY(50px) translateZ(-300px) rotateX(-35deg);}100%{opacity:1;-webkit-transform:perspective(1000px) translateY(0) translateZ(0) rotateX(0deg);transform:perspective(1000px) translateY(0) translateZ(0) rotateX(0deg);}}@keyframes fallPerspective{0%{opacity:0;-webkit-transform:perspective(1000px) translateY(50px) translateZ(-300px) rotateX(-35deg);transform:perspective(1000px) translateY(50px) translateZ(-300px) rotateX(-35deg);}100%{opacity:1;-webkit-transform:perspective(1000px) translateY(0) translateZ(0) rotateX(0deg);transform:perspective(1000px) translateY(0) translateZ(0) rotateX(0deg);}}@-webkit-keyframes edit-button-pulse{0%{-webkit-box-shadow:0 0 2px 0 rgba(183,8,78,.6);box-shadow:0 0 2px 0 rgba(183,8,78,.6);}30%{-webkit-box-shadow:0 0 2px 10px rgba(183,8,78,0);box-shadow:0 0 2px 10px rgba(183,8,78,0);}100%{-webkit-box-shadow:0 0 2px 0 rgba(183,8,78,0);box-shadow:0 0 2px 0 rgba(183,8,78,0);}}@keyframes edit-button-pulse{0%{-webkit-box-shadow:0 0 2px 0 rgba(183,8,78,.6);box-shadow:0 0 2px 0 rgba(183,8,78,.6);}30%{-webkit-box-shadow:0 0 2px 10px rgba(183,8,78,0);box-shadow:0 0 2px 10px rgba(183,8,78,0);}100%{-webkit-box-shadow:0 0 2px 0 rgba(183,8,78,0);box-shadow:0 0 2px 0 rgba(183,8,78,0);}}@-webkit-keyframes spCircRot{from{-webkit-transform:rotate(0deg);transform:rotate(0deg);}to{-webkit-transform:rotate(359deg);transform:rotate(359deg);}}@keyframes spCircRot{from{-webkit-transform:rotate(0deg);transform:rotate(0deg);}to{-webkit-transform:rotate(359deg);transform:rotate(359deg);}}.fa,.fab,.fad,.fal,.far,.fas{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;display:inline-block;font-style:normal;font-variant:normal;text-rendering:auto;line-height:1;}@-webkit-keyframes fa-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg);}to{-webkit-transform:rotate(1turn);transform:rotate(1turn);}}@keyframes fa-spin{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg);}to{-webkit-transform:rotate(1turn);transform:rotate(1turn);}}.fa-search:before{content:"";}@font-face{font-family:"Font Awesome 5 Brands";font-style:normal;font-weight:400;font-display:block;src:url("https://smowl.net/wp-content/plugins/elementor/assets/lib/font-awesome/css/../webfonts/fa-brands-400.eot");src:url("https://smowl.net/wp-content/plugins/elementor/assets/lib/font-awesome/css/../webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"),url("https://smowl.net/wp-content/plugins/elementor/assets/lib/font-awesome/css/../webfonts/fa-brands-400.woff2") format("woff2"),url("https://smowl.net/wp-content/plugins/elementor/assets/lib/font-awesome/css/../webfonts/fa-brands-400.woff") format("woff"),url("https://smowl.net/wp-content/plugins/elementor/assets/lib/font-awesome/css/../webfonts/fa-brands-400.ttf") format("truetype"),url("https://smowl.net/wp-content/plugins/elementor/assets/lib/font-awesome/css/../webfonts/fa-brands-400.svg#fontawesome") format("svg");}@font-face{font-family:"Font Awesome 5 Free";font-style:normal;font-weight:400;font-display:block;src:url("https://smowl.net/wp-content/plugins/elementor/assets/lib/font-awesome/css/../webfonts/fa-regular-400.eot");src:url("https://smowl.net/wp-content/plugins/elementor/assets/lib/font-awesome/css/../webfonts/fa-regular-400.eot?#iefix") format("embedded-opentype"),url("https://smowl.net/wp-content/plugins/elementor/assets/lib/font-awesome/css/../webfonts/fa-regular-400.woff2") format("woff2"),url("https://smowl.net/wp-content/plugins/elementor/assets/lib/font-awesome/css/../webfonts/fa-regular-400.woff") format("woff"),url("https://smowl.net/wp-content/plugins/elementor/assets/lib/font-awesome/css/../webfonts/fa-regular-400.ttf") format("truetype"),url("https://smowl.net/wp-content/plugins/elementor/assets/lib/font-awesome/css/../webfonts/fa-regular-400.svg#fontawesome") format("svg");}@font-face{font-family:"Font Awesome 5 Free";font-style:normal;font-weight:900;font-display:block;src:url("https://smowl.net/wp-content/plugins/elementor/assets/lib/font-awesome/css/../webfonts/fa-solid-900.eot");src:url("https://smowl.net/wp-content/plugins/elementor/assets/lib/font-awesome/css/../webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"),url("https://smowl.net/wp-content/plugins/elementor/assets/lib/font-awesome/css/../webfonts/fa-solid-900.woff2") format("woff2"),url("https://smowl.net/wp-content/plugins/elementor/assets/lib/font-awesome/css/../webfonts/fa-solid-900.woff") format("woff"),url("https://smowl.net/wp-content/plugins/elementor/assets/lib/font-awesome/css/../webfonts/fa-solid-900.ttf") format("truetype"),url("https://smowl.net/wp-content/plugins/elementor/assets/lib/font-awesome/css/../webfonts/fa-solid-900.svg#fontawesome") format("svg");}.fa,.far,.fas{font-family:"Font Awesome 5 Free";}.fa,.fas{font-weight:900;}@-webkit-keyframes jet-spinner-animation{0%{-webkit-transform:scaleY(.4);transform:scaleY(.4);}25%{-webkit-transform:scaleY(.9);transform:scaleY(.9);}50%{-webkit-transform:scaleY(.2);transform:scaleY(.2);}80%{-webkit-transform:scaleY(.4);transform:scaleY(.4);}100%{-webkit-transform:scaleY(.4);transform:scaleY(.4);}}@keyframes jet-spinner-animation{0%{-webkit-transform:scaleY(.4);transform:scaleY(.4);}25%{-webkit-transform:scaleY(.9);transform:scaleY(.9);}50%{-webkit-transform:scaleY(.2);transform:scaleY(.2);}80%{-webkit-transform:scaleY(.4);transform:scaleY(.4);}100%{-webkit-transform:scaleY(.4);transform:scaleY(.4);}}@keyframes jet-spinner-animation{0%{-webkit-transform:scaleY(.4);transform:scaleY(.4);}25%{-webkit-transform:scaleY(.9);transform:scaleY(.9);}50%{-webkit-transform:scaleY(.2);transform:scaleY(.2);}80%{-webkit-transform:scaleY(.4);transform:scaleY(.4);}100%{-webkit-transform:scaleY(.4);transform:scaleY(.4);}}@font-face{font-family:"flechaabajo";src:url("https://smowl.net/wp-content/uploads/elementor/custom-icons/flechaabajo/fonts/flechaabajo.eot?rzqjbi");src:url("https://smowl.net/wp-content/uploads/elementor/custom-icons/flechaabajo/fonts/flechaabajo.eot?rzqjbi#iefix") format("embedded-opentype"),url("https://smowl.net/wp-content/uploads/elementor/custom-icons/flechaabajo/fonts/flechaabajo.ttf?rzqjbi") format("truetype"),url("https://smowl.net/wp-content/uploads/elementor/custom-icons/flechaabajo/fonts/flechaabajo.woff?rzqjbi") format("woff"),url("https://smowl.net/wp-content/uploads/elementor/custom-icons/flechaabajo/fonts/flechaabajo.svg?rzqjbi#flechaabajo") format("svg");font-weight:normal;font-style:normal;font-display:block;}[class^="icon-"],[class*=" icon-"]{font-family:"flechaabajo" !important;speak:never;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}.icon-fa--caret-down:before{content:"";}.elementor-search-form{display:block;transition:.2s;}.elementor-search-form .e-font-icon-svg-container{align-items:center;display:flex;height:100%;justify-content:center;width:100%;}.elementor-search-form button,.elementor-search-form input[type=search]{-webkit-appearance:none;-moz-appearance:none;background:none;border:0;display:inline-block;font-size:15px;line-height:1;margin:0;min-width:0;padding:0;vertical-align:middle;white-space:normal;}.elementor-search-form button:focus,.elementor-search-form input[type=search]:focus{color:inherit;outline:0;}.elementor-search-form button{background-color:#69727d;border-radius:0;color:#fff;font-size:var(--e-search-form-submit-icon-size,16px);}.elementor-search-form__container{border:0 solid transparent;display:flex;min-height:50px;overflow:hidden;transition:.2s;}.elementor-search-form__container:not(.elementor-search-form--full-screen){background:#f1f2f3;}.elementor-search-form__input{color:#3f444b;flex-basis:100%;transition:color .2s;}.elementor-search-form__input::-moz-placeholder{color:inherit;font-family:inherit;opacity:.6;}.elementor-search-form__input::placeholder{color:inherit;font-family:inherit;opacity:.6;}.elementor-search-form__submit{font-size:var(--e-search-form-submit-icon-size,16px);transition:color .2s,background .2s;}.elementor-search-form__submit svg{fill:var(--e-search-form-submit-text-color,#fff);height:var(--e-search-form-submit-icon-size,16px);width:var(--e-search-form-submit-icon-size,16px);}.elementor-search-form .elementor-search-form__submit,.elementor-search-form .elementor-search-form__submit:hover{border:none;border-radius:0;color:var(--e-search-form-submit-text-color,#fff);}</style>
+<meta name="description" content="Discover Computational Thinking: Definition, Phases, &amp; Traits. Unravel the skill behind problem-solving and innovation in the digital age. Learn more!"/>
+<meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
+<link rel="canonical" href="https://smowl.net/en/blog/computational-thinking/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Computational thinking, what it is, phases and characteristics" />
+<meta property="og:description" content="Discover Computational Thinking: Definition, Phases, &amp; Traits. Unravel the skill behind problem-solving and innovation in the digital age. Learn more!" />
+<meta property="og:url" content="https://smowl.net/en/blog/computational-thinking/" />
+<meta property="og:site_name" content="SMOWL Proctoring | Supervision system for online exams" />
+<meta property="article:section" content="Technology" />
+<meta property="og:updated_time" content="2025-02-24T16:44:01+01:00" />
+<meta property="og:image" content="https://smowl.net/wp-content/uploads/2023/09/fases-del-pensamiento-computacional.jpg" />
+<meta property="og:image:secure_url" content="https://smowl.net/wp-content/uploads/2023/09/fases-del-pensamiento-computacional.jpg" />
+<meta property="og:image:width" content="1024" />
+<meta property="og:image:height" content="683" />
+<meta property="og:image:alt" content="Phases of Computational Thinking" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="article:published_time" content="2023-10-04T07:02:00+02:00" />
+<meta property="article:modified_time" content="2025-02-24T16:44:01+01:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Computational thinking, what it is, phases and characteristics" />
+<meta name="twitter:description" content="Discover Computational Thinking: Definition, Phases, &amp; Traits. Unravel the skill behind problem-solving and innovation in the digital age. Learn more!" />
+<meta name="twitter:site" content="@smowltech" />
+<meta name="twitter:creator" content="@smowltech" />
+<meta name="twitter:image" content="https://smowl.net/wp-content/uploads/2023/09/fases-del-pensamiento-computacional.jpg" />
+<script type="application/ld+json" class="rank-math-schema">{"@context":"https://schema.org","@graph":[{"@type":"Place","@id":"https://smowl.net/#place","address":{"@type":"PostalAddress","streetAddress":"Potuetxe Kalea, 53 B","addressLocality":"Donostia/San Sebasti\u00e1n","addressRegion":"Gipuzkoa","postalCode":"20018","addressCountry":"Espa\u00f1a"}},{"@type":"Organization","@id":"https://smowl.net/#organization","name":"SMOWL Proctoring | Sistema de supervisi\u00f3n para ex\u00e1menes online","url":"https://smowl.net","sameAs":["https://twitter.com/smowltech"],"email":"info@smowltech.com","address":{"@type":"PostalAddress","streetAddress":"Potuetxe Kalea, 53 B","addressLocality":"Donostia/San Sebasti\u00e1n","addressRegion":"Gipuzkoa","postalCode":"20018","addressCountry":"Espa\u00f1a"},"logo":{"@type":"ImageObject","@id":"https://smowl.net/#logo","url":"https://smowl.net/wp-content/uploads/2022/02/logo-smowl.svg","contentUrl":"https://smowl.net/wp-content/uploads/2022/02/logo-smowl.svg","caption":"SMOWL Proctoring | Sistema de supervisi\u00f3n para ex\u00e1menes online","inLanguage":"en","width":"2203","height":"399"},"location":{"@id":"https://smowl.net/#place"}},{"@type":"WebSite","@id":"https://smowl.net/#website","url":"https://smowl.net","name":"SMOWL Proctoring | Sistema de supervisi\u00f3n para ex\u00e1menes online","publisher":{"@id":"https://smowl.net/#organization"},"inLanguage":"en"},{"@type":"ImageObject","@id":"https://smowl.net/wp-content/uploads/2023/09/fases-del-pensamiento-computacional.jpg","url":"https://smowl.net/wp-content/uploads/2023/09/fases-del-pensamiento-computacional.jpg","width":"1024","height":"683","caption":"Phases of Computational Thinking","inLanguage":"en"},{"@type":"BreadcrumbList","@id":"https://smowl.net/en/blog/computational-thinking/#breadcrumb","itemListElement":[{"@type":"ListItem","position":"1","item":{"@id":"https://smowl.net","name":"Home"}},{"@type":"ListItem","position":"2","item":{"@id":"https://smowl.net/en/our-blog/","name":"Our reports and articles"}},{"@type":"ListItem","position":"3","item":{"@id":"https://smowl.net/en/category/technology/","name":"Technology"}},{"@type":"ListItem","position":"4","item":{"@id":"https://smowl.net/en/blog/computational-thinking/","name":"Exploring Computational Thinking: definition, phases, and key traits"}}]},{"@type":"WebPage","@id":"https://smowl.net/en/blog/computational-thinking/#webpage","url":"https://smowl.net/en/blog/computational-thinking/","name":"Computational thinking, what it is, phases and characteristics","datePublished":"2023-10-04T07:02:00+02:00","dateModified":"2025-02-24T16:44:01+01:00","isPartOf":{"@id":"https://smowl.net/#website"},"primaryImageOfPage":{"@id":"https://smowl.net/wp-content/uploads/2023/09/fases-del-pensamiento-computacional.jpg"},"inLanguage":"en","breadcrumb":{"@id":"https://smowl.net/en/blog/computational-thinking/#breadcrumb"}},{"@type":"Person","@id":"https://smowl.net/en/author/mikel/","name":"Mikel Perez","url":"https://smowl.net/en/author/mikel/","image":{"@type":"ImageObject","@id":"https://secure.gravatar.com/avatar/67f97ae6c4139ba6c586651617e62be3?s=96&amp;d=mm&amp;r=g","url":"https://secure.gravatar.com/avatar/67f97ae6c4139ba6c586651617e62be3?s=96&amp;d=mm&amp;r=g","caption":"Mikel Perez","inLanguage":"en"},"worksFor":{"@id":"https://smowl.net/#organization"}},{"@type":"BlogPosting","headline":"Computational thinking, what it is, phases and characteristics","keywords":"computational thinking","datePublished":"2023-10-04T07:02:00+02:00","dateModified":"2025-02-24T16:44:01+01:00","articleSection":"Technology","author":{"@id":"https://smowl.net/en/author/mikel/","name":"Mikel Perez"},"publisher":{"@id":"https://smowl.net/#organization"},"description":"Discover Computational Thinking: Definition, Phases, &amp; Traits. Unravel the skill behind problem-solving and innovation in the digital age. Learn more!","name":"Computational thinking, what it is, phases and characteristics","@id":"https://smowl.net/en/blog/computational-thinking/#richSnippet","isPartOf":{"@id":"https://smowl.net/en/blog/computational-thinking/#webpage"},"image":{"@id":"https://smowl.net/wp-content/uploads/2023/09/fases-del-pensamiento-computacional.jpg"},"inLanguage":"en","mainEntityOfPage":{"@id":"https://smowl.net/en/blog/computational-thinking/#webpage"}}]}</script>
+<!-- /Rank Math WordPress SEO plugin -->
+
+
+<link rel="stylesheet" id="wp-block-library-css" media="all" data-pmdelayedstyle="https://smowl.net/wp-includes/css/dist/block-library/style.min.css?ver=6.7.2">
+<link rel="stylesheet" id="jet-engine-frontend-css" media="all" data-pmdelayedstyle="https://smowl.net/wp-content/plugins/jet-engine/assets/css/frontend.css?ver=3.6.6">
+<style id='global-styles-inline-css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:root { --wp--style--global--content-size: 800px;--wp--style--global--wide-size: 1200px; }:where(body) { margin: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.wp-site-blocks) > * { margin-block-start: 24px; margin-block-end: 0; }:where(.wp-site-blocks) > :first-child { margin-block-start: 0; }:where(.wp-site-blocks) > :last-child { margin-block-end: 0; }:root { --wp--style--block-gap: 24px; }:root :where(.is-layout-flow) > :first-child{margin-block-start: 0;}:root :where(.is-layout-flow) > :last-child{margin-block-end: 0;}:root :where(.is-layout-flow) > *{margin-block-start: 24px;margin-block-end: 0;}:root :where(.is-layout-constrained) > :first-child{margin-block-start: 0;}:root :where(.is-layout-constrained) > :last-child{margin-block-end: 0;}:root :where(.is-layout-constrained) > *{margin-block-start: 24px;margin-block-end: 0;}:root :where(.is-layout-flex){gap: 24px;}:root :where(.is-layout-grid){gap: 24px;}.is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}a:where(:not(.wp-element-button)){text-decoration: underline;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;line-height: inherit;padding: calc(0.667em + 2px) calc(1.333em + 2px);text-decoration: none;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel="stylesheet" id="hello-elementor-css" media="all" data-pmdelayedstyle="https://smowl.net/wp-content/themes/hello-elementor/style.min.css?ver=3.3.0">
+<link rel="stylesheet" id="hello-elementor-theme-style-css" media="all" data-pmdelayedstyle="https://smowl.net/wp-content/themes/hello-elementor/theme.min.css?ver=3.3.0">
+<link rel="stylesheet" id="hello-elementor-header-footer-css" media="all" data-pmdelayedstyle="https://smowl.net/wp-content/themes/hello-elementor/header-footer.min.css?ver=3.3.0">
+<link rel="stylesheet" id="elementor-frontend-css" media="all" data-pmdelayedstyle="https://smowl.net/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.28.3">
+<link rel="stylesheet" id="widget-icon-box-css" media="all" data-pmdelayedstyle="https://smowl.net/wp-content/plugins/elementor/assets/css/widget-icon-box.min.css?ver=3.28.3">
+<link rel="stylesheet" id="widget-image-css" media="all" data-pmdelayedstyle="https://smowl.net/wp-content/plugins/elementor/assets/css/widget-image.min.css?ver=3.28.3">
+<link rel="stylesheet" id="widget-nav-menu-css" media="all" data-pmdelayedstyle="https://smowl.net/wp-content/plugins/elementor-pro/assets/css/widget-nav-menu.min.css?ver=3.28.2">
+<link rel="stylesheet" id="e-sticky-css" media="all" data-pmdelayedstyle="https://smowl.net/wp-content/plugins/elementor-pro/assets/css/modules/sticky.min.css?ver=3.28.2">
+<link rel="stylesheet" id="widget-divider-css" media="all" data-pmdelayedstyle="https://smowl.net/wp-content/plugins/elementor/assets/css/widget-divider.min.css?ver=3.28.3">
+<link rel="stylesheet" id="widget-heading-css" media="all" data-pmdelayedstyle="https://smowl.net/wp-content/plugins/elementor/assets/css/widget-heading.min.css?ver=3.28.3">
+<link rel="stylesheet" id="widget-icon-list-css" media="all" data-pmdelayedstyle="https://smowl.net/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css?ver=3.28.3">
+<link rel="stylesheet" id="e-animation-grow-css" href="https://smowl.net/wp-content/plugins/elementor/assets/lib/animations/styles/e-animation-grow.min.css?ver=3.28.3" media="print" onload="this.media=&#039;all&#039;;this.onload=null;">
+<link rel="stylesheet" id="widget-social-icons-css" media="all" data-pmdelayedstyle="https://smowl.net/wp-content/plugins/elementor/assets/css/widget-social-icons.min.css?ver=3.28.3">
+<link rel="stylesheet" id="e-apple-webkit-css" media="all" data-pmdelayedstyle="https://smowl.net/wp-content/plugins/elementor/assets/css/conditionals/apple-webkit.min.css?ver=3.28.3">
+<link rel="stylesheet" id="swiper-css" media="all" data-pmdelayedstyle="https://smowl.net/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=8.4.5">
+<link rel="stylesheet" id="e-swiper-css" media="all" data-pmdelayedstyle="https://smowl.net/wp-content/plugins/elementor/assets/css/conditionals/e-swiper.min.css?ver=3.28.3">
+<link rel="stylesheet" id="widget-table-of-contents-css" media="all" data-pmdelayedstyle="https://smowl.net/wp-content/plugins/elementor-pro/assets/css/widget-table-of-contents.min.css?ver=3.28.2">
+<link rel="stylesheet" id="widget-posts-css" media="all" data-pmdelayedstyle="https://smowl.net/wp-content/plugins/elementor-pro/assets/css/widget-posts.min.css?ver=3.28.2">
+<link rel="stylesheet" id="e-animation-fadeIn-css" href="https://smowl.net/wp-content/plugins/elementor/assets/lib/animations/styles/fadeIn.min.css?ver=3.28.3" media="print" onload="this.media=&#039;all&#039;;this.onload=null;">
+<link rel="stylesheet" id="e-popup-css" media="all" data-pmdelayedstyle="https://smowl.net/wp-content/plugins/elementor-pro/assets/css/conditionals/popup.min.css?ver=3.28.2">
+<link rel="stylesheet" id="jet-blocks-css" media="all" data-pmdelayedstyle="https://smowl.net/wp-content/uploads/elementor/css/custom-jet-blocks.css?ver=1.3.17">
+<link rel='stylesheet' id='elementor-post-58-css' href='https://smowl.net/wp-content/uploads/elementor/css/post-58.css?ver=1743601780' media='all' />
+<link rel="stylesheet" id="cpel-language-switcher-css" media="all" data-pmdelayedstyle="https://smowl.net/wp-content/plugins/connect-polylang-elementor/assets/css/language-switcher.min.css?ver=2.4.6">
+<link rel="stylesheet" id="jet-tabs-frontend-css" media="all" data-pmdelayedstyle="https://smowl.net/wp-content/plugins/jet-tabs/assets/css/jet-tabs-frontend.css?ver=2.2.8">
+<link rel="stylesheet" id="font-awesome-5-all-css" media="all" data-pmdelayedstyle="https://smowl.net/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css?ver=3.28.3">
+<link rel="stylesheet" id="font-awesome-4-shim-css" media="all" data-pmdelayedstyle="https://smowl.net/wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min.css?ver=3.28.3">
+<link rel='stylesheet' id='elementor-post-19052-css' href='https://smowl.net/wp-content/uploads/elementor/css/post-19052.css?ver=1743601786' media='all' />
+<link rel='stylesheet' id='elementor-post-10983-css' href='https://smowl.net/wp-content/uploads/elementor/css/post-10983.css?ver=1743601786' media='all' />
+<link rel='stylesheet' id='elementor-post-10977-css' href='https://smowl.net/wp-content/uploads/elementor/css/post-10977.css?ver=1743601786' media='all' />
+<link rel='stylesheet' id='elementor-post-26594-css' href='https://smowl.net/wp-content/uploads/elementor/css/post-26594.css?ver=1743601780' media='all' />
+<link rel="stylesheet" id="hello-elementor-child-style-css" media="all" data-pmdelayedstyle="https://smowl.net/wp-content/themes/child/style.css?ver=2.0.6">
+<link rel="stylesheet" id="jquery-chosen-css" media="all" data-pmdelayedstyle="https://smowl.net/wp-content/plugins/jet-search/assets/lib/chosen/chosen.min.css?ver=1.8.7">
+<link rel="stylesheet" id="jet-search-css" media="all" data-pmdelayedstyle="https://smowl.net/wp-content/plugins/jet-search/assets/css/jet-search.css?ver=3.5.7.1">
+<link rel="stylesheet" id="elementor-gf-local-montserrat-css" media="all" data-pmdelayedstyle="https://smowl.net/wp-content/uploads/elementor/google-fonts/css/montserrat.css?ver=1743587773">
+<link rel="stylesheet" id="elementor-icons-flechaabajo-css" media="all" data-pmdelayedstyle="https://smowl.net/wp-content/uploads/elementor/custom-icons/flechaabajo/style.css?ver=1.0.0">
+<script id="jquery-core-js-extra">
+var pp = {"ajax_url":"https:\/\/smowl.net\/wp-admin\/admin-ajax.php"};
+</script>
+<script src="https://smowl.net/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script src="https://smowl.net/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script src="https://smowl.net/wp-includes/js/imagesloaded.min.js?ver=6.7.2" id="imagesLoaded-js"></script>
+<script src="https://smowl.net/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min.js?ver=3.28.3" id="font-awesome-4-shim-js"></script>
+<link rel="https://api.w.org/" href="https://smowl.net/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://smowl.net/wp-json/wp/v2/posts/21017" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://smowl.net/xmlrpc.php?rsd" />
+<link rel='shortlink' href='https://smowl.net/?p=21017' />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://smowl.net/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsmowl.net%2Fen%2Fblog%2Fcomputational-thinking%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://smowl.net/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsmowl.net%2Fen%2Fblog%2Fcomputational-thinking%2F&#038;format=xml" />
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+            'lang': 'en',  // Detecta si es 'es' o 'en'
+            'pageType': 'single'  // Tipo de página dinámico
+        });
+    </script>
+    <meta name="generator" content="Elementor 3.28.3; features: e_font_icon_svg, additional_custom_breakpoints, e_local_google_fonts; settings: css_print_method-external, google_font-enabled, font_display-block">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KJZM5MW');</script>
+<!-- End Google Tag Manager -->
+<meta name="google-site-verification" content="lO55QF5y_MTOh-mayvettTEZ6znVbdO52ECvOIkKu44" />
+<meta name="google-site-verification" content="Zv1f0j2yjJyeFc58UkE2c8YpwdMZlhPWb0T6oZOfuDE" />
+			<style>
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+					background-image: none !important;
+				}
+				@media screen and (max-height: 1024px) {
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+				@media screen and (max-height: 640px) {
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+			</style>
+			<link rel="icon" href="https://smowl.net/wp-content/uploads/2022/02/favicon-150x150.png" sizes="32x32" />
+<link rel="icon" href="https://smowl.net/wp-content/uploads/2022/02/favicon-300x300.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://smowl.net/wp-content/uploads/2022/02/favicon-300x300.png" />
+<meta name="msapplication-TileImage" content="https://smowl.net/wp-content/uploads/2022/02/favicon-300x300.png" />
+		<style id="wp-custom-css">
+			.jet_carosellee .jet-testimonials__content img {
+    width: 150px;
+}
+h2, h3, h4, h5, h6{
+	margin-bottom: 1.5rem;
+	margin-top: 2.5rem;
+}		</style>
+		<noscript><style>.perfmatters-lazy[data-src]{display:none !important;}</style></noscript><style>.perfmatters-lazy-youtube{position:relative;width:100%;max-width:100%;height:0;padding-bottom:56.23%;overflow:hidden}.perfmatters-lazy-youtube img{position:absolute;top:0;right:0;bottom:0;left:0;display:block;width:100%;max-width:100%;height:auto;margin:auto;border:none;cursor:pointer;transition:.5s all;-webkit-transition:.5s all;-moz-transition:.5s all}.perfmatters-lazy-youtube img:hover{-webkit-filter:brightness(75%)}.perfmatters-lazy-youtube .play{position:absolute;top:50%;left:50%;right:auto;width:68px;height:48px;margin-left:-34px;margin-top:-24px;background:url(https://smowl.net/wp-content/plugins/perfmatters/img/youtube.svg) no-repeat;background-position:center;background-size:cover;pointer-events:none;filter:grayscale(1)}.perfmatters-lazy-youtube:hover .play{filter:grayscale(0)}.perfmatters-lazy-youtube iframe{position:absolute;top:0;left:0;width:100%;height:100%;z-index:99}.wp-has-aspect-ratio .wp-block-embed__wrapper{position:relative;}.wp-has-aspect-ratio .perfmatters-lazy-youtube{position:absolute;top:0;right:0;bottom:0;left:0;width:100%;height:100%;padding-bottom:0}</style></head>
+<body data-rsssl=1 class="post-template-default single single-post postid-21017 single-format-standard wp-embed-responsive theme-default elementor-default elementor-kit-58 elementor-page-10977">
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KJZM5MW"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+		<div data-elementor-type="header" data-elementor-id="19052" class="elementor elementor-19052 elementor-location-header" data-elementor-post-type="elementor_library">
+			<header class="elementor-element elementor-element-03ea7a1 .tamano-menu e-flex e-con-boxed e-con e-parent" data-id="03ea7a1" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-17fb0f8 elementor-position-left elementor-mobile-position-left elementor-vertical-align-bottom elementor-view-default elementor-widget elementor-widget-icon-box" data-id="17fb0f8" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
+
+						<div class="elementor-icon-box-icon">
+				<a href="https://my.smowltech.net/" class="elementor-icon" tabindex="-1" aria-label="mySmowltech">
+				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="18" viewBox="0 0 16 18" fill="none"><path d="M7.72348 8.15826C9.58311 8.15826 11.0906 6.65073 11.0906 4.79111C11.0906 2.93148 9.58311 1.42395 7.72348 1.42395C5.86385 1.42395 4.35632 2.93148 4.35632 4.79111C4.35632 6.65073 5.86385 8.15826 7.72348 8.15826Z" stroke="white" stroke-width="1.01015" stroke-linecap="round" stroke-linejoin="round"></path><path d="M14.5593 16.5761C14.1328 7.59703 1.51714 7.59703 1.09064 16.5761" stroke="white" stroke-width="1.01015" stroke-linecap="round" stroke-linejoin="round"></path></svg>				</a>
+			</div>
+			
+						<div class="elementor-icon-box-content">
+
+									<p class="elementor-icon-box-title">
+						<a href="https://my.smowltech.net/" >
+							mySmowltech						</a>
+					</p>
+				
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+				<div style="--langs:1" class="elementor-element elementor-element-f6359bc cpel-switcher--layout-dropdown elementor-widget__width-initial cpel-switcher--drop-on-click cpel-switcher--drop-to-down elementor-widget elementor-widget-polylang-language-switcher" data-id="f6359bc" data-element_type="widget" data-widget_type="polylang-language-switcher.default">
+				<div class="elementor-widget-container">
+					<nav class="cpel-switcher__nav"><div class="cpel-switcher__toggle cpel-switcher__lang" onclick="this.classList.toggle('cpel-switcher__toggle--on')"><a lang="en" hreflang="en" href="https://smowl.net/en/blog/computational-thinking/"><span class="cpel-switcher__code">EN</span><i class="cpel-switcher__icon icon icon-fa--caret-down" aria-hidden="true"></i></a></div><ul class="cpel-switcher__list"><li class="cpel-switcher__lang"><a lang="es" hreflang="es" href="https://smowl.net/es/blog/pensamiento-computacional/"><span class="cpel-switcher__code">ES</span></a></li></ul></nav>				</div>
+				</div>
+					</div>
+				</header>
+		<header class="elementor-element elementor-element-b84bea7 .tamano-menu e-flex e-con-boxed e-con e-parent" data-id="b84bea7" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;sticky&quot;:&quot;top&quot;,&quot;sticky_effects_offset&quot;:120,&quot;sticky_on&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;],&quot;sticky_offset&quot;:0,&quot;sticky_anchor_link_offset&quot;:0}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-8006a00 .tamano-logo elementor-widget-mobile__width-initial elementor-widget-tablet__width-initial elementor-widget elementor-widget-image" data-id="8006a00" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+																<a href="https://smowl.net/en/">
+							<img   width="210" height="65" src="https://smowl.net/wp-content/uploads/2023/04/logo-smowltech.png" class="attachment-full size-full wp-image-26116" alt="" />								</a>
+															</div>
+				</div>
+		<div class="elementor-element elementor-element-8c49b36 e-con-full e-flex e-con e-child" data-id="8c49b36" data-element_type="container">
+				<div class="elementor-element elementor-element-c871898 elementor-nav-menu--stretch elementor-nav-menu__align-start elementor-hidden-mobile elementor-nav-menu--dropdown-tablet elementor-nav-menu__text-align-aside elementor-nav-menu--toggle elementor-nav-menu--burger elementor-widget elementor-widget-nav-menu" data-id="c871898" data-element_type="widget" data-settings="{&quot;full_width&quot;:&quot;stretch&quot;,&quot;layout&quot;:&quot;horizontal&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;svg class=\&quot;e-font-icon-svg e-fas-caret-down\&quot; viewBox=\&quot;0 0 320 512\&quot; xmlns=\&quot;http:\/\/www.w3.org\/2000\/svg\&quot;&gt;&lt;path d=\&quot;M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z\&quot;&gt;&lt;\/path&gt;&lt;\/svg&gt;&quot;,&quot;library&quot;:&quot;fa-solid&quot;},&quot;toggle&quot;:&quot;burger&quot;}" data-widget_type="nav-menu.default">
+				<div class="elementor-widget-container">
+								<nav aria-label="Menú" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-underline e--animation-fade">
+				<ul id="menu-1-c871898" class="elementor-nav-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-26170"><a class="elementor-item">Uses</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="nav-en-sub-sup-empresa menu-item menu-item-type-post_type menu-item-object-page menu-item-14722"><a href="https://smowl.net/en/proctoring-education/" class="elementor-sub-item">Education</a></li>
+	<li class="nav-en-sub-sup-educacion menu-item menu-item-type-post_type menu-item-object-page menu-item-14721"><a href="https://smowl.net/en/proctoring-corporate/" class="elementor-sub-item">Corporate</a></li>
+</ul>
+</li>
+<li class="nav-en-sup-planes menu-item menu-item-type-post_type menu-item-object-page menu-item-14724"><a href="https://smowl.net/en/proctoring-products/" class="elementor-item">Plans</a></li>
+<li class="nav-en-sup-nosotros menu-item menu-item-type-post_type menu-item-object-page menu-item-14719"><a href="https://smowl.net/en/about-us/" class="elementor-item">Smowltech</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-26172"><a class="elementor-item">Support</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="nav-en-sub-sup-preguntas-frecuentes menu-item menu-item-type-custom menu-item-object-custom menu-item-14039"><a href="https://smowl.net/en/faqs-proctoring-smowl/" class="elementor-sub-item">FAQs</a></li>
+	<li class="nav-en-sub-sup-estudiante menu-item menu-item-type-custom menu-item-object-custom menu-item-26173"><a href="https://smowl.net/en/faqs-proctoring-smowl/user/" class="elementor-sub-item">Student</a></li>
+	<li class="nav-en-sub-sup-soporte-tecnico menu-item menu-item-type-post_type menu-item-object-page menu-item-14708"><a href="https://smowl.net/en/support-for-exam-takers/" class="elementor-sub-item">Technical Support</a></li>
+</ul>
+</li>
+<li class="nav-en-sup-blog menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-21423"><a href="https://smowl.net/en/our-blog/" class="elementor-item">Blog</a></li>
+</ul>			</nav>
+					<div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Menu Toggle" aria-expanded="false">
+			<svg aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--open e-font-icon-svg e-eicon-menu-bar" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M104 333H896C929 333 958 304 958 271S929 208 896 208H104C71 208 42 237 42 271S71 333 104 333ZM104 583H896C929 583 958 554 958 521S929 458 896 458H104C71 458 42 487 42 521S71 583 104 583ZM104 833H896C929 833 958 804 958 771S929 708 896 708H104C71 708 42 737 42 771S71 833 104 833Z"></path></svg><svg aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--close e-font-icon-svg e-eicon-close" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M742 167L500 408 258 167C246 154 233 150 217 150 196 150 179 158 167 167 154 179 150 196 150 212 150 229 154 242 171 254L408 500 167 742C138 771 138 800 167 829 196 858 225 858 254 829L496 587 738 829C750 842 767 846 783 846 800 846 817 842 829 829 842 817 846 804 846 783 846 767 842 750 829 737L588 500 833 258C863 229 863 200 833 171 804 137 775 137 742 167Z"></path></svg>		</div>
+					<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" aria-hidden="true">
+				<ul id="menu-2-c871898" class="elementor-nav-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-26170"><a class="elementor-item" tabindex="-1">Uses</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="nav-en-sub-sup-empresa menu-item menu-item-type-post_type menu-item-object-page menu-item-14722"><a href="https://smowl.net/en/proctoring-education/" class="elementor-sub-item" tabindex="-1">Education</a></li>
+	<li class="nav-en-sub-sup-educacion menu-item menu-item-type-post_type menu-item-object-page menu-item-14721"><a href="https://smowl.net/en/proctoring-corporate/" class="elementor-sub-item" tabindex="-1">Corporate</a></li>
+</ul>
+</li>
+<li class="nav-en-sup-planes menu-item menu-item-type-post_type menu-item-object-page menu-item-14724"><a href="https://smowl.net/en/proctoring-products/" class="elementor-item" tabindex="-1">Plans</a></li>
+<li class="nav-en-sup-nosotros menu-item menu-item-type-post_type menu-item-object-page menu-item-14719"><a href="https://smowl.net/en/about-us/" class="elementor-item" tabindex="-1">Smowltech</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-26172"><a class="elementor-item" tabindex="-1">Support</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="nav-en-sub-sup-preguntas-frecuentes menu-item menu-item-type-custom menu-item-object-custom menu-item-14039"><a href="https://smowl.net/en/faqs-proctoring-smowl/" class="elementor-sub-item" tabindex="-1">FAQs</a></li>
+	<li class="nav-en-sub-sup-estudiante menu-item menu-item-type-custom menu-item-object-custom menu-item-26173"><a href="https://smowl.net/en/faqs-proctoring-smowl/user/" class="elementor-sub-item" tabindex="-1">Student</a></li>
+	<li class="nav-en-sub-sup-soporte-tecnico menu-item menu-item-type-post_type menu-item-object-page menu-item-14708"><a href="https://smowl.net/en/support-for-exam-takers/" class="elementor-sub-item" tabindex="-1">Technical Support</a></li>
+</ul>
+</li>
+<li class="nav-en-sup-blog menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-21423"><a href="https://smowl.net/en/our-blog/" class="elementor-item" tabindex="-1">Blog</a></li>
+</ul>			</nav>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-d826e9a elementor-nav-menu--stretch elementor-nav-menu__align-start elementor-hidden-desktop elementor-hidden-tablet elementor-nav-menu--dropdown-tablet elementor-nav-menu__text-align-aside elementor-nav-menu--toggle elementor-nav-menu--burger elementor-widget elementor-widget-nav-menu" data-id="d826e9a" data-element_type="widget" data-settings="{&quot;full_width&quot;:&quot;stretch&quot;,&quot;layout&quot;:&quot;horizontal&quot;,&quot;submenu_icon&quot;:{&quot;value&quot;:&quot;&lt;svg class=\&quot;e-font-icon-svg e-fas-caret-down\&quot; viewBox=\&quot;0 0 320 512\&quot; xmlns=\&quot;http:\/\/www.w3.org\/2000\/svg\&quot;&gt;&lt;path d=\&quot;M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z\&quot;&gt;&lt;\/path&gt;&lt;\/svg&gt;&quot;,&quot;library&quot;:&quot;fa-solid&quot;},&quot;toggle&quot;:&quot;burger&quot;}" data-widget_type="nav-menu.default">
+				<div class="elementor-widget-container">
+								<nav aria-label="Menú" class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-underline e--animation-fade">
+				<ul id="menu-1-d826e9a" class="elementor-nav-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-27405"><a href="#" class="elementor-item elementor-item-anchor">Uses</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="nav-en-mob-educacion menu-item menu-item-type-post_type menu-item-object-page menu-item-27406"><a href="https://smowl.net/en/proctoring-education/" class="elementor-sub-item">Education</a></li>
+	<li class="nav-en-mob-empresa menu-item menu-item-type-post_type menu-item-object-page menu-item-27407"><a href="https://smowl.net/en/proctoring-corporate/" class="elementor-sub-item">Corporate</a></li>
+</ul>
+</li>
+<li class="nav-en-mob-planes menu-item menu-item-type-post_type menu-item-object-page menu-item-27408"><a href="https://smowl.net/en/proctoring-products/" class="elementor-item">Plans</a></li>
+<li class="nav-en-mob-nosotros menu-item menu-item-type-post_type menu-item-object-page menu-item-27409"><a href="https://smowl.net/en/about-us/" class="elementor-item">Smowltech</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-27410"><a href="#" class="elementor-item elementor-item-anchor">Support</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="nav-en-mob-preguntas-frecuentes menu-item menu-item-type-custom menu-item-object-custom menu-item-27411"><a href="https://smowl.net/en/faqs-proctoring-smowl/" class="elementor-sub-item">FAQs</a></li>
+	<li class="nav-en-mob-estudiante menu-item menu-item-type-custom menu-item-object-custom menu-item-27412"><a href="https://smowl.net/en/faqs-proctoring-smowl/user/" class="elementor-sub-item">Student</a></li>
+	<li class="nav-en-mob-soporte-tecnico menu-item menu-item-type-post_type menu-item-object-page menu-item-27413"><a href="https://smowl.net/en/support-for-exam-takers/" class="elementor-sub-item">Technical Support</a></li>
+</ul>
+</li>
+<li class="nav-en-mob-blog menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-27414"><a href="https://smowl.net/en/our-blog/" class="elementor-item">Blog</a></li>
+<li class="nav-en-mob-demo-gratis menu-item menu-item-type-custom menu-item-object-custom menu-item-27415"><a href="https://smowl.net/en/contact/" class="elementor-item">Request free demo</a></li>
+</ul>			</nav>
+					<div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Menu Toggle" aria-expanded="false">
+			<svg aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--open e-font-icon-svg e-eicon-menu-bar" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M104 333H896C929 333 958 304 958 271S929 208 896 208H104C71 208 42 237 42 271S71 333 104 333ZM104 583H896C929 583 958 554 958 521S929 458 896 458H104C71 458 42 487 42 521S71 583 104 583ZM104 833H896C929 833 958 804 958 771S929 708 896 708H104C71 708 42 737 42 771S71 833 104 833Z"></path></svg><svg aria-hidden="true" role="presentation" class="elementor-menu-toggle__icon--close e-font-icon-svg e-eicon-close" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M742 167L500 408 258 167C246 154 233 150 217 150 196 150 179 158 167 167 154 179 150 196 150 212 150 229 154 242 171 254L408 500 167 742C138 771 138 800 167 829 196 858 225 858 254 829L496 587 738 829C750 842 767 846 783 846 800 846 817 842 829 829 842 817 846 804 846 783 846 767 842 750 829 737L588 500 833 258C863 229 863 200 833 171 804 137 775 137 742 167Z"></path></svg>		</div>
+					<nav class="elementor-nav-menu--dropdown elementor-nav-menu__container" aria-hidden="true">
+				<ul id="menu-2-d826e9a" class="elementor-nav-menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-27405"><a href="#" class="elementor-item elementor-item-anchor" tabindex="-1">Uses</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="nav-en-mob-educacion menu-item menu-item-type-post_type menu-item-object-page menu-item-27406"><a href="https://smowl.net/en/proctoring-education/" class="elementor-sub-item" tabindex="-1">Education</a></li>
+	<li class="nav-en-mob-empresa menu-item menu-item-type-post_type menu-item-object-page menu-item-27407"><a href="https://smowl.net/en/proctoring-corporate/" class="elementor-sub-item" tabindex="-1">Corporate</a></li>
+</ul>
+</li>
+<li class="nav-en-mob-planes menu-item menu-item-type-post_type menu-item-object-page menu-item-27408"><a href="https://smowl.net/en/proctoring-products/" class="elementor-item" tabindex="-1">Plans</a></li>
+<li class="nav-en-mob-nosotros menu-item menu-item-type-post_type menu-item-object-page menu-item-27409"><a href="https://smowl.net/en/about-us/" class="elementor-item" tabindex="-1">Smowltech</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-27410"><a href="#" class="elementor-item elementor-item-anchor" tabindex="-1">Support</a>
+<ul class="sub-menu elementor-nav-menu--dropdown">
+	<li class="nav-en-mob-preguntas-frecuentes menu-item menu-item-type-custom menu-item-object-custom menu-item-27411"><a href="https://smowl.net/en/faqs-proctoring-smowl/" class="elementor-sub-item" tabindex="-1">FAQs</a></li>
+	<li class="nav-en-mob-estudiante menu-item menu-item-type-custom menu-item-object-custom menu-item-27412"><a href="https://smowl.net/en/faqs-proctoring-smowl/user/" class="elementor-sub-item" tabindex="-1">Student</a></li>
+	<li class="nav-en-mob-soporte-tecnico menu-item menu-item-type-post_type menu-item-object-page menu-item-27413"><a href="https://smowl.net/en/support-for-exam-takers/" class="elementor-sub-item" tabindex="-1">Technical Support</a></li>
+</ul>
+</li>
+<li class="nav-en-mob-blog menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-27414"><a href="https://smowl.net/en/our-blog/" class="elementor-item" tabindex="-1">Blog</a></li>
+<li class="nav-en-mob-demo-gratis menu-item menu-item-type-custom menu-item-object-custom menu-item-27415"><a href="https://smowl.net/en/contact/" class="elementor-item" tabindex="-1">Request free demo</a></li>
+</ul>			</nav>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-8bf7639 e-con-full e-flex e-con e-child" data-id="8bf7639" data-element_type="container">
+				<div class="elementor-element elementor-element-942dbda elementor-widget__width-initial elementor-widget-mobile__width-initial elementor-widget-tablet__width-initial elementor-view-default elementor-widget elementor-widget-icon" data-id="942dbda" data-element_type="widget" data-widget_type="icon.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-wrapper">
+			<a class="elementor-icon" href="#elementor-action%3Aaction%3Dpopup%3Aopen%26settings%3DeyJpZCI6IjEzMDY3IiwidG9nZ2xlIjpmYWxzZX0%3D">
+			<svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M16.3333 15.3855L12.9598 12.0128C13.9658 10.7579 14.513 9.19706 14.5107 7.58871C14.5107 3.67574 11.3349 0.5 7.42196 0.5C3.50899 0.5 0.333252 3.67574 0.333252 7.58871C0.333252 11.5017 3.50899 14.6774 7.42196 14.6774C9.03031 14.6797 10.5912 14.1325 11.8461 13.1266L15.2188 16.5L16.3333 15.3855ZM12.9353 7.58871C12.9376 9.02254 12.3794 10.4005 11.3798 11.4284L11.2616 11.5466C10.2337 12.5462 8.85574 13.1044 7.4219 13.1022C4.37534 13.1022 1.90847 10.6345 1.90847 7.58871C1.90847 4.54214 4.37534 2.07527 7.4219 2.07527C10.4677 2.07527 12.9353 4.54214 12.9353 7.58871Z" fill="#323232"></path></svg>			</a>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-a860d56 elementor-hidden-mobile nav-en-sup-demo-gratis elementor-widget elementor-widget-button" data-id="a860d56" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://smowl.net/en/contact/">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Request free demo</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				</div>
+					</div>
+				</header>
+				</div>
+				<div data-elementor-type="single-post" data-elementor-id="10977" class="elementor elementor-10977 elementor-location-single post-21017 post type-post status-publish format-standard has-post-thumbnail hentry category-technology" data-elementor-post-type="elementor_library">
+			<div class="elementor-element elementor-element-2906cf0 e-flex e-con-boxed e-con e-parent" data-id="2906cf0" data-element_type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-3d14aee elementor-widget elementor-widget-jet-breadcrumbs" data-id="3d14aee" data-element_type="widget" data-widget_type="jet-breadcrumbs.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-jet-breadcrumbs jet-blocks">
+		<div class="jet-breadcrumbs">
+		<div class="jet-breadcrumbs__content">
+		<div class="jet-breadcrumbs__wrap"><div class="jet-breadcrumbs__item"><a href="https://smowl.net/" class="jet-breadcrumbs__item-link is-home" rel="home" title="Home">Home</a></div>
+			 <div class="jet-breadcrumbs__item"><div class="jet-breadcrumbs__item-sep"><span>/</span></div></div> <div class="jet-breadcrumbs__item"><a href="https://smowl.net/en/category/technology/" class="jet-breadcrumbs__item-link" rel="tag" title="Technology">Technology</a></div>
+			 <div class="jet-breadcrumbs__item"><div class="jet-breadcrumbs__item-sep"><span>/</span></div></div> <div class="jet-breadcrumbs__item"><span class="jet-breadcrumbs__item-target">Exploring Computational Thinking: definition, phases, and key traits</span></div>
+		</div>
+		</div>
+		</div></div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-ab77197 elementor-widget elementor-widget-heading" data-id="ab77197" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h1 class="elementor-heading-title elementor-size-default">Exploring Computational Thinking: definition, phases, and key traits</h1>				</div>
+				</div>
+				<div class="elementor-element elementor-element-5c8ddcb elementor-widget__width-initial elementor-widget-mobile__width-initial elementor-widget elementor-widget-jet-listing-dynamic-field" data-id="5c8ddcb" data-element_type="widget" data-widget_type="jet-listing-dynamic-field.default">
+					<div class="jet-listing jet-listing-dynamic-field display-inline"><div class="jet-listing-dynamic-field__inline-wrap"><div class="jet-listing-dynamic-field__content">In the current digital age, computational thinking stands as a vital cognitive skill. It refers to the ability to solve...</div></div></div>				</div>
+				<div class="elementor-element elementor-element-ebdf52f elementor-widget elementor-widget-image" data-id="ebdf52f" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img fetchpriority="high"  width="1024" height="683" src="https://smowl.net/wp-content/uploads/2023/09/fases-del-pensamiento-computacional.jpg" class="attachment-full size-full wp-image-21014" alt="Phases of Computational Thinking" srcset="https://smowl.net/wp-content/uploads/2023/09/fases-del-pensamiento-computacional.jpg 1024w, https://smowl.net/wp-content/uploads/2023/09/fases-del-pensamiento-computacional-300x200.jpg 300w, https://smowl.net/wp-content/uploads/2023/09/fases-del-pensamiento-computacional-768x512.jpg 768w" sizes="(max-width: 1024px) 100vw, 1024px" />															</div>
+				</div>
+		<div class="elementor-element elementor-element-829ba78 e-con-full e-flex e-con e-child" data-id="829ba78" data-element_type="container">
+				<div class="elementor-element elementor-element-5c39286 elementor-widget__width-auto elementor-widget-mobile__width-initial elementor-widget elementor-widget-jet-listing-dynamic-field" data-id="5c39286" data-element_type="widget" data-widget_type="jet-listing-dynamic-field.default">
+					<div class="jet-listing jet-listing-dynamic-field display-inline"><div class="jet-listing-dynamic-field__inline-wrap"><div class="jet-listing-dynamic-field__content">4 October 2023</div></div></div>				</div>
+				<div class="elementor-element elementor-element-ec2c4a6 elementor-widget__width-auto elementor-widget-mobile__width-initial elementor-widget elementor-widget-heading" data-id="ec2c4a6" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<p class="elementor-heading-title elementor-size-default"><a href="https://smowl.net/en/category/technology/">Technology</a></p>				</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-6a03ffb elementor-toc--minimized-on-tablet elementor-widget elementor-widget-table-of-contents" data-id="6a03ffb" data-element_type="widget" data-settings="{&quot;headings_by_tags&quot;:[&quot;h2&quot;,&quot;h3&quot;,&quot;h4&quot;],&quot;exclude_headings_by_selector&quot;:[],&quot;no_headings_message&quot;:&quot;No headings were found on this page.&quot;,&quot;marker_view&quot;:&quot;numbers&quot;,&quot;minimize_box&quot;:&quot;yes&quot;,&quot;minimized_on&quot;:&quot;tablet&quot;,&quot;hierarchical_view&quot;:&quot;yes&quot;,&quot;min_height&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;min_height_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;min_height_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="table-of-contents.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-toc__header">
+			<h4 class="elementor-toc__header-title">
+				Índice			</h4>
+							<div class="elementor-toc__toggle-button elementor-toc__toggle-button--expand" role="button" tabindex="0" aria-controls="elementor-toc__6a03ffb" aria-expanded="true" aria-label="Open table of contents"><svg aria-hidden="true" class="e-font-icon-svg e-fas-chevron-down" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"></path></svg></div>
+				<div class="elementor-toc__toggle-button elementor-toc__toggle-button--collapse" role="button" tabindex="0" aria-controls="elementor-toc__6a03ffb" aria-expanded="true" aria-label="Close table of contents"><svg aria-hidden="true" class="e-font-icon-svg e-fas-chevron-up" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M240.971 130.524l194.343 194.343c9.373 9.373 9.373 24.569 0 33.941l-22.667 22.667c-9.357 9.357-24.522 9.375-33.901.04L224 227.495 69.255 381.516c-9.379 9.335-24.544 9.317-33.901-.04l-22.667-22.667c-9.373-9.373-9.373-24.569 0-33.941L207.03 130.525c9.372-9.373 24.568-9.373 33.941-.001z"></path></svg></div>
+					</div>
+		<div id="elementor-toc__6a03ffb" class="elementor-toc__body">
+			<div class="elementor-toc__spinner-container">
+				<svg class="elementor-toc__spinner eicon-animation-spin e-font-icon-svg e-eicon-loading" aria-hidden="true" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M500 975V858C696 858 858 696 858 500S696 142 500 142 142 304 142 500H25C25 237 238 25 500 25S975 237 975 500 763 975 500 975Z"></path></svg>			</div>
+		</div>
+						</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-4b63a03 e-flex e-con-boxed e-con e-parent" data-id="4b63a03" data-element_type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-87a7b2b e-con-full e-flex e-con e-child" data-id="87a7b2b" data-element_type="container">
+				<div class="elementor-element elementor-element-5cdd9c4 elementor-widget elementor-widget-theme-post-content" data-id="5cdd9c4" data-element_type="widget" data-widget_type="theme-post-content.default">
+				<div class="elementor-widget-container">
+					
+<p>In the current digital age, <strong>computational thinking</strong> stands as a vital cognitive skill.</p>
+
+
+
+<p>It refers to the <strong>ability to solve problems and tackle challenges using approaches similar to those applied in programming and computing.</strong></p>
+
+
+
+<p>In this article, we&#8217;ll delve into the <strong>intricacies</strong> of computational thinking, the <strong>phases </strong>that comprise it, the <strong>defining traits</strong> that characterize it, and we&#8217;ll provide <strong>illustrative examples</strong> of its application.</p>
+
+
+
+<h2 class="wp-block-heading">What is Computational Thinking?</h2>
+
+
+
+<p>Computational thinking involves <strong>breaking down complex problems into smaller, more manageable parts</strong>.</p>
+
+
+
+<p>Think of it as disassembling a puzzle to understand how the pieces fit together. This skill enables you to address any problem, not just tech-related ones, in a structured and logical manner.</p>
+
+
+
+<p>Computational thinking <strong>promotes step-by-step problem-solving and identifying patterns</strong> to arrive at efficient solutions.</p>
+
+
+
+<p>While the definition might make it seem recent, it&#8217;s not a new concept. Its roots can be traced back to the beginnings of computing and programming.</p>
+
+
+
+<div style="height:30px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<figure class="wp-block-image size-full"><img decoding="async" width="850" height="550" src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20width=&#039;850&#039;%20height=&#039;550&#039;%20viewBox=&#039;0%200%20850%20550&#039;%3E%3C/svg%3E" alt="Exploring Computational Thinking: definition, phases, and key traits" class="wp-image-21011 perfmatters-lazy" data-src="https://smowl.net/wp-content/uploads/2023/09/pensamiento-computacional.jpg" data-srcset="https://smowl.net/wp-content/uploads/2023/09/pensamiento-computacional.jpg 850w, https://smowl.net/wp-content/uploads/2023/09/pensamiento-computacional-300x194.jpg 300w, https://smowl.net/wp-content/uploads/2023/09/pensamiento-computacional-768x497.jpg 768w" data-sizes="(max-width: 850px) 100vw, 850px" /><noscript><img loading="lazy"   decoding="async" width="850" height="550" src="https://smowl.net/wp-content/uploads/2023/09/pensamiento-computacional.jpg" alt="Exploring Computational Thinking: definition, phases, and key traits" class="wp-image-21011" srcset="https://smowl.net/wp-content/uploads/2023/09/pensamiento-computacional.jpg 850w, https://smowl.net/wp-content/uploads/2023/09/pensamiento-computacional-300x194.jpg 300w, https://smowl.net/wp-content/uploads/2023/09/pensamiento-computacional-768x497.jpg 768w" sizes="(max-width: 850px) 100vw, 850px" /></noscript></figure>
+
+
+
+<p>As technology advanced, the foundations of computational thinking were laid, although it wasn&#8217;t referred to as such at the time. Computing pioneers like Alan Turing, Claude Shannon, and Grace Hopper established the groundwork for logical and algorithmic approaches to problem-solving.</p>
+
+
+
+<p>Over time, computational thinking expanded beyond programming boundaries and began to be applied across various disciplines.</p>
+
+
+
+<p>As computers became more accessible, people started adopting computational approaches to address everyday life, science, engineering, and more.</p>
+
+
+
+<h2 class="wp-block-heading">Phases of Computational Thinking</h2>
+
+
+
+<p>Computational thinking is <strong>broken down into several phases</strong> that facilitate problem-solving:</p>
+
+
+
+<h3 class="wp-block-heading"><strong>1. Problem Identification</strong></h3>
+
+
+
+<p>The first phase involves clearly defining the problem that needs to be solved. This includes understanding the requirements, limitations, and goals of the problem at hand.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>2. Decomposition</strong></h3>
+
+
+
+<p>In this stage, the problem is broken down into smaller, more manageable subproblems. Each subproblem is addressed separately to avoid feeling overwhelmed by the complexity of the main problem.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>3. Pattern Recognition</strong></h3>
+
+
+
+<p>Pattern recognition involves identifying similarities or regularities within the subproblems. This phase allows for discovering general approaches that can be applied to various aspects of the problem.</p>
+
+
+
+<div style="height:30px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<hr class="wp-block-separator has-text-color has-vivid-cyan-blue-color has-alpha-channel-opacity has-vivid-cyan-blue-background-color has-background"/>
+
+
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-1 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow">
+<div style="height:30px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<p><strong>Subscribe today to SMOWL&#8217;s weekly newsletter!</strong></p>
+
+
+
+<div style="height:30px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<p>Discover the <strong>latest trends</strong> in eLearning, technology, and innovation, <strong>alongside experts</strong> in assessment and talent management. <strong>Stay informed about industry updates</strong> and get the information you need.</p>
+
+
+
+<div style="height:30px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<p>Simply <strong>fill out the form</strong> and stay up-to-date with everything relevant in our field.</p>
+
+
+
+<div style="height:30px" aria-hidden="true" class="wp-block-spacer"></div>
+</div>
+
+
+
+<div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow">
+<div style="height:30px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<div class="pipedriveWebForms" data-pd-webforms="https://webforms.pipedrive.com/f/1uKtiMWdc5bWpJyfqmiJQdVdWcMWrfpQ1jqKdsOrl4lFuIeldCFE5dH4xsOt1PXpx"><script src="https://webforms.pipedrive.com/f/loader"></script></div>
+
+
+
+<div style="height:30px" aria-hidden="true" class="wp-block-spacer"></div>
+</div>
+</div>
+
+
+
+<hr class="wp-block-separator has-text-color has-vivid-cyan-blue-color has-alpha-channel-opacity has-vivid-cyan-blue-background-color has-background"/>
+
+
+
+<div style="height:30px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<h3 class="wp-block-heading"><strong>4. Abstraction</strong></h3>
+
+
+
+<p>Abstraction entails removing unnecessary details and focusing on the fundamental aspects of the problem. This helps simplify the resolution process by highlighting what truly matters.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>5. Algorithms</strong></h3>
+
+
+
+<p>During this phase, algorithms or organized sets of logical steps that lead to the solution of each subproblem are developed. Algorithms are like recipes that guide you through the resolution process.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>6. Evaluation and Refinement</strong></h3>
+
+
+
+<p>After applying the algorithms, the obtained solutions are evaluated and refined if necessary. This phase ensures that the solutions are effective and efficient.</p>
+
+
+
+<div style="height:30px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<figure class="wp-block-image size-full"><img decoding="async" width="850" height="550" src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20width=&#039;850&#039;%20height=&#039;550&#039;%20viewBox=&#039;0%200%20850%20550&#039;%3E%3C/svg%3E" alt="Examples of Computational Thinking in Action" class="wp-image-21013 perfmatters-lazy" data-src="https://smowl.net/wp-content/uploads/2023/09/pensamiento-computacional-ejemplos.jpg" data-srcset="https://smowl.net/wp-content/uploads/2023/09/pensamiento-computacional-ejemplos.jpg 850w, https://smowl.net/wp-content/uploads/2023/09/pensamiento-computacional-ejemplos-300x194.jpg 300w, https://smowl.net/wp-content/uploads/2023/09/pensamiento-computacional-ejemplos-768x497.jpg 768w" data-sizes="(max-width: 850px) 100vw, 850px" /><noscript><img loading="lazy" decoding="async" width="850" height="550" src="https://smowl.net/wp-content/uploads/2023/09/pensamiento-computacional-ejemplos.jpg" alt="Examples of Computational Thinking in Action" class="wp-image-21013" srcset="https://smowl.net/wp-content/uploads/2023/09/pensamiento-computacional-ejemplos.jpg 850w, https://smowl.net/wp-content/uploads/2023/09/pensamiento-computacional-ejemplos-300x194.jpg 300w, https://smowl.net/wp-content/uploads/2023/09/pensamiento-computacional-ejemplos-768x497.jpg 768w" sizes="(max-width: 850px) 100vw, 850px" /></noscript></figure>
+
+
+
+<h2 class="wp-block-heading">Key Traits of Computational Thinking</h2>
+
+
+
+<p>The <strong>following factors characterize computational thinking</strong>:</p>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Systematic Approach: </strong>It adopts a step-by-step and organized approach to address problems, facilitating the effective resolution of complex tasks.</li>
+</ul>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Pattern Utilization:</strong> Identifying patterns in problems and solutions enables the application of proven solutions to similar situations.</li>
+</ul>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Detail Abstraction:</strong> The ability to abstract unnecessary details allows focusing on the essential aspects of a problem, simplifying its resolution.</li>
+</ul>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Algorithmic Thinking:</strong> Computational thinking involves designing algorithms, which are ordered sequences of logical steps, to solve problems.</li>
+</ul>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Structured Creativity: </strong>While rooted in logic and structure, computational thinking allows for creative problem-solving, finding unique solutions to diverse challenges.</li>
+</ul>
+
+
+
+<div style="height:30px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<h2 class="wp-block-heading">Examples of Computational Thinking in Action</h2>
+
+
+
+<p>Computational thinking is applied in various scenarios, many of which are unrelated to technology or computing:</p>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Mathematical Problem Solving:</strong> When facing complex mathematical problems, computational thinking helps break them down into logical steps and use patterns to find solutions.</li>
+</ul>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Algorithm Design:</strong> Programmers use computational thinking to create efficient algorithms, such as those of <a href="https://smowl.net/en/blog/automatic-item-generation/" target="_blank" rel="noreferrer noopener">Automatic item generation (AIG)</a> that solve specific tasks, such as sorting data lists or searching databases.</li>
+</ul>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Task Automation: </strong>In <a href="https://smowl.net/en/blog/rpa-what-is-it-benefits/" target="_blank" rel="noreferrer noopener">process automation</a>, computational thinking is employed to design automated workflows that save time and reduce errors.</li>
+</ul>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Everyday Problem Solving: </strong>Even in daily life, computational thinking can help address complex problems, such as planning optimized travel routes or efficiently managing household tasks.</li>
+</ul>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Business Optimization:</strong> Entrepreneurs and business analysts leverage computational thinking to optimize operations, streamline processes, and make informed decisions based on data analysis.</li>
+</ul>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Medical Diagnosis:</strong> Medical professionals utilize computational thinking to analyze complex medical data, identify patterns, and aid in diagnosing diseases or conditions.</li>
+</ul>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Environmental Modeling:</strong> Environmental scientists employ computational thinking to develop models that simulate ecological systems, helping predict the impact of various factors on the environment.</li>
+</ul>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Artificial Intelligence (AI):</strong> <a href="https://smowl.net/en/blog/artificial-intelligence-in-business/" target="_blank" rel="noreferrer noopener">AI </a>specialists utilize computational thinking to create algorithms that enable machines to learn from data, recognize patterns, and make intelligent decisions.</li>
+</ul>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Cybersecurity: </strong><a href="https://smowl.net/en/blog/cibersecurity-education/" target="_blank" rel="noreferrer noopener">Cybersecurity</a> experts employ computational thinking to detect anomalies in network traffic, identify potential threats, and develop strategies to safeguard digital assets.</li>
+</ul>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Digital Art: </strong>Digital artists apply computational thinking to create intricate visual designs, simulations, and animations, often requiring the manipulation of complex algorithms.</li>
+</ul>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Language Processing:</strong> Linguists and developers use computational thinking to design natural language processing algorithms that enable machines to understand and generate human language.</li>
+</ul>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Financial Analysis: </strong>Analysts use computational thinking to model complex financial scenarios, perform risk assessments, and make informed investment decisions.</li>
+</ul>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Genomic Sequencing:</strong> Geneticists harness computational thinking to analyze vast amounts of genetic data, identify genetic variations, and uncover insights into diseases and inheritance.</li>
+</ul>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Transportation Planning: </strong>Urban planners use computational thinking to optimize transportation routes, manage traffic flow, and design efficient public transportation systems.</li>
+</ul>
+
+
+
+<div style="height:30px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<p>These examples underscore the pervasive influence of computational thinking across a broad spectrum of industries and applications, showcasing its ability to enhance problem-solving and innovation.</p>
+
+
+
+<div style="height:30px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<figure class="wp-block-image size-full"><img decoding="async" width="850" height="550" src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20width=&#039;850&#039;%20height=&#039;550&#039;%20viewBox=&#039;0%200%20850%20550&#039;%3E%3C/svg%3E" alt="What is Computational Thinking?" class="wp-image-21012 perfmatters-lazy" data-src="https://smowl.net/wp-content/uploads/2023/09/que-es-el-pensamiento-computacional.jpg" data-srcset="https://smowl.net/wp-content/uploads/2023/09/que-es-el-pensamiento-computacional.jpg 850w, https://smowl.net/wp-content/uploads/2023/09/que-es-el-pensamiento-computacional-300x194.jpg 300w, https://smowl.net/wp-content/uploads/2023/09/que-es-el-pensamiento-computacional-768x497.jpg 768w" data-sizes="(max-width: 850px) 100vw, 850px" /><noscript><img loading="lazy" decoding="async" width="850" height="550" src="https://smowl.net/wp-content/uploads/2023/09/que-es-el-pensamiento-computacional.jpg" alt="What is Computational Thinking?" class="wp-image-21012" srcset="https://smowl.net/wp-content/uploads/2023/09/que-es-el-pensamiento-computacional.jpg 850w, https://smowl.net/wp-content/uploads/2023/09/que-es-el-pensamiento-computacional-300x194.jpg 300w, https://smowl.net/wp-content/uploads/2023/09/que-es-el-pensamiento-computacional-768x497.jpg 768w" sizes="(max-width: 850px) 100vw, 850px" /></noscript></figure>
+
+
+
+<h2 class="wp-block-heading">Computational Thinking in Education</h2>
+
+
+
+<p>Computational thinking has become <strong>crucial in modern education</strong>. As technology becomes increasingly integrated into classrooms, the importance of teaching students skills that go beyond rote memorization is recognized.</p>
+
+
+
+<p>It&#8217;s a valuable tool that promotes critical thinking, problem-solving, and structured creativity—essential skills in a constantly evolving world.&nbsp;</p>
+
+
+
+<p>Schools and educators are incorporating<strong> computational thinking into curricula to prepare students for 21st-century </strong>challenges. Teaching decomposition, pattern recognition, and abstraction fosters an analytical mindset that can be applied in various situations.</p>
+
+
+
+<p>While it extends beyond the technological realm, computational thinking is frequently seen in the <a href="https://smowl.net/en/blog/what-is-edtech/" target="_blank" rel="noreferrer noopener">edtech</a> sector. At Smowltech, we firmly believe that technology enhances people&#8217;s lives through education.</p>
+
+
+
+<p>That&#8217;s why we develop <a href="https://smowl.net/en/proctoring-products/" target="_blank" rel="noreferrer noopener">proctoring plans</a> that help create reliable environments for the increasingly common digital educational and corporate <a href="https://smowl.net/en/blog/digital-ecosystem/" target="_blank" rel="noreferrer noopener">ecosystems</a>.</p>
+
+
+
+<p>If you want to experience the benefits that proctoring technology can bring to your institution, we invite you to request <a href="https://smowl.net/en/contact/">a free demo </a>of our tool.</p>
+
+
+
+<div style="height:60px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<hr class="wp-block-separator has-text-color has-vivid-cyan-blue-color has-alpha-channel-opacity has-vivid-cyan-blue-background-color has-background"/>
+
+
+
+<div style="height:60px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<div class="wp-block-columns is-layout-flex wp-container-core-columns-is-layout-2 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow">
+<div style="height:30px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<p><em>Download now!</em></p>
+
+
+
+<div style="height:30px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<p class="has-vivid-cyan-blue-color has-text-color has-large-font-size"><strong>8 interesting </strong></p>
+
+
+
+<p class="has-vivid-cyan-blue-color has-text-color has-large-font-size"><strong>facts </strong></p>
+
+
+
+<p class="has-vivid-cyan-blue-color has-text-color has-large-font-size"><strong>about proctoring</strong></p>
+
+
+
+<div style="height:30px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<p>Discover everything you need about online proctoring in this book to know how to choose the best software.</p>
+
+
+
+<p><strong>Fill out the form and download the guide now.</strong></p>
+
+
+
+<div style="height:30px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<p>And <strong>subscribe to the weekly SMOWL newsletter</strong> to get <strong>exclusive offers and promotions</strong>.</p>
+
+
+
+<p>You will discover all the trends in eLearning, technology, innovation, and proctoring at the hands of <strong>evaluation and talent management experts</strong>.</p>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<div class="pipedriveWebForms" data-pd-webforms="https://webforms.pipedrive.com/f/1HGf5ozYTH79878LVueO7Vi2RiL0dHmB39CyhE7TD5nzeNA0F6F2SxjFbwTMyl2hl"><script src="https://webforms.pipedrive.com/f/loader"></script></div>
+</div>
+</div>
+
+
+
+<div style="height:30px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<hr class="wp-block-separator has-text-color has-vivid-cyan-blue-color has-alpha-channel-opacity has-vivid-cyan-blue-background-color has-background"/>
+
+
+
+<div style="height:30px" aria-hidden="true" class="wp-block-spacer"></div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-71460f5 e-con-full e-flex e-con e-child" data-id="71460f5" data-element_type="container">
+		<div class="elementor-element elementor-element-560d52f e-con-full e-flex e-con e-child" data-id="560d52f" data-element_type="container">
+				<div class="elementor-element elementor-element-f511fba elementor-widget elementor-widget-heading" data-id="f511fba" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<p class="elementor-heading-title elementor-size-default">Discover how SMOWL works</p>				</div>
+				</div>
+				<div class="elementor-element elementor-element-381d5d3 elementor-widget elementor-widget-text-editor" data-id="381d5d3" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<ol><li>Register in mySmowltech indicating your LMS.</li><li>Check your email and follow the steps to integrate the tool.</li><li>Enjoy your free trial of 25 licenses.</li></ol>								</div>
+				</div>
+				<div class="elementor-element elementor-element-7998fd6 elementor-align-justify elementor-widget elementor-widget-button" data-id="7998fd6" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://my.smowltech.net/index.php/RegistrationStep1?_gl=1*113t5sz*_gcl_au*MTcxMjQ1NzExOC4xNzE4Nzg5Nzk2">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Register for free now</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-f5d5276 e-con-full e-flex e-con e-child" data-id="f5d5276" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-fdfa24e elementor-widget elementor-widget-heading" data-id="fdfa24e" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<p class="elementor-heading-title elementor-size-default">Request a free demo with one of our experts</p>				</div>
+				</div>
+				<div class="elementor-element elementor-element-78d434e elementor-widget elementor-widget-text-editor" data-id="78d434e" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>In addition to showing you how SMOWL works, we will guide and advise you at all times so that you can choose the plan that best suits your company or institution.</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-23947d4 elementor-align-justify elementor-widget elementor-widget-button" data-id="23947d4" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://smowl.net/en/contact/">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Request a demo</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-9850f9d e-con-full e-flex e-con e-child" data-id="9850f9d" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;sticky&quot;:&quot;top&quot;,&quot;sticky_on&quot;:[&quot;desktop&quot;],&quot;sticky_offset&quot;:120,&quot;sticky_parent&quot;:&quot;yes&quot;,&quot;sticky_effects_offset&quot;:0,&quot;sticky_anchor_link_offset&quot;:0}">
+		<div class="elementor-element elementor-element-602def6 e-con-full e-flex e-con e-child" data-id="602def6" data-element_type="container">
+				<div class="elementor-element elementor-element-9ab8dcc elementor-widget elementor-widget-image" data-id="9ab8dcc" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img width="1629" height="1243" src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20width=&#039;1629&#039;%20height=&#039;1243&#039;%20viewBox=&#039;0%200%201629%201243&#039;%3E%3C/svg%3E" class="attachment-full size-full wp-image-27533 perfmatters-lazy" alt data-src="https://smowl.net/wp-content/uploads/2024/08/imac-con-imagen-plataforma-smowl-class.png" data-srcset="https://smowl.net/wp-content/uploads/2024/08/imac-con-imagen-plataforma-smowl-class.png 1629w, https://smowl.net/wp-content/uploads/2024/08/imac-con-imagen-plataforma-smowl-class-300x229.png 300w, https://smowl.net/wp-content/uploads/2024/08/imac-con-imagen-plataforma-smowl-class-1024x781.png 1024w, https://smowl.net/wp-content/uploads/2024/08/imac-con-imagen-plataforma-smowl-class-768x586.png 768w, https://smowl.net/wp-content/uploads/2024/08/imac-con-imagen-plataforma-smowl-class-1536x1172.png 1536w" data-sizes="(max-width: 1629px) 100vw, 1629px" /><noscript><img loading="lazy" loading="lazy" width="1629" height="1243" src="https://smowl.net/wp-content/uploads/2024/08/imac-con-imagen-plataforma-smowl-class.png" class="attachment-full size-full wp-image-27533" alt="" srcset="https://smowl.net/wp-content/uploads/2024/08/imac-con-imagen-plataforma-smowl-class.png 1629w, https://smowl.net/wp-content/uploads/2024/08/imac-con-imagen-plataforma-smowl-class-300x229.png 300w, https://smowl.net/wp-content/uploads/2024/08/imac-con-imagen-plataforma-smowl-class-1024x781.png 1024w, https://smowl.net/wp-content/uploads/2024/08/imac-con-imagen-plataforma-smowl-class-768x586.png 768w, https://smowl.net/wp-content/uploads/2024/08/imac-con-imagen-plataforma-smowl-class-1536x1172.png 1536w" sizes="(max-width: 1629px) 100vw, 1629px" /></noscript>															</div>
+				</div>
+				<div class="elementor-element elementor-element-102ecfd elementor-widget elementor-widget-heading" data-id="102ecfd" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<p class="elementor-heading-title elementor-size-default">Discover our proctoring plans</p>				</div>
+				</div>
+				<div class="elementor-element elementor-element-06922f1 elementor-widget elementor-widget-text-editor" data-id="06922f1" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Receive an ebook on proctoring solutions. SMOWL is the most complete and customizable proctoring software.</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-5533328 elementor-align-center elementor-widget elementor-widget-button" data-id="5533328" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://smowl.net/en/proctoring-products/">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">See plans</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-27b6a4e elementor-widget elementor-widget-heading" data-id="27b6a4e" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<p class="elementor-heading-title elementor-size-default">Recent posts</p>				</div>
+				</div>
+				<div class="elementor-element elementor-element-fcf8fb1 elementor-grid-1 elementor-grid-tablet-2 elementor-grid-mobile-1 elementor-posts--thumbnail-top elementor-widget elementor-widget-posts" data-id="fcf8fb1" data-element_type="widget" data-settings="{&quot;classic_columns&quot;:&quot;1&quot;,&quot;classic_row_gap&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:20,&quot;sizes&quot;:[]},&quot;classic_columns_tablet&quot;:&quot;2&quot;,&quot;classic_columns_mobile&quot;:&quot;1&quot;,&quot;classic_row_gap_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;classic_row_gap_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="posts.classic">
+				<div class="elementor-widget-container">
+							<div class="elementor-posts-container elementor-posts elementor-posts--skin-classic elementor-grid">
+				<article class="elementor-post elementor-grid-item post-29696 post type-post status-publish format-standard has-post-thumbnail hentry category-technology">
+				<a class="elementor-post__thumbnail__link" href="https://smowl.net/en/blog/5g-technology/" tabindex="-1" >
+			<div class="elementor-post__thumbnail"><img width="300" height="200" src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20width=&#039;300&#039;%20height=&#039;200&#039;%20viewBox=&#039;0%200%20300%20200&#039;%3E%3C/svg%3E" class="attachment-medium size-medium wp-image-29692 perfmatters-lazy" alt="The future of 5G and beyond" data-src="https://smowl.net/wp-content/uploads/2025/02/como-funciona-la-tecnologia-5g-300x200.jpg" /><noscript><img loading="lazy" width="300" height="200" src="https://smowl.net/wp-content/uploads/2025/02/como-funciona-la-tecnologia-5g-300x200.jpg" class="attachment-medium size-medium wp-image-29692" alt="The future of 5G and beyond" /></noscript></div>
+		</a>
+				<div class="elementor-post__text">
+				<p class="elementor-post__title">
+			<a href="https://smowl.net/en/blog/5g-technology/" >
+				5G technology and what you need to know: advantages and comparisons			</a>
+		</p>
+				</div>
+				</article>
+				<article class="elementor-post elementor-grid-item post-29319 post type-post status-publish format-standard has-post-thumbnail hentry category-technology">
+				<a class="elementor-post__thumbnail__link" href="https://smowl.net/en/blog/digital-twins/" tabindex="-1" >
+			<div class="elementor-post__thumbnail"><img width="300" height="200" src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20width=&#039;300&#039;%20height=&#039;200&#039;%20viewBox=&#039;0%200%20300%20200&#039;%3E%3C/svg%3E" class="attachment-medium size-medium wp-image-29315 perfmatters-lazy" alt="Challenges and Limitations of Digital Twins" data-src="https://smowl.net/wp-content/uploads/2025/01/gemelos-digitales-que-es-300x200.jpg" /><noscript><img loading="lazy" width="300" height="200" src="https://smowl.net/wp-content/uploads/2025/01/gemelos-digitales-que-es-300x200.jpg" class="attachment-medium size-medium wp-image-29315" alt="Challenges and Limitations of Digital Twins" /></noscript></div>
+		</a>
+				<div class="elementor-post__text">
+				<p class="elementor-post__title">
+			<a href="https://smowl.net/en/blog/digital-twins/" >
+				Digital twins: definition and benefits			</a>
+		</p>
+				</div>
+				</article>
+				<article class="elementor-post elementor-grid-item post-29195 post type-post status-publish format-standard has-post-thumbnail hentry category-technology">
+				<a class="elementor-post__thumbnail__link" href="https://smowl.net/en/blog/technology-adoption/" tabindex="-1" >
+			<div class="elementor-post__thumbnail"><img width="300" height="200" src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20width=&#039;300&#039;%20height=&#039;200&#039;%20viewBox=&#039;0%200%20300%20200&#039;%3E%3C/svg%3E" class="attachment-medium size-medium wp-image-29191 perfmatters-lazy" alt="GDPR Compliance in Technology Adoption" data-src="https://smowl.net/wp-content/uploads/2024/12/rgpd-adopcion-tecnologica-300x200.jpg" /><noscript><img loading="lazy" width="300" height="200" src="https://smowl.net/wp-content/uploads/2024/12/rgpd-adopcion-tecnologica-300x200.jpg" class="attachment-medium size-medium wp-image-29191" alt="GDPR Compliance in Technology Adoption" /></noscript></div>
+		</a>
+				<div class="elementor-post__text">
+				<p class="elementor-post__title">
+			<a href="https://smowl.net/en/blog/technology-adoption/" >
+				Technology Adoption: What It Is and How to Implement It			</a>
+		</p>
+				</div>
+				</article>
+				<article class="elementor-post elementor-grid-item post-29086 post type-post status-publish format-standard has-post-thumbnail hentry category-technology">
+				<a class="elementor-post__thumbnail__link" href="https://smowl.net/en/blog/api-integration/" tabindex="-1" >
+			<div class="elementor-post__thumbnail"><img width="300" height="200" src="data:image/svg+xml,%3Csvg%20xmlns=&#039;http://www.w3.org/2000/svg&#039;%20width=&#039;300&#039;%20height=&#039;200&#039;%20viewBox=&#039;0%200%20300%20200&#039;%3E%3C/svg%3E" class="attachment-medium size-medium wp-image-29079 perfmatters-lazy" alt="Types of API Integrations" data-src="https://smowl.net/wp-content/uploads/2024/12/integracion-via-api-300x200.jpg" /><noscript><img loading="lazy" width="300" height="200" src="https://smowl.net/wp-content/uploads/2024/12/integracion-via-api-300x200.jpg" class="attachment-medium size-medium wp-image-29079" alt="Types of API Integrations" /></noscript></div>
+		</a>
+				<div class="elementor-post__text">
+				<p class="elementor-post__title">
+			<a href="https://smowl.net/en/blog/api-integration/" >
+				API Integration: Definition and Features			</a>
+		</p>
+				</div>
+				</article>
+				</div>
+		
+						</div>
+				</div>
+				</div>
+					</div>
+				</div>
+				</div>
+				<div data-elementor-type="footer" data-elementor-id="10983" class="elementor elementor-10983 elementor-location-footer" data-elementor-post-type="elementor_library">
+			<div class="elementor-element elementor-element-40d486a e-flex e-con-boxed e-con e-parent" data-id="40d486a" data-element_type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-1a8c80a elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="1a8c80a" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+						</div>
+				</div>
+					</div>
+				</div>
+		<footer class="elementor-element elementor-element-dac9e32 e-flex e-con-boxed e-con e-parent" data-id="dac9e32" data-element_type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-4130334 e-con-full e-flex e-con e-child" data-id="4130334" data-element_type="container">
+				<div class="elementor-element elementor-element-d8af8a8 elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="d8af8a8" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">About Smowltech</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-f45066d elementor-widget elementor-widget-text-editor" data-id="f45066d" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Smowltech was created in 2012 to improve the quality of online evaluations, thanks to our SMOWL proctoring solution, which generates evidence for correct decision-making at the time of examination.</p>								</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-7a4d249 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="7a4d249" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+							<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<a href="https://smowl.net/en/privacy-policy/">
+
+											<span class="elementor-icon-list-text">Privacy policy</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="https://smowl.net/en/cookie-policy-smowl-eproctoring/">
+
+											<span class="elementor-icon-list-text">Cookies Policy</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="https://smowl.net/en/terms-and-conditions/">
+
+											<span class="elementor-icon-list-text">Terms and Conditions</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="https://smowl.net/en/trust-in-e-learning/">
+
+											<span class="elementor-icon-list-text">Social impact</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="https://my.smowltech.net/" target="_blank" rel="nofollow">
+
+											<span class="elementor-icon-list-text">mySmowltech</span>
+											</a>
+									</li>
+						</ul>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-433a4b7 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="433a4b7" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+							<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<a href="https://smowl.net/en/partners-website/">
+
+											<span class="elementor-icon-list-text">Portal Partners</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="https://smowl.net/en/h2020-smowl/">
+
+											<span class="elementor-icon-list-text">H2020</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="https://smowl.net/en/rd-online-authentication/">
+
+											<span class="elementor-icon-list-text">I+D+I</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="https://smowl.net/en/dictionary/">
+
+											<span class="elementor-icon-list-text">Dictionary</span>
+											</a>
+									</li>
+						</ul>
+						</div>
+				</div>
+		<div class="elementor-element elementor-element-be10faf e-con-full e-flex e-con e-child" data-id="be10faf" data-element_type="container">
+				<div class="elementor-element elementor-element-f3ad9e1 elementor-widget__width-initial elementor-widget-tablet__width-initial elementor-widget-mobile__width-initial elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="f3ad9e1" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+							<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<a href="https://smowl.net/en/contact/">
+
+											<span class="elementor-icon-list-text">Contact</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="https://smowl.net/en/careers/">
+
+											<span class="elementor-icon-list-text">Careers</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="https://smowl.net/en/our-blog/">
+
+											<span class="elementor-icon-list-text">Blog</span>
+											</a>
+									</li>
+								<li class="elementor-icon-list-item">
+											<a href="https://smowl.net/en/blog/how-does-proctoring-work/" title="What is proctoring?">
+
+											<span class="elementor-icon-list-text">What is proctoring?</span>
+											</a>
+									</li>
+						</ul>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-a1527dd e-grid-align-left elementor-widget-mobile__width-initial elementor-widget__width-initial elementor-widget-tablet__width-initial elementor-shape-rounded elementor-grid-0 elementor-widget elementor-widget-social-icons" data-id="a1527dd" data-element_type="widget" data-widget_type="social-icons.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-social-icons-wrapper elementor-grid">
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-linkedin elementor-animation-grow elementor-repeater-item-4765dd3" href="https://www.linkedin.com/company/smowl/" target="_blank">
+						<span class="elementor-screen-only">Linkedin</span>
+						<svg class="e-font-icon-svg e-fab-linkedin" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg>					</a>
+				</span>
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-twitter elementor-animation-grow elementor-repeater-item-d3fbadd" href="https://twitter.com/smowltech" target="_blank">
+						<span class="elementor-screen-only">Twitter</span>
+						<svg class="e-font-icon-svg e-fab-twitter" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path></svg>					</a>
+				</span>
+							<span class="elementor-grid-item">
+					<a class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-animation-grow elementor-repeater-item-822b042" href="https://www.youtube.com/@SmowltechEnglish" target="_blank">
+						<span class="elementor-screen-only">Youtube</span>
+						<svg class="e-font-icon-svg e-fab-youtube" viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg>					</a>
+				</span>
+					</div>
+						</div>
+				</div>
+				</div>
+					</div>
+				</footer>
+		<div class="elementor-element elementor-element-eeb1452 e-flex e-con-boxed e-con e-parent" data-id="eeb1452" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-b55280e elementor-icon-list--layout-inline elementor-align-center elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="b55280e" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+							<ul class="elementor-icon-list-items elementor-inline-items">
+							<li class="elementor-icon-list-item elementor-inline-item">
+										<span class="elementor-icon-list-text">Copyright © 2025 all rights reserved  SMOWLTECH</span>
+									</li>
+						</ul>
+						</div>
+				</div>
+					</div>
+				</div>
+				</div>
+		
+<script data-cfasync="false">
+  document.onreadystatechange = function () {
+    if (document.readyState == "complete") {
+      var logout_link = document.querySelectorAll('a[href*="wp-login.php?action=logout"]');
+      if (logout_link) {
+        for(var i=0; i < logout_link.length; i++) {
+          logout_link[i].addEventListener( "click", function() {
+            Intercom('shutdown');
+          });
+        }
+      }
+    }
+  };
+</script>
+<script data-cfasync="false">
+  window.intercomSettings = {"app_id":"za4nyfvv","language_override":"en","installation_type":"wordpress"};
+</script>
+<script data-cfasync="false">(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',w.intercomSettings);}else{var d=document;var i=function(){i.c(arguments);};i.q=[];i.c=function(args){i.q.push(args);};w.Intercom=i;var l=function(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/za4nyfvv';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s, x);};if(document.readyState==='complete'){l();}else if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Definir los IDs de los botones para español
+            var ids_espanol = [
+                'cta-inicio-demo-gratis-01',
+                'cta-inicio-demo-gratis-02',
+                'cta-inicio-ver-demo-gratis-01',
+                'cta-inicio-como-funciona-01',
+                'cta-inicio-casos-de-estudio-01',
+                'cta-inicio-hablar-experto-01',
+                'cta-edu-cita-personalizada-01',
+                'cta-edu-planes-01',
+                'cta-edu-empresas-01',
+                'cta-edu-solicitar-demo-01',
+                'cta-emp-demo-gratuita-01',
+                'cta-emp-planes-proctoring-01',
+                'cta-emp-proctoring-para-educacion-01',
+                'cta-emp-demo-gratuita-02',
+                'cta-gracias-planes-01',
+                'cta-h2020-descubre-mas-01',
+                'cta-primeros-pasos-prueba-gratis-01',
+                'cta-primeros-pasos-prueba-gratis-02',
+                'cta-smowltech-edu-01',
+                'cta-smowltech-emp-02',
+                'cta-smowltech-ver-planes-01',
+                'cta-smowltech-ver-demo-01',
+                'cta-software-contactar-ventas-01',
+                'cta-software-solicitar-demo-01',
+                'cta-software-soft-probar-ahora-01',
+                'cta-software-edu-probar-ahora-01',
+                'cta-software-emp-probar-ahora-01',
+                'cta-software-hablar-experto-01',
+                'cta-unete-al-equipo-ver-ofertas-01',
+                'cta-video-demo-gratis-agendar-llamada-01'
+            ];
+
+            // Definir los IDs de los botones para inglés
+            var ids_ingles = [
+                'cta-en-smowltech-edu-01',
+                'cta-en-smowltech-emp-01',
+                'cta-en-smowltech-ver-planes-01',
+                'cta-en-smowltech-ver-demo-01',
+                'cta-en-unete-al-equipo-ver-ofertas-01',
+                'cta-en-primeros-pasos-prueba-gratis-01',
+                'cta-en-primeros-pasos-prueba-gratis-02',
+                'cta-en-video-demo-gratis-agendar-llamada-01',
+                'cta-en-h2020-descubre-mas-01',
+                'cta-en-emp-demo-gratuita-01',
+                'cta-en-emp-planes-proctoring-01',
+                'cta-en-emp-proctoring-para-educacion-01',
+                'cta-en-emp-demo-gratuita-02',
+                'cta-en-edu-cita-personalizada-01',
+                'cta-en-edu-planes-01',
+                'cta-en-edu-empresas-01',
+                'cta-en-edu-solicitar-demo-01',
+                'cta-en-software-contactar-ventas-01',
+                'cta-en-software-solicitar-demo-01',
+                'cta-en-software-soft-probar-ahora-01',
+                'cta-en-software-edu-probar-ahora-01',
+                'cta-en-software-emp-probar-ahora-01',
+                'cta-en-software-hablar-experto-01',
+                'cta-en-gracias-planes-01'
+            ];
+
+            // Función para agregar un evento de clic a cada botón
+            function addClickEvent(ids) {
+                ids.forEach(function(id) {
+                    var button = document.getElementById(id);
+                    if (button) {
+                        button.addEventListener('click', function() {
+                            var ctaText = button.innerText || button.textContent;  // Captura el texto del CTA
+
+                            window.dataLayer = window.dataLayer || [];
+                            window.dataLayer.push({
+                                'event': 'cta_click',
+                                'cta_text': ctaText,  // Envía el texto del CTA
+                                'data_id': id  // Usa el ID que ya tienes configurado
+                            });
+                        });
+                    }
+                });
+            }
+
+            // Añadir eventos para botones en español e inglés
+            addClickEvent(ids_espanol);
+            addClickEvent(ids_ingles);
+        });
+    </script>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Definir un array con las clases CSS de los ítems del menú, tanto para desktop como para móvil
+            var clasesNav = [
+                // Clases para la versión en español
+                'nav-sub-sup-empresa',
+                'nav-sub-sup-educacion',
+                'nav-sup-planes',
+                'nav-sup-nosotros',
+                'nav-sup-soporte',
+                'nav-sub-sup-preguntas-frecuentes',
+                'nav-sub-sup-estudiante',
+                'nav-sub-sup-soporte-tecnico',
+                'nav-sup-blog',
+                'nav-sup-demo-gratis',
+                // Clases para la versión móvil en español
+                'nav-mob-empresa',
+                'nav-mob-educacion',
+                'nav-mob-planes',
+                'nav-mob-nosotros',
+                'nav-mob-soporte',
+                'nav-mob-preguntas-frecuentes',
+                'nav-mob-estudiante',
+                'nav-mob-soporte-tecnico',
+                'nav-mob-blog',
+                'nav-mob-demo-gratis',
+                // Clases para la versión en inglés
+                'nav-en-sub-sup-empresa',
+                'nav-en-sub-sup-educacion',
+                'nav-en-sup-planes',
+                'nav-en-sup-nosotros',
+                'nav-en-sup-soporte',
+                'nav-en-sub-sup-preguntas-frecuentes',
+                'nav-en-sub-sup-estudiante',
+                'nav-en-sub-sup-soporte-tecnico',
+                'nav-en-sup-blog',
+                'nav-en-sup-demo-gratis',
+                // Clases para la versión móvil en inglés
+                'nav-en-mob-empresa',
+                'nav-en-mob-educacion',
+                'nav-en-mob-planes',
+                'nav-en-mob-nosotros',
+                'nav-en-mob-soporte',
+                'nav-en-mob-preguntas-frecuentes',
+                'nav-en-mob-estudiante',
+                'nav-en-mob-soporte-tecnico',
+                'nav-en-mob-blog',
+                'nav-en-mob-demo-gratis'
+            ];
+
+            // Asignar eventos de clic a cada ítem del menú
+            clasesNav.forEach(function(clase) {
+                var elementos = document.getElementsByClassName(clase);
+                for (var i = 0; i < elementos.length; i++) {
+                    elementos[i].addEventListener('click', function() {
+                        window.dataLayer = window.dataLayer || [];
+                        window.dataLayer.push({
+                            'event': 'nav_click',
+                            'nav_bar_class': clase, // Envía la clase en lugar de un nombre específico
+                            'page_path': window.location.pathname
+                        });
+                    });
+                }
+            });
+        });
+    </script>
+        <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Definir un array con las clases CSS de los ítems del menú de categorías (español e inglés)
+            var categoriasBlog = [
+                // Categorías en español
+                'nav-cat-casos-estudio',
+                'nav-cat-elearning',
+                'nav-cat-reclutamiento',
+                'nav-cat-evaluacion',
+                'nav-cat-privacidad',
+                'nav-cat-sostenibilidad',
+                'nav-cat-tecnologia',
+                'nav-cat-edtech',
+                // Categorías en inglés
+                'nav-en-cat-case-studies',
+                'nav-en-cat-elearning',
+                'nav-en-cat-recruitment',
+                'nav-en-cat-assessment',
+                'nav-en-cat-privacy',
+                'nav-en-cat-sustainability',
+                'nav-en-cat-technology',
+                'nav-en-cat-edtech'
+            ];
+
+            // Asignar eventos de clic a cada categoría
+            categoriasBlog.forEach(function(claseCategoria) {
+                var enlaces = document.getElementsByClassName(claseCategoria);
+                for (var i = 0; i < enlaces.length; i++) {
+                    enlaces[i].addEventListener('click', function() {
+                        window.dataLayer = window.dataLayer || [];
+                        window.dataLayer.push({
+                            'event': 'category_click',
+                            'category_name': this.innerText.trim(),  // Captura el nombre de la categoría
+                            'category_class': claseCategoria,        // Captura la clase de la categoría
+                            'page_path': window.location.pathname
+                        });
+                    });
+                }
+            });
+        });
+    </script>
+    		<div data-elementor-type="popup" data-elementor-id="13067" class="elementor elementor-13067 elementor-location-popup" data-elementor-settings="{&quot;entrance_animation&quot;:&quot;slideInLeft&quot;,&quot;exit_animation&quot;:&quot;slideInLeft&quot;,&quot;entrance_animation_duration&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:0.5,&quot;sizes&quot;:[]},&quot;a11y_navigation&quot;:&quot;yes&quot;,&quot;timing&quot;:[]}" data-elementor-post-type="elementor_library">
+			<div class="elementor-element elementor-element-c135300 e-flex e-con-boxed e-con e-parent" data-id="c135300" data-element_type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-747350e elementor-widget elementor-widget-heading" data-id="747350e" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<p class="elementor-heading-title elementor-size-default">Write below what you are looking for</p>				</div>
+				</div>
+				<div class="elementor-element elementor-element-046d796 elementor-search-form--skin-classic elementor-search-form--button-type-icon elementor-search-form--icon-search elementor-widget elementor-widget-search-form" data-id="046d796" data-element_type="widget" data-settings="{&quot;skin&quot;:&quot;classic&quot;}" data-widget_type="search-form.default">
+				<div class="elementor-widget-container">
+							<search role="search">
+			<form class="elementor-search-form" action="https://smowl.net/en/" method="get">
+												<div class="elementor-search-form__container">
+					<label class="elementor-screen-only" for="elementor-search-form-046d796">Search</label>
+
+					
+					<input id="elementor-search-form-046d796" placeholder="Write here..." class="elementor-search-form__input" type="search" name="s" value="">
+					
+											<button class="elementor-search-form__submit" type="submit" aria-label="Search">
+															<div class="e-font-icon-svg-container"><svg class="fa fa-search e-font-icon-svg e-fas-search" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg></div>													</button>
+					
+									</div>
+			</form>
+		</search>
+						</div>
+				</div>
+					</div>
+				</div>
+				</div>
+				<div data-elementor-type="popup" data-elementor-id="26594" class="elementor elementor-26594 elementor-location-popup" data-elementor-settings="{&quot;entrance_animation&quot;:&quot;fadeIn&quot;,&quot;entrance_animation_duration&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:1.1999999999999999555910790149937383830547332763671875,&quot;sizes&quot;:[]},&quot;a11y_navigation&quot;:&quot;yes&quot;,&quot;triggers&quot;:[],&quot;timing&quot;:[]}" data-elementor-post-type="elementor_library">
+			<div class="elementor-element elementor-element-1bd3877 e-flex e-con-boxed e-con e-parent" data-id="1bd3877" data-element_type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-e6619f7 elementor-widget elementor-widget-html" data-id="e6619f7" data-element_type="widget" id="formcrafts-popup-container" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+					<!-- FormCrafts JavaScript embed code -->
+
+ <script type='text/javascript'>var _fo=_fo?_fo:[];_fo.push({'c':'cdtii','i':'nrxqpjk','m':0,'s':0,'w':700,'t':'rgba(0, 146, 209, 1)'}); if (typeof fce=='undefined') {var s=document.createElement('script');s.type='text/javascript'; s.async=true; s.src='https://formcrafts.com/js/fc.js'; document.body.appendChild(s);fce=1;}</script>
+
+<div id='cdtii' style='height:500.42px'></div>				</div>
+				</div>
+					</div>
+				</div>
+				</div>
+					<script>
+				const lazyloadRunObserver = () => {
+					const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
+					const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
+						entries.forEach( ( entry ) => {
+							if ( entry.isIntersecting ) {
+								let lazyloadBackground = entry.target;
+								if( lazyloadBackground ) {
+									lazyloadBackground.classList.add( 'e-lazyloaded' );
+								}
+								lazyloadBackgroundObserver.unobserve( entry.target );
+							}
+						});
+					}, { rootMargin: '200px 0px 200px 0px' } );
+					lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
+						lazyloadBackgroundObserver.observe( lazyloadBackground );
+					} );
+				};
+				const events = [
+					'DOMContentLoaded',
+					'elementor/lazyload/observe',
+				];
+				events.forEach( ( event ) => {
+					document.addEventListener( event, lazyloadRunObserver );
+				} );
+			</script>
+			<script type="text/html" id="tmpl-jet-ajax-search-results-item">
+<div class="jet-ajax-search__results-item">
+	<a class="jet-ajax-search__item-link" href="{{{data.link}}}" target="{{{data.link_target_attr}}}">
+		{{{data.thumbnail}}}
+		<div class="jet-ajax-search__item-content-wrapper">
+			{{{data.before_title}}}
+			<div class="jet-ajax-search__item-title">{{{data.title}}}</div>
+			{{{data.after_title}}}
+			{{{data.before_content}}}
+			<div class="jet-ajax-search__item-content">{{{data.content}}}</div>
+			{{{data.after_content}}}
+			{{{data.rating}}}
+			{{{data.price}}}
+			{{{data.add_to_cart}}}
+		</div>
+	</a>
+</div>
+</script><script type="text/html" id="tmpl-jet-search-focus-suggestion-item">
+<div class="jet-search-suggestions__focus-area-item" tabindex="0" aria-label="{{{data.fullName}}}">
+	<div class="jet-search-suggestions__focus-area-item-title">{{{data.name}}}</div>
+</div>
+</script><script type="text/html" id="tmpl-jet-search-inline-suggestion-item">
+<div class="jet-search-suggestions__inline-area-item" tabindex="0" aria-label="{{{data.fullName}}}">
+	<div class="jet-search-suggestions__inline-area-item-title" >{{{data.name}}}</div>
+</div>
+</script><script type="text/html" id="tmpl-jet-ajax-search-inline-suggestion-item">
+<div class="jet-ajax-search__suggestions-inline-area-item" tabindex="0" aria-label="{{{data.fullName}}}">
+	<div class="jet-ajax-search__suggestions-inline-area-item-title" >{{{data.name}}}</div>
+</div>
+</script><script type="text/html" id="tmpl-jet-ajax-search-results-suggestion-item">
+<div class="jet-ajax-search__results-suggestions-area-item" tabindex="0" aria-label="{{{data.fullName}}}">
+	<div class="jet-ajax-search__results-suggestions-area-item-title">{{{data.name}}}</div>
+</div>
+</script><style id='core-block-supports-inline-css'>
+.wp-container-core-columns-is-layout-1{flex-wrap:nowrap;}.wp-container-core-columns-is-layout-2{flex-wrap:nowrap;}
+</style>
+<link rel='stylesheet' id='elementor-post-13067-css' href='https://smowl.net/wp-content/uploads/elementor/css/post-13067.css?ver=1743601786' media='all' />
+<link rel="stylesheet" id="widget-search-form-css" media="all" data-pmdelayedstyle="https://smowl.net/wp-content/plugins/elementor-pro/assets/css/widget-search-form.min.css?ver=3.28.2">
+<link rel="stylesheet" id="e-animation-slideInLeft-css" href="https://smowl.net/wp-content/plugins/elementor/assets/lib/animations/styles/slideInLeft.min.css?ver=3.28.3" media="print" onload="this.media=&#039;all&#039;;this.onload=null;">
+<script src="https://smowl.net/wp-includes/js/underscore.min.js?ver=1.13.7" id="underscore-js"></script>
+<script id="wp-util-js-extra">
+var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
+</script>
+<script src="https://smowl.net/wp-includes/js/wp-util.min.js?ver=6.7.2" id="wp-util-js"></script>
+<script src="https://smowl.net/wp-content/plugins/jet-search/assets/lib/chosen/chosen.jquery.min.js?ver=1.8.7" id="jquery-chosen-js"></script>
+<script src="https://smowl.net/wp-content/plugins/jet-search/assets/lib/jet-plugins/jet-plugins.js?ver=1.0.0" id="jet-plugins-js"></script>
+<script src="https://smowl.net/wp-content/plugins/jet-search/assets/js/jet-search.js?ver=3.5.7.1" id="jet-search-js"></script>
+<script src="https://smowl.net/wp-content/plugins/elementor-pro/assets/lib/smartmenus/jquery.smartmenus.min.js?ver=1.2.1" id="smartmenus-js"></script>
+<script src="https://smowl.net/wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.min.js?ver=3.28.2" id="e-sticky-js"></script>
+<script src="https://smowl.net/wp-includes/js/imagesloaded.min.js?ver=5.0.0" id="imagesloaded-js"></script>
+<script id="perfmatters-lazy-load-js-before">
+window.lazyLoadOptions={elements_selector:"img[data-src],.perfmatters-lazy,.perfmatters-lazy-css-bg",thresholds:"0px 0px",class_loading:"pmloading",class_loaded:"pmloaded",callback_loaded:function(element){if(element.tagName==="IFRAME"){if(element.classList.contains("pmloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}};window.addEventListener("LazyLoad::Initialized",function(e){var lazyLoadInstance=e.detail.instance;});function perfmattersLazyLoadYouTube(e){var t=document.createElement("iframe"),r="ID?";r+=0===e.dataset.query.length?"":e.dataset.query+"&",r+="autoplay=1",t.setAttribute("src",r.replace("ID",e.dataset.src)),t.setAttribute("frameborder","0"),t.setAttribute("allowfullscreen","1"),t.setAttribute("allow","accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"),e.replaceChild(t,e.firstChild)}
+</script>
+<script async src="https://smowl.net/wp-content/plugins/perfmatters/js/lazyload.min.js?ver=2.4.1" id="perfmatters-lazy-load-js"></script>
+<script id="jet-engine-frontend-js-extra">
+var JetEngineSettings = {"ajaxurl":"https:\/\/smowl.net\/wp-admin\/admin-ajax.php","ajaxlisting":"https:\/\/smowl.net\/en\/blog\/computational-thinking\/?nocache=1743679531","restNonce":"f6f1f2c110","hoverActionTimeout":"400","post_id":"21017"};
+</script>
+<script src="https://smowl.net/wp-content/plugins/jet-engine/assets/js/frontend.js?ver=3.6.6" id="jet-engine-frontend-js"></script>
+<script src="https://smowl.net/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.28.2" id="elementor-pro-webpack-runtime-js"></script>
+<script src="https://smowl.net/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.28.3" id="elementor-webpack-runtime-js"></script>
+<script src="https://smowl.net/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.28.3" id="elementor-frontend-modules-js"></script>
+<script src="https://smowl.net/wp-includes/js/dist/hooks.min.js?ver=4d63a3d491d11ffd8ac6" id="wp-hooks-js"></script>
+<script src="https://smowl.net/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script id="elementor-pro-frontend-js-before">
+var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/smowl.net\/wp-admin\/admin-ajax.php","nonce":"7376023693","urls":{"assets":"https:\/\/smowl.net\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/smowl.net\/wp-json\/"},"settings":{"lazy_load_background_images":true},"popup":{"hasPopUps":true},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"},"x-twitter":{"title":"X"},"threads":{"title":"Threads"}},"facebook_sdk":{"lang":"en","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/smowl.net\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+</script>
+<script src="https://smowl.net/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.28.2" id="elementor-pro-frontend-js"></script>
+<script src="https://smowl.net/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
+<script id="elementor-frontend-js-before">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":false},"version":"3.28.3","is_static":false,"experimentalFeatures":{"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container":true,"e_local_google_fonts":true,"landing-pages":true,"nested-elements":true,"editor_v2":true,"home_screen":true,"mega-menu":true},"urls":{"assets":"https:\/\/smowl.net\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"https:\/\/smowl.net\/wp-admin\/admin-ajax.php","uploadUrl":"https:\/\/smowl.net\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"b5abd981e7"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":21017,"title":"Computational%20thinking%2C%20what%20it%20is%2C%20phases%20and%20characteristics","excerpt":"","featuredImage":"https:\/\/smowl.net\/wp-content\/uploads\/2023\/09\/fases-del-pensamiento-computacional.jpg"}};
+</script>
+<script src="https://smowl.net/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.28.3" id="elementor-frontend-js"></script>
+<script src="https://smowl.net/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.28.2" id="pro-elements-handlers-js"></script>
+<script id="jet-blocks-js-extra">
+var jetBlocksData = {"recaptchaConfig":""};
+var JetHamburgerPanelSettings = {"ajaxurl":"https:\/\/smowl.net\/wp-admin\/admin-ajax.php","isMobile":"false","templateApiUrl":"https:\/\/smowl.net\/wp-json\/jet-blocks-api\/v1\/elementor-template","devMode":"false","restNonce":"f6f1f2c110"};
+</script>
+<script src="https://smowl.net/wp-content/plugins/jet-blocks/assets/js/jet-blocks.min.js?ver=1.3.17" id="jet-blocks-js"></script>
+<script id="jet-elements-js-extra">
+var jetElements = {"ajaxUrl":"https:\/\/smowl.net\/wp-admin\/admin-ajax.php","isMobile":"false","templateApiUrl":"https:\/\/smowl.net\/wp-json\/jet-elements-api\/v1\/elementor-template","devMode":"false","messages":{"invalidMail":"Please specify a valid e-mail"}};
+</script>
+<script src="https://smowl.net/wp-content/plugins/jet-elements/assets/js/jet-elements.min.js?ver=2.7.5" id="jet-elements-js"></script>
+<script id="jet-tabs-frontend-js-extra">
+var JetTabsSettings = {"ajaxurl":"https:\/\/smowl.net\/wp-admin\/admin-ajax.php","isMobile":"false","templateApiUrl":"https:\/\/smowl.net\/wp-json\/jet-tabs-api\/v1\/elementor-template","devMode":"false","isSelfRequest":""};
+</script>
+<script src="https://smowl.net/wp-content/plugins/jet-tabs/assets/js/jet-tabs-frontend.min.js?ver=2.2.8" id="jet-tabs-frontend-js"></script>
+<script>
+(function() {
+				var expirationDate = new Date();
+				expirationDate.setTime( expirationDate.getTime() + 31536000 * 1000 );
+				document.cookie = "pll_language=en; expires=" + expirationDate.toUTCString() + "; path=/; secure; SameSite=Lax";
+			}());
+
+</script>
+
+<script type="text/javascript" id="perfmatters-delayed-styles-js">!function(){const e=["keydown","mousemove","wheel","touchmove","touchstart","touchend"];function t(){document.querySelectorAll("link[data-pmdelayedstyle]").forEach(function(e){e.setAttribute("href",e.getAttribute("data-pmdelayedstyle"))}),e.forEach(function(e){window.removeEventListener(e,t,{passive:!0})})}e.forEach(function(e){window.addEventListener(e,t,{passive:!0})})}();</script></body>
+</html>
+<!-- Optimización aplicada -->

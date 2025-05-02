@@ -1,0 +1,739 @@
+--2025-04-03 11:25:29--  https://en.wikipedia.org/wiki/Computational_thinking
+Resolving en.wikipedia.org (en.wikipedia.org)... 185.15.59.224, 2a02:ec80:300:ed1a::1
+Connecting to en.wikipedia.org (en.wikipedia.org)|185.15.59.224|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 169878 (166K) [text/html]
+Saving to: ‘./html/https:__en.wikipedia.org_wiki_Computational_thinking.html’
+
+     0K .......... .......... .......... .......... .......... 30% 3.63M 0s
+    50K .......... .......... .......... .......... .......... 60% 7.91M 0s
+   100K .......... .......... .......... .......... .......... 90% 15.8M 0s
+   150K .......... .....                                      100% 19.2M=0.02s
+
+2025-04-03 11:25:29 (6.89 MB/s) - ‘./html/https:__en.wikipedia.org_wiki_Computational_thinking.html’ saved [169878/169878]
+
+--2025-04-03 11:25:29--  https://www.bbc.co.uk/bitesize/guides/zp92mp3/revision/1
+Resolving www.bbc.co.uk (www.bbc.co.uk)... 146.75.72.81
+Connecting to www.bbc.co.uk (www.bbc.co.uk)|146.75.72.81|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 292448 (286K) [text/html]
+Saving to: ‘./html/https:__www.bbc.co.uk_bitesize_guides_zp92mp3_revision_1.html’
+
+     0K .......... .......... .......... .......... .......... 17% 60.1M 0s
+    50K .......... .......... .......... .......... .......... 35%  188M 0s
+   100K .......... .......... .......... .......... .......... 52% 61.7M 0s
+   150K .......... .......... .......... .......... .......... 70%  202M 0s
+   200K .......... .......... .......... .......... .......... 87%  379M 0s
+   250K .......... .......... .......... .....                100% 45.6M=0.003s
+
+2025-04-03 11:25:30 (93.1 MB/s) - ‘./html/https:__www.bbc.co.uk_bitesize_guides_zp92mp3_revision_1.html’ saved [292448/292448]
+
+--2025-04-03 11:25:30--  https://www.gettingsmart.com/2018/03/18/early-learning-strategies-for-developing-computational-thinking-skills/
+Resolving www.gettingsmart.com (www.gettingsmart.com)... 141.193.213.21, 141.193.213.20
+Connecting to www.gettingsmart.com (www.gettingsmart.com)|141.193.213.21|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘./html/https:__www.gettingsmart.com_2018_03_18_early-learning-strategies-for-developing-computational-thinking-skills_.html’
+
+     0K .......... .......... .......... .......... .......... 27.4M
+    50K .......... .......... .......... .......... .......... 25.7M
+   100K .......... .......... .......... .......... .......... 2.55M
+   150K .......... .......... .......... .......... ..........  195M
+   200K .......... ........                                     212M=0.02s
+
+2025-04-03 11:25:30 (9.22 MB/s) - ‘./html/https:__www.gettingsmart.com_2018_03_18_early-learning-strategies-for-developing-computational-thinking-skills_.html’ saved [223700]
+
+--2025-04-03 11:25:30--  https://smowl.net/en/blog/computational-thinking/
+Resolving smowl.net (smowl.net)... 172.66.40.153, 172.66.43.103, 2606:4700:3108::ac42:2899, ...
+Connecting to smowl.net (smowl.net)|172.66.40.153|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘./html/https:__smowl.net_en_blog_computational-thinking_.html’
+
+     0K .......... .......... .......... .......... .......... 87.4M
+    50K .......... .......... .......... .......... .......... 28.0M
+   100K .......... .......... .......... .......... .......... 15.6M
+   150K .......... .......... .......... ......                20.8M=0.007s
+
+2025-04-03 11:25:31 (25.5 MB/s) - ‘./html/https:__smowl.net_en_blog_computational-thinking_.html’ saved [190987]
+
+--2025-04-03 11:25:31--  https://www.thetech.org/media/l0nasrfv/techtip_computationalthinking.pdf
+Resolving www.thetech.org (www.thetech.org)... 20.66.52.58
+Connecting to www.thetech.org (www.thetech.org)|20.66.52.58|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 135740 (133K) [application/pdf]
+Saving to: ‘./html/https:__www.thetech.org_media_l0nasrfv_techtip_computationalthinking.pdf.html’
+
+     0K .......... .......... .......... .......... .......... 37%  177K 0s
+    50K .......... .......... .......... .......... .......... 75%  355K 0s
+   100K .......... .......... .......... ..                   100%  184M=0.4s
+
+2025-04-03 11:25:32 (313 KB/s) - ‘./html/https:__www.thetech.org_media_l0nasrfv_techtip_computationalthinking.pdf.html’ saved [135740/135740]
+
+--2025-04-03 11:25:32--  https://www.learning.com/blog/defining-computational-thinking/
+Resolving www.learning.com (www.learning.com)... 104.198.1.206
+Connecting to www.learning.com (www.learning.com)|104.198.1.206|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 274692 (268K) [text/html]
+Saving to: ‘./html/https:__www.learning.com_blog_defining-computational-thinking_.html’
+
+     0K .......... .......... .......... .......... .......... 18%  358K 1s
+    50K .......... .......... .......... .......... .......... 37%  357K 0s
+   100K .......... .......... .......... .......... .......... 55%  233M 0s
+   150K .......... .......... .......... .......... .......... 74%  360K 0s
+   200K .......... .......... .......... .......... .......... 93% 42.1M 0s
+   250K .......... ........                                   100%  423M=0.4s
+
+2025-04-03 11:25:33 (638 KB/s) - ‘./html/https:__www.learning.com_blog_defining-computational-thinking_.html’ saved [274692/274692]
+
+--2025-04-03 11:25:33--  https://digitalpromise.org/initiative/computational-thinking/computational-thinking-for-next-generation-science/what-is-computational-thinking/
+Resolving digitalpromise.org (digitalpromise.org)... 141.193.213.10, 141.193.213.11
+Connecting to digitalpromise.org (digitalpromise.org)|141.193.213.10|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘./html/https:__digitalpromise.org_initiative_computational-thinking_computational-thinking-for-next-generation-science_what-is-computational-thinking_.html’
+
+     0K .......... .......... .......... .......... ..........  102M
+    50K .......... .......... .......... .......... .......... 4.99M
+   100K ....                                                   89.7M=0.01s
+
+2025-04-03 11:25:34 (9.89 MB/s) - ‘./html/https:__digitalpromise.org_initiative_computational-thinking_computational-thinking-for-next-generation-science_what-is-computational-thinking_.html’ saved [107082]
+
+--2025-04-03 11:25:34--  https://www.cs.cmu.edu/~15110-s13/Wing06-ct.pdf
+Resolving www.cs.cmu.edu (www.cs.cmu.edu)... 128.2.42.95
+Connecting to www.cs.cmu.edu (www.cs.cmu.edu)|128.2.42.95|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 66288 (65K) [application/pdf]
+Saving to: ‘./html/https:__www.cs.cmu.edu_~15110-s13_Wing06-ct.pdf.html’
+
+     0K .......... .......... .......... .......... .......... 77%  296K 0s
+    50K .......... ....                                       100%  253M=0.2s
+
+2025-04-03 11:25:35 (383 KB/s) - ‘./html/https:__www.cs.cmu.edu_~15110-s13_Wing06-ct.pdf.html’ saved [66288/66288]
+
+--2025-04-03 11:25:35--  https://www.learning.com/blog/defining-computational-thinking/
+Resolving www.learning.com (www.learning.com)... 104.198.1.206
+Connecting to www.learning.com (www.learning.com)|104.198.1.206|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 274692 (268K) [text/html]
+Saving to: ‘./html/https:__www.learning.com_blog_defining-computational-thinking_.html’
+
+     0K .......... .......... .......... .......... .......... 18%  358K 1s
+    50K .......... .......... .......... .......... .......... 37%  358K 0s
+   100K .......... .......... .......... .......... .......... 55%  279M 0s
+   150K .......... .......... .......... .......... .......... 74%  362K 0s
+   200K .......... .......... .......... .......... .......... 93% 42.0M 0s
+   250K .......... ........                                   100%  132K=0.6s
+
+2025-04-03 11:25:36 (481 KB/s) - ‘./html/https:__www.learning.com_blog_defining-computational-thinking_.html’ saved [274692/274692]
+
+--2025-04-03 11:25:36--  https://www.bbc.co.uk/bitesize/guides/z4rbcj6/revision/1
+Resolving www.bbc.co.uk (www.bbc.co.uk)... 146.75.72.81
+Connecting to www.bbc.co.uk (www.bbc.co.uk)|146.75.72.81|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 295099 (288K) [text/html]
+Saving to: ‘./html/https:__www.bbc.co.uk_bitesize_guides_z4rbcj6_revision_1.html’
+
+     0K .......... .......... .......... .......... .......... 17% 37.9M 0s
+    50K .......... .......... .......... .......... .......... 34% 39.4M 0s
+   100K .......... .......... .......... .......... .......... 52%  148M 0s
+   150K .......... .......... .......... .......... .......... 69%  176M 0s
+   200K .......... .......... .......... .......... .......... 86% 54.9M 0s
+   250K .......... .......... .......... ........             100%  341M=0.004s
+
+2025-04-03 11:25:36 (68.1 MB/s) - ‘./html/https:__www.bbc.co.uk_bitesize_guides_z4rbcj6_revision_1.html’ saved [295099/295099]
+
+--2025-04-03 11:25:36--  https://joint-research-centre.ec.europa.eu/computational-thinking-study_en
+Resolving joint-research-centre.ec.europa.eu (joint-research-centre.ec.europa.eu)... 18.154.84.35, 18.154.84.129, 18.154.84.47, ...
+Connecting to joint-research-centre.ec.europa.eu (joint-research-centre.ec.europa.eu)|18.154.84.35|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 60768 (59K) [text/html]
+Saving to: ‘./html/https:__joint-research-centre.ec.europa.eu_computational-thinking-study_en.html’
+
+     0K .......... .......... .......... .......... .......... 84% 40.6M 0s
+    50K .........                                             100%  213M=0.001s
+
+2025-04-03 11:25:36 (46.6 MB/s) - ‘./html/https:__joint-research-centre.ec.europa.eu_computational-thinking-study_en.html’ saved [60768/60768]
+
+--2025-04-03 11:25:36--  https://smowl.net/en/blog/computational-thinking/
+Resolving smowl.net (smowl.net)... 172.66.40.153, 172.66.43.103, 2606:4700:3108::ac42:2899, ...
+Connecting to smowl.net (smowl.net)|172.66.40.153|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘./html/https:__smowl.net_en_blog_computational-thinking_.html’
+
+     0K .......... .......... .......... .......... .......... 90.3M
+    50K .......... .......... .......... .......... .......... 19.6M
+   100K .......... .......... .......... .......... .......... 22.9M
+   150K .......... .......... .......... ......                83.7M=0.006s
+
+2025-04-03 11:25:36 (32.6 MB/s) - ‘./html/https:__smowl.net_en_blog_computational-thinking_.html’ saved [190987]
+
+--2025-04-03 11:25:36--  https://writings.stephenwolfram.com/2016/09/how-to-teach-computational-thinking/
+Resolving writings.stephenwolfram.com (writings.stephenwolfram.com)... 140.177.9.7
+Connecting to writings.stephenwolfram.com (writings.stephenwolfram.com)|140.177.9.7|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘./html/https:__writings.stephenwolfram.com_2016_09_how-to-teach-computational-thinking_.html’
+
+     0K .......... .......... .......... .......... ..........  168K
+    50K .......... .......... .......... .......... ..........  499K
+   100K .......... .......... .......... .......... ..........  507K
+   150K .......... .......... .......... ........              31.8M=0.5s
+
+2025-04-03 11:25:37 (378 KB/s) - ‘./html/https:__writings.stephenwolfram.com_2016_09_how-to-teach-computational-thinking_.html’ saved [193008]
+
+--2025-04-03 11:25:37--  https://www.coursera.org/learn/computational-thinking-problem-solving
+Resolving www.coursera.org (www.coursera.org)... 18.66.102.2, 18.66.102.16, 18.66.102.79, ...
+Connecting to www.coursera.org (www.coursera.org)|18.66.102.2|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘./html/https:__www.coursera.org_learn_computational-thinking-problem-solving.html’
+
+     0K .......... .......... .......... .......... .......... 3.04M
+    50K .......... .......... .......... .......... .......... 5.89M
+   100K .......... .......... .......... .......... ..........  757K
+   150K .......... .......... .......... .......... .......... 12.9M
+   200K .......... .......... .......... .......... .......... 25.2M
+   250K .......... .......... .......... .......... .......... 6.06M
+   300K .......... .......... .......... .......... .......... 16.2M
+   350K .......... .......... .......... .......... .......... 19.2M
+   400K .......... .......... .......... .......... .......... 17.0M
+   450K .......... .......... .......... .......... ..........  735K
+   500K .......... .......... .......... .......... .......... 48.5M
+   550K .......... .......... .......... .......... .......... 28.4M
+   600K .......... .......... .......... .......... .......... 27.5M
+   650K .......... .......... .......... .......... .......... 47.5M
+   700K .......... .......... .......... .......... .......... 26.6M
+   750K .......... .......... .......... .......... .......... 56.3M
+   800K .......... .......... .......... .......... .......... 29.6M
+   850K .......... .......... .......... .......... .......... 28.8M
+   900K .......... .......... .......... .......... .......... 23.3M
+   950K .......... .......... .......... .........             56.6M=0.2s
+
+2025-04-03 11:25:39 (4.96 MB/s) - ‘./html/https:__www.coursera.org_learn_computational-thinking-problem-solving.html’ saved [1013153]
+
+--2025-04-03 11:25:39--  https://edtechbooks.org/k12handbook/computational_thinking
+Resolving edtechbooks.org (edtechbooks.org)... 54.71.69.230
+Connecting to edtechbooks.org (edtechbooks.org)|54.71.69.230|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 8952 (8.7K) [text/html]
+Saving to: ‘./html/https:__edtechbooks.org_k12handbook_computational_thinking.html’
+
+     0K ........                                              100% 94.0M=0s
+
+2025-04-03 11:25:40 (94.0 MB/s) - ‘./html/https:__edtechbooks.org_k12handbook_computational_thinking.html’ saved [8952/8952]
+
+--2025-04-03 11:25:40--  https://computationalthinking.mit.edu/
+Resolving computationalthinking.mit.edu (computationalthinking.mit.edu)... 185.199.108.153, 185.199.109.153, 185.199.110.153, ...
+Connecting to computationalthinking.mit.edu (computationalthinking.mit.edu)|185.199.108.153|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 156 [text/html]
+Saving to: ‘./html/https:__computationalthinking.mit.edu_.html’
+
+     0K                                                       100% 6.51M=0s
+
+2025-04-03 11:25:40 (6.51 MB/s) - ‘./html/https:__computationalthinking.mit.edu_.html’ saved [156/156]
+
+--2025-04-03 11:25:40--  https://www.csunplugged.org/en/computational-thinking/
+Resolving www.csunplugged.org (www.csunplugged.org)... 132.181.109.13
+Connecting to www.csunplugged.org (www.csunplugged.org)|132.181.109.13|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 32864 (32K) [text/html]
+Saving to: ‘./html/https:__www.csunplugged.org_en_computational-thinking_.html’
+
+     0K .......... .......... .......... ..                   100%  121K=0.3s
+
+2025-04-03 11:25:42 (121 KB/s) - ‘./html/https:__www.csunplugged.org_en_computational-thinking_.html’ saved [32864/32864]
+
+--2025-04-03 11:25:42--  https://www.cs.cmu.edu/~CompThink/
+Resolving www.cs.cmu.edu (www.cs.cmu.edu)... 128.2.42.95
+Connecting to www.cs.cmu.edu (www.cs.cmu.edu)|128.2.42.95|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 9199 (9.0K) [text/html]
+Saving to: ‘./html/https:__www.cs.cmu.edu_~CompThink_.html’
+
+     0K ........                                              100%  120M=0s
+
+2025-04-03 11:25:42 (120 MB/s) - ‘./html/https:__www.cs.cmu.edu_~CompThink_.html’ saved [9199/9199]
+
+--2025-04-03 11:25:42--  https://computationalthinking.education/
+Resolving computationalthinking.education (computationalthinking.education)... 20.82.22.191
+Connecting to computationalthinking.education (computationalthinking.education)|20.82.22.191|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 21290 (21K) [text/html]
+Saving to: ‘./html/https:__computationalthinking.education_.html’
+
+     0K .......... ..........                                 100% 2.33M=0.009s
+
+2025-04-03 11:25:42 (2.33 MB/s) - ‘./html/https:__computationalthinking.education_.html’ saved [21290/21290]
+
+--2025-04-03 11:25:42--  https://www.edx.org/xseries/mitx-computational-thinking-using-python
+Resolving www.edx.org (www.edx.org)... 18.244.179.60, 18.244.179.33, 18.244.179.32, ...
+Connecting to www.edx.org (www.edx.org)|18.244.179.60|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘./html/https:__www.edx.org_xseries_mitx-computational-thinking-using-python.html’
+
+     0K .......... .......... .......... .......... .......... 21.0M
+    50K .......... .......... .......... .......... .......... 49.3M
+   100K .......... .......... .......... .......... .......... 62.9M
+   150K .......... .......... .......... .......... .......... 54.9M
+   200K .......... .......... .......... .......... ..........  193M
+   250K .......... .......... .......... .......... ..........  322M
+   300K .......... .......... .......... .......... .......... 95.0M
+   350K .......... .......... .......... .......... ..........  267M
+   400K .......... .......... .......... .......... .......... 95.7M
+   450K .......... .......... .......... .......... ..........  298M
+   500K .......... .......... .......... .......... ..........  297M
+   550K .......... .......... .......... .......... ..........  285M
+   600K .......... .......... .......... ..                     336M=0.007s
+
+2025-04-03 11:25:42 (85.9 MB/s) - ‘./html/https:__www.edx.org_xseries_mitx-computational-thinking-using-python.html’ saved [647626]
+
+--2025-04-03 11:25:42--  https://inferentialthinking.com/
+Resolving inferentialthinking.com (inferentialthinking.com)... 185.199.108.153
+Connecting to inferentialthinking.com (inferentialthinking.com)|185.199.108.153|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 67 [text/html]
+Saving to: ‘./html/https:__inferentialthinking.com_.html’
+
+     0K                                                       100% 5.42M=0s
+
+2025-04-03 11:25:43 (5.42 MB/s) - ‘./html/https:__inferentialthinking.com_.html’ saved [67/67]
+
+--2025-04-03 11:25:43--  https://www.amt.edu.au/cat
+Resolving www.amt.edu.au (www.amt.edu.au)... 35.213.160.171
+Connecting to www.amt.edu.au (www.amt.edu.au)|35.213.160.171|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘./html/https:__www.amt.edu.au_cat.html’
+
+     0K .......... .......... .......... .......... ..........  322K
+    50K .......... .......... .......... .........              161M=0.2s
+
+2025-04-03 11:25:44 (578 KB/s) - ‘./html/https:__www.amt.edu.au_cat.html’ saved [91916]
+
+--2025-04-03 11:25:44--  https://inferentialthinking.com/
+Resolving inferentialthinking.com (inferentialthinking.com)... 185.199.108.153
+Connecting to inferentialthinking.com (inferentialthinking.com)|185.199.108.153|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 67 [text/html]
+Saving to: ‘./html/https:__inferentialthinking.com_.html’
+
+     0K                                                       100% 4.76M=0s
+
+2025-04-03 11:25:44 (4.76 MB/s) - ‘./html/https:__inferentialthinking.com_.html’ saved [67/67]
+
+--2025-04-03 11:25:44--  https://www.oneadvanced.com/
+Resolving www.oneadvanced.com (www.oneadvanced.com)... 76.76.21.98, 66.33.60.194
+Connecting to www.oneadvanced.com (www.oneadvanced.com)|76.76.21.98|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘./html/https:__www.oneadvanced.com_.html’
+
+     0K .......... .......... .......... .......... .......... 6.41M
+    50K .......... .......... .......... .......... ..........  597K
+   100K .......... .......... .......... .......... .......... 72.5M
+   150K .......... .......... .......... .......... .......... 45.0M
+   200K .......... ......                                       184M=0.09s
+
+2025-04-03 11:25:46 (2.27 MB/s) - ‘./html/https:__www.oneadvanced.com_.html’ saved [221574]
+
+--2025-04-03 11:25:46--  https://www.coursera.org/courses?query=computational%20thinking
+Resolving www.coursera.org (www.coursera.org)... 18.66.102.2, 18.66.102.79, 18.66.102.11, ...
+Connecting to www.coursera.org (www.coursera.org)|18.66.102.2|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘./html/https:__www.coursera.org_courses?query=computational%20thinking.html’
+
+     0K .......... .......... .......... .......... .......... 3.17M
+    50K .......... .......... .......... .......... .......... 7.07M
+   100K .......... .......... .......... .......... .......... 4.64M
+   150K .......... .......... .......... .......... .......... 9.83M
+   200K .......... .......... .......... .......... ..........  936K
+   250K .......... .......... .......... .......... .......... 17.1M
+   300K .......... .......... .......... .......... .......... 14.7M
+   350K .......... .......... .......... .......... .......... 17.1M
+   400K .......... .......... .......... .......... .......... 11.0M
+   450K .......... .......... .......... .......... .......... 20.6M
+   500K .......... .......... .......... .......... .......... 20.5M
+   550K .......... .......... .......... .......... .......... 15.2M
+   600K .......... .......... .......... .......... .......... 23.8M
+   650K .......... .......... .......... .......... .......... 17.8M
+   700K .......... .......... .......... .......... .......... 29.1M
+   750K .......... .......... .......... .......... .......... 32.6M
+   800K .......... .......... .......... .......... ..........  831K
+   850K .......... .......... .......... .......... .......... 80.5M
+   900K .......... .......... .......... .......... .......... 76.0M
+   950K .......                                                17.8M=0.2s
+
+2025-04-03 11:25:47 (5.13 MB/s) - ‘./html/https:__www.coursera.org_courses?query=computational%20thinking.html’ saved [980167]
+
+--2025-04-03 11:25:47--  https://www.sciencedirect.com/science/article/pii/S0360131519303483
+Resolving www.sciencedirect.com (www.sciencedirect.com)... 203.22.241.9, 203.22.241.8, 203.22.241.10, ...
+Connecting to www.sciencedirect.com (www.sciencedirect.com)|203.22.241.9|:443... connected.
+HTTP request sent, awaiting response... 403 Forbidden
+2025-04-03 11:25:47 ERROR 403: Forbidden.
+
+--2025-04-03 11:25:47--  https://iste.org/computational-thinking
+Resolving iste.org (iste.org)... 54.209.100.75, 18.209.129.233, 3.222.73.9, ...
+Connecting to iste.org (iste.org)|54.209.100.75|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘./html/https:__iste.org_computational-thinking.html’
+
+     0K .......... .......... .......... .......... ..........  662K
+    50K .......... .......... .......... .......... ..........  664K
+   100K .......... .......... .......... .......... .......... 90.5M
+   150K .......... .......... .......... .......... ..........  668K
+   200K .......... .......... .......... .......... .......... 43.8M
+   250K .......... .......... .......... .......... ..........  307M
+   300K .......... .......... .......... .......... .......... 99.5M
+   350K .......... .......... .......... .......... ..........  342M
+   400K .......... .......... .......... .......... ..........  677K
+   450K ...                                                    6804G=0.3s
+
+2025-04-03 11:25:49 (1.47 MB/s) - ‘./html/https:__iste.org_computational-thinking.html’ saved [464453]
+
+--2025-04-03 11:25:49--  https://learn.microsoft.com/en-us/training/modules/computational-thinking-importance-education/
+Resolving learn.microsoft.com (learn.microsoft.com)... 184.25.193.230, 2a02:26f0:5d00:187::3544, 2a02:26f0:5d00:189::3544
+Connecting to learn.microsoft.com (learn.microsoft.com)|184.25.193.230|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 42872 (42K) [text/html]
+Saving to: ‘./html/https:__learn.microsoft.com_en-us_training_modules_computational-thinking-importance-education_.html’
+
+     0K .......... .......... .......... .......... .         100%  284K=0.1s
+
+2025-04-03 11:25:49 (284 KB/s) - ‘./html/https:__learn.microsoft.com_en-us_training_modules_computational-thinking-importance-education_.html’ saved [42872/42872]
+
+--2025-04-03 11:25:49--  https://dl.acm.org/doi/10.1145/1118178.1118215
+Resolving dl.acm.org (dl.acm.org)... 104.18.42.89, 172.64.145.167
+Connecting to dl.acm.org (dl.acm.org)|104.18.42.89|:443... connected.
+HTTP request sent, awaiting response... 403 Forbidden
+2025-04-03 11:25:49 ERROR 403: Forbidden.
+
+--2025-04-03 11:25:49--  https://ocw.mit.edu/courses/6-0002-introduction-to-computational-thinking-and-data-science-fall-2016/
+Resolving ocw.mit.edu (ocw.mit.edu)... 151.101.194.133, 151.101.66.133, 151.101.2.133, ...
+Connecting to ocw.mit.edu (ocw.mit.edu)|151.101.194.133|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 44625 (44K) [text/html]
+Saving to: ‘./html/https:__ocw.mit.edu_courses_6-0002-introduction-to-computational-thinking-and-data-science-fall-2016_.html’
+
+     0K .......... .......... .......... .......... ...       100% 82.9M=0.001s
+
+2025-04-03 11:25:50 (82.9 MB/s) - ‘./html/https:__ocw.mit.edu_courses_6-0002-introduction-to-computational-thinking-and-data-science-fall-2016_.html’ saved [44625/44625]
+
+--2025-04-03 11:25:50--  https://publications.jrc.ec.europa.eu/repository/handle/JRC128347
+Resolving publications.jrc.ec.europa.eu (publications.jrc.ec.europa.eu)... 139.191.221.11
+Connecting to publications.jrc.ec.europa.eu (publications.jrc.ec.europa.eu)|139.191.221.11|:443... connected.
+HTTP request sent, awaiting response... 200 
+Length: unspecified [text/html]
+Saving to: ‘./html/https:__publications.jrc.ec.europa.eu_repository_handle_JRC128347.html’
+
+     0K .......... .......... .......... .......... .....      1.77M=0.02s
+
+2025-04-03 11:25:50 (1.77 MB/s) - ‘./html/https:__publications.jrc.ec.europa.eu_repository_handle_JRC128347.html’ saved [46156]
+
+--2025-04-03 11:25:50--  https://www.sciencedirect.com/science/article/pii/S0360131518301799
+Resolving www.sciencedirect.com (www.sciencedirect.com)... 203.22.241.8, 203.22.241.11, 203.22.241.9, ...
+Connecting to www.sciencedirect.com (www.sciencedirect.com)|203.22.241.8|:443... connected.
+HTTP request sent, awaiting response... 403 Forbidden
+2025-04-03 11:25:50 ERROR 403: Forbidden.
+
+--2025-04-03 11:25:50--  https://www.advancedfactories.com/en/
+Resolving www.advancedfactories.com (www.advancedfactories.com)... 172.67.217.190, 104.21.16.251, 2606:4700:3036::6815:10fb, ...
+Connecting to www.advancedfactories.com (www.advancedfactories.com)|172.67.217.190|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘./html/https:__www.advancedfactories.com_en_.html’
+
+     0K .......... .......... .......... .......... ..........  103M
+    50K .......... .......... .......... .......... .......... 2.11M
+   100K .......... .......... .......... .......... ..........  217M
+   150K .......... .......... .......... .......... .......... 24.7M
+   200K .......... .......... .......... .......... ..........  319M
+   250K .......... .......... .......... .......... ..........  286M
+   300K .......... .......... .......... .......... ..........  263M
+   350K .......... .......... .......... .......... ..........  340M
+   400K .......... .......... .......... .......... ..........  347M
+   450K .......... .......... .......... .......... .......... 36.8M
+   500K .......... .......... .......... .......... ..........  326M
+   550K .......... .......... .......... .......... .......... 2.16M
+   600K .......... .......... ...                               274M=0.05s
+
+2025-04-03 11:25:51 (12.0 MB/s) - ‘./html/https:__www.advancedfactories.com_en_.html’ saved [638386]
+
+--2025-04-03 11:25:51--  https://www.sydney.edu.au/courses/courses/uc/bachelor-of-advanced-computing.html
+Resolving www.sydney.edu.au (www.sydney.edu.au)... 2.19.248.146, 2.19.248.143, 2a02:26f0:5d00:13::5f65:ee15, ...
+Connecting to www.sydney.edu.au (www.sydney.edu.au)|2.19.248.146|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘./html/https:__www.sydney.edu.au_courses_courses_uc_bachelor-of-advanced-computing.html.html’
+
+     0K .......... .......... .......... .......... .......... 28.8M
+    50K .......... .......... .......... .......... .......... 5.25M
+   100K .......                                                 252M=0.01s
+
+2025-04-03 11:25:51 (9.55 MB/s) - ‘./html/https:__www.sydney.edu.au_courses_courses_uc_bachelor-of-advanced-computing.html.html’ saved [110425]
+
+--2025-04-03 11:25:51--  https://www.edx.org/learn/computer-science/massachusetts-institute-of-technology-introduction-to-computational-thinking-and-data-science
+Resolving www.edx.org (www.edx.org)... 18.244.179.60, 18.244.179.33, 18.244.179.32, ...
+Connecting to www.edx.org (www.edx.org)|18.244.179.60|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘./html/https:__www.edx.org_learn_computer-science_massachusetts-institute-of-technology-introduction-to-computational-thinking-and-data-science.html’
+
+     0K .......... .......... .......... .......... .......... 17.6M
+    50K .......... .......... .......... .......... .......... 27.1M
+   100K .......... .......... .......... .......... .......... 25.0M
+   150K .......... .......... .......... .......... ..........  170M
+   200K .......... .......... .......... .......... .......... 44.4M
+   250K .......... .......... .......... .......... ..........  154M
+   300K .......... .......... .......... .......... .......... 35.7M
+   350K .......... .......... .......... .......... .......... 28.9M
+   400K .......... .......... .......... .......... ..........  160M
+   450K .......... .......... ...                               445M=0.01s
+
+2025-04-03 11:25:51 (39.7 MB/s) - ‘./html/https:__www.edx.org_learn_computer-science_massachusetts-institute-of-technology-introduction-to-computational-thinking-and-data-science.html’ saved [484776]
+
+--2025-04-03 11:25:51--  https://digitalpromise.org/initiative/computational-thinking/
+Resolving digitalpromise.org (digitalpromise.org)... 141.193.213.11, 141.193.213.10
+Connecting to digitalpromise.org (digitalpromise.org)|141.193.213.11|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘./html/https:__digitalpromise.org_initiative_computational-thinking_.html’
+
+     0K .......... .......... .......... .......... .......... 48.7M
+    50K .......... .......... .......... .......... .......... 5.09M
+   100K ....                                                    168M=0.01s
+
+2025-04-03 11:25:52 (9.58 MB/s) - ‘./html/https:__digitalpromise.org_initiative_computational-thinking_.html’ saved [106611]
+
+--2025-04-03 11:25:52--  https://www.uc3m.es/master/computational-social-science
+Resolving www.uc3m.es (www.uc3m.es)... 176.58.10.138, 2a0a:7dc0:101:340:176:58:10:138
+Connecting to www.uc3m.es (www.uc3m.es)|176.58.10.138|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘./html/https:__www.uc3m.es_master_computational-social-science.html’
+
+     0K .......... .......... .......... .......... ..........  347K
+    50K .......... ...                                          181K=0.2s
+
+2025-04-03 11:25:52 (291 KB/s) - ‘./html/https:__www.uc3m.es_master_computational-social-science.html’ saved [64858]
+
+--2025-04-03 11:25:52--  https://www.thinking.com.tw/
+Resolving www.thinking.com.tw (www.thinking.com.tw)... 104.21.81.187, 172.67.163.100, 2606:4700:3033::6815:51bb, ...
+Connecting to www.thinking.com.tw (www.thinking.com.tw)|104.21.81.187|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘./html/https:__www.thinking.com.tw_.html’
+
+     0K .......... .......... .......... .......... .......... 41.7M
+    50K .......... .........                                    157M=0.001s
+
+2025-04-03 11:25:53 (52.5 MB/s) - ‘./html/https:__www.thinking.com.tw_.html’ saved [71057]
+
+--2025-04-03 11:25:53--  https://www.durham.ac.uk/study/courses/advanced-computer-science-g5t609/
+Resolving www.durham.ac.uk (www.durham.ac.uk)... 143.204.176.61, 143.204.176.20, 143.204.176.102, ...
+Connecting to www.durham.ac.uk (www.durham.ac.uk)|143.204.176.61|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘./html/https:__www.durham.ac.uk_study_courses_advanced-computer-science-g5t609_.html’
+
+     0K .......... .......... .......... .......... .......... 24.7M
+    50K .......... .......... .......... .......... .......... 5.32M
+   100K .......... .....                                       44.1M=0.01s
+
+2025-04-03 11:25:53 (9.80 MB/s) - ‘./html/https:__www.durham.ac.uk_study_courses_advanced-computer-science-g5t609_.html’ saved [118248]
+
+--2025-04-03 11:25:53--  https://programsandcourses.anu.edu.au/program/aacom
+Resolving programsandcourses.anu.edu.au (programsandcourses.anu.edu.au)... 23.98.64.158
+Connecting to programsandcourses.anu.edu.au (programsandcourses.anu.edu.au)|23.98.64.158|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 100421 (98K) [text/html]
+Saving to: ‘./html/https:__programsandcourses.anu.edu.au_program_aacom.html’
+
+     0K .......... .......... .......... .......... .......... 50%  325K 0s
+    50K .......... .......... .......... .......... ........  100%  312K=0.3s
+
+2025-04-03 11:25:55 (319 KB/s) - ‘./html/https:__programsandcourses.anu.edu.au_program_aacom.html’ saved [100421/100421]
+
+--2025-04-03 11:25:55--  https://www.computationalthinking.org/
+Resolving www.computationalthinking.org (www.computationalthinking.org)... 140.177.8.173
+Connecting to www.computationalthinking.org (www.computationalthinking.org)|140.177.8.173|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Cookie coming from www.computationalthinking.org attempted to set domain to wolfram.com
+Length: unspecified [text/html]
+Saving to: ‘./html/https:__www.computationalthinking.org_.html’
+
+     0K .......... .......... .......... ..........             205K=0.2s
+
+2025-04-03 11:25:56 (205 KB/s) - ‘./html/https:__www.computationalthinking.org_.html’ saved [41944]
+
+--2025-04-03 11:25:56--  https://www.researchgate.net/publication/319959476_Demystifying_computational_thinking
+Resolving www.researchgate.net (www.researchgate.net)... 172.64.146.247, 104.18.41.9, 2606:4700:4400::6812:2909, ...
+Connecting to www.researchgate.net (www.researchgate.net)|172.64.146.247|:443... connected.
+HTTP request sent, awaiting response... 403 Forbidden
+2025-04-03 11:25:56 ERROR 403: Forbidden.
+
+--2025-04-03 11:25:56--  http://multimedia.uoc.edu/carlos/chipro/wp-content/uploads/2013/10/38.full_.pdf
+Resolving multimedia.uoc.edu (multimedia.uoc.edu)... 52.50.150.254
+Connecting to multimedia.uoc.edu (multimedia.uoc.edu)|52.50.150.254|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 197984 (193K) [application/pdf]
+Saving to: ‘./html/http:__multimedia.uoc.edu_carlos_chipro_wp-content_uploads_2013_10_38.full_.pdf.html’
+
+     0K .......... .......... .......... .......... .......... 25% 2.22M 0s
+    50K .......... .......... .......... .......... .......... 51% 4.36M 0s
+   100K .......... .......... .......... .......... .......... 77%  125M 0s
+   150K .......... .......... .......... .......... ...       100%  444M=0.03s
+
+2025-04-03 11:25:57 (5.61 MB/s) - ‘./html/http:__multimedia.uoc.edu_carlos_chipro_wp-content_uploads_2013_10_38.full_.pdf.html’ saved [197984/197984]
+
+--2025-04-03 11:25:57--  https://www.wolfram.com/wolfram-u/courses/computational-thinking/
+Resolving www.wolfram.com (www.wolfram.com)... 140.177.9.134
+Connecting to www.wolfram.com (www.wolfram.com)|140.177.9.134|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘./html/https:__www.wolfram.com_wolfram-u_courses_computational-thinking_.html’
+
+     0K .......... .......... .......... .......... ..........  167K
+    50K .......... .......... .......... .......... ...         439K=0.4s
+
+2025-04-03 11:25:57 (235 KB/s) - ‘./html/https:__www.wolfram.com_wolfram-u_courses_computational-thinking_.html’ saved [95804]
+
+--2025-04-03 11:25:57--  https://link.springer.com/journal/10614
+Resolving link.springer.com (link.springer.com)... 146.75.72.95
+Connecting to link.springer.com (link.springer.com)|146.75.72.95|:443... connected.
+HTTP request sent, awaiting response... 403 Forbidden
+2025-04-03 11:25:58 ERROR 403: Forbidden.
+
+--2025-04-03 11:25:58--  https://www.cranfield.ac.uk/courses/taught/computational-and-software-techniques-in-engineering
+Resolving www.cranfield.ac.uk (www.cranfield.ac.uk)... 20.49.200.40
+Connecting to www.cranfield.ac.uk (www.cranfield.ac.uk)|20.49.200.40|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 154252 (151K) [text/html]
+Saving to: ‘./html/https:__www.cranfield.ac.uk_courses_taught_computational-and-software-techniques-in-engineering.html’
+
+     0K .......... .......... .......... .......... .......... 33%  137M 0s
+    50K .......... .......... .......... .......... .......... 66% 8.10M 0s
+   100K .......... .......... .......... .......... .......... 99%  124M 0s
+   150K                                                       100% 1214G=0.007s
+
+2025-04-03 11:25:58 (21.7 MB/s) - ‘./html/https:__www.cranfield.ac.uk_courses_taught_computational-and-software-techniques-in-engineering.html’ saved [154252/154252]
+
+--2025-04-03 11:25:58--  https://ads.apple.com/app-store/advanced
+Resolving ads.apple.com (ads.apple.com)... 2.22.144.37, 2.22.144.32, 2a02:26f0:5d00:6::684f:5de3, ...
+Connecting to ads.apple.com (ads.apple.com)|2.22.144.37|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘./html/https:__ads.apple.com_app-store_advanced.html’
+
+     0K .......... .......... .......... .......... .......... 39.4M
+    50K .......... .......... .......... .......... ........    388K=0.1s
+
+2025-04-03 11:25:59 (779 KB/s) - ‘./html/https:__ads.apple.com_app-store_advanced.html’ saved [100996]
+
+--2025-04-03 11:25:59--  https://advanced.onlinelibrary.wiley.com/journal/21951071
+Resolving advanced.onlinelibrary.wiley.com (advanced.onlinelibrary.wiley.com)... 162.159.129.87, 162.159.130.87, 2606:4700:7::a29f:8157, ...
+Connecting to advanced.onlinelibrary.wiley.com (advanced.onlinelibrary.wiley.com)|162.159.129.87|:443... connected.
+HTTP request sent, awaiting response... 403 Forbidden
+2025-04-03 11:25:59 ERROR 403: Forbidden.
+
+--2025-04-03 11:25:59--  https://en.wikipedia.org/wiki/Computation
+Resolving en.wikipedia.org (en.wikipedia.org)... 185.15.59.224, 2a02:ec80:300:ed1a::1
+Connecting to en.wikipedia.org (en.wikipedia.org)|185.15.59.224|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 107074 (105K) [text/html]
+Saving to: ‘./html/https:__en.wikipedia.org_wiki_Computation.html’
+
+     0K .......... .......... .......... .......... .......... 47% 3.64M 0s
+    50K .......... .......... .......... .......... .......... 95% 12.0M 0s
+   100K ....                                                  100%  167M=0.02s
+
+2025-04-03 11:25:59 (5.83 MB/s) - ‘./html/https:__en.wikipedia.org_wiki_Computation.html’ saved [107074/107074]
+
+--2025-04-03 11:25:59--  https://www.advancedcustomfields.com/
+Resolving www.advancedcustomfields.com (www.advancedcustomfields.com)... 104.18.42.191, 172.64.145.65, 2606:4700:4400::6812:2abf, ...
+Connecting to www.advancedcustomfields.com (www.advancedcustomfields.com)|104.18.42.191|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘./html/https:__www.advancedcustomfields.com_.html’
+
+     0K .......... .......... .......... .......... .......... 33.8M
+    50K .......... .......... ..........                        145M=0.002s
+
+2025-04-03 11:26:00 (47.8 MB/s) - ‘./html/https:__www.advancedcustomfields.com_.html’ saved [82841]
+
+--2025-04-03 11:26:00--  https://www.cambridgeenglish.org/exams-and-tests/advanced/
+Resolving www.cambridgeenglish.org (www.cambridgeenglish.org)... 192.149.119.104
+Connecting to www.cambridgeenglish.org (www.cambridgeenglish.org)|192.149.119.104|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 90632 (89K) [text/html]
+Saving to: ‘./html/https:__www.cambridgeenglish.org_exams-and-tests_advanced_.html’
+
+     0K .......... .......... .......... .......... .......... 56% 4.01M 0s
+    50K .......... .......... .......... ........             100% 6.28M=0.02s
+
+2025-04-03 11:26:00 (4.76 MB/s) - ‘./html/https:__www.cambridgeenglish.org_exams-and-tests_advanced_.html’ saved [90632/90632]
+
+--2025-04-03 11:26:00--  https://stemeducationjournal.springeropen.com/articles/10.1186/s40594-023-00434-7
+Resolving stemeducationjournal.springeropen.com (stemeducationjournal.springeropen.com)... 146.75.72.95
+Connecting to stemeducationjournal.springeropen.com (stemeducationjournal.springeropen.com)|146.75.72.95|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 709670 (693K) [text/html]
+Saving to: ‘./html/https:__stemeducationjournal.springeropen.com_articles_10.1186_s40594-023-00434-7.html’
+
+     0K .......... .......... .......... .......... ..........  7% 36.7M 0s
+    50K .......... .......... .......... .......... .......... 14% 48.5M 0s
+   100K .......... .......... .......... .......... .......... 21%  241M 0s
+   150K .......... .......... .......... .......... .......... 28%  376M 0s
+   200K .......... .......... .......... .......... .......... 36% 70.5M 0s
+   250K .......... .......... .......... .......... .......... 43%  125M 0s
+   300K .......... .......... .......... .......... .......... 50%  261M 0s
+   350K .......... .......... .......... .......... .......... 57%  335M 0s
+   400K .......... .......... .......... .......... .......... 64%  345M 0s
+   450K .......... .......... .......... .......... .......... 72%  304M 0s
+   500K .......... .......... .......... .......... .......... 79%  378M 0s
+   550K .......... .......... .......... .......... .......... 86%  161M 0s
+   600K .......... .......... .......... .......... .......... 93%  186M 0s
+   650K .......... .......... .......... .......... ...       100%  239M=0.005s
+
+2025-04-03 11:26:00 (129 MB/s) - ‘./html/https:__stemeducationjournal.springeropen.com_articles_10.1186_s40594-023-00434-7.html’ saved [709670/709670]
+
+--2025-04-03 11:26:00--  https://advancedcomputing.ifca.es/
+Resolving advancedcomputing.ifca.es (advancedcomputing.ifca.es)... 193.146.75.193
+Connecting to advancedcomputing.ifca.es (advancedcomputing.ifca.es)|193.146.75.193|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘./html/https:__advancedcomputing.ifca.es_.html’
+
+     0K .......... .......... .......... .......... .......... 1.53M
+    50K                                                        1140G=0.03s
+
+2025-04-03 11:26:00 (1.55 MB/s) - ‘./html/https:__advancedcomputing.ifca.es_.html’ saved [51812]
+
+--2025-04-03 11:26:00--  https://adv-r.hadley.nz/
+Resolving adv-r.hadley.nz (adv-r.hadley.nz)... 185.199.108.153, 185.199.109.153, 185.199.110.153, ...
+Connecting to adv-r.hadley.nz (adv-r.hadley.nz)|185.199.108.153|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 12457 (12K) [text/html]
+Saving to: ‘./html/https:__adv-r.hadley.nz_.html’
+
+     0K .......... ..                                         100% 92.1M=0s
+
+2025-04-03 11:26:01 (92.1 MB/s) - ‘./html/https:__adv-r.hadley.nz_.html’ saved [12457/12457]
+
+--2025-04-03 11:26:01--  https://laurentian.ca/program/computational-sciences-msc
+Resolving laurentian.ca (laurentian.ca)... 45.223.58.194, 45.223.157.194
+Connecting to laurentian.ca (laurentian.ca)|45.223.58.194|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: unspecified [text/html]
+Saving to: ‘./html/https:__laurentian.ca_program_computational-sciences-msc.html’
+
+     0K .......... .......... .......... .......... ..........  349K
+    50K .                                                      21.0M=0.1s
+
+2025-04-03 11:26:02 (360 KB/s) - ‘./html/https:__laurentian.ca_program_computational-sciences-msc.html’ saved [52876]
+

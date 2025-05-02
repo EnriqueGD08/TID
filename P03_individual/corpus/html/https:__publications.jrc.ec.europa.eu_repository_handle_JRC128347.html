@@ -1,0 +1,876 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<!--  module-repository\src\main\webapp\jsp\pages\handle.jsp  -->
+<!-- Notice: html code in item-view panel is written by java/jsp, but it is replaced by handle.jsp when javascript is enabled.
+     When javascript is disabled (Google Scholar) the html code written by java/jsp is not replaced -->
+
+
+
+
+<!-- head-tag-handle.html start -->
+<head>
+
+    <title>JRC Publications Repository</title>
+    <!-- <base href="//publications.jrc.ec.europa.eu/repository/" > -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="JRC">
+    <meta name="description" content="Access to Joint Research Centre's publications">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" >
+    <!-- <meta http-equiv="expires" content="300"> -->
+    <meta name="_csrf" content="">
+    <meta name="_csrf_header" content="">
+    <link rel="icon" href="/repository/assets/images/favicon.ico" type="image/x-icon">
+
+ 	<link href="/repository/assets/styles/repository.css" type="text/css" rel="stylesheet">
+ 	
+	<!-- OpenGraph meta tags -->
+    <meta property="og:title" content="Reviewing Computational Thinking in Compulsory Education" >
+    <meta property="og:type" content="website" >
+    <meta property="og:image" content="https://publications.jrc.ec.europa.eu/repository/cover/JRC128347_cover.jpg" >
+    <meta property="og:url" content="https://publications.jrc.ec.europa.eu/repository/handle/JRC128347" >
+    <meta property="og:description" content="In recent years, many European countries have revised their statutory compulsory education curriculum, introducing basic Computer Science concepts. This has paved the way for the development of students&rsquo; Computational Thinking (CT) skills.  Further impetus in this direction is coming from  the European Commission&acute;s Digital Education Action Plan 2021-2027, where quality Computing Education is a key element  under the priority &ldquo;Enhancing digital skills and competences for the digital transformation.&rdquo; Despite increasing uptake, a range of issues and challenges are emerging for the effective integration of CT skills in compulsory education. This report updates and extends findings from the 2016 EC Computational Thinking Study, providing an updated overview in 22 EU Member States and 8 non-EU countries. The study has gathered a wide range of evidence collected via a systematic literature review, a survey with representatives of Ministries of Education, two online consultation events and in-depth case studies in nine European countries involving semi-structured interviews with experts, policy makers, school leaders, teachers, as well as focus groups with students. The report discusses significant developments concerning the integration of CT skills in compulsory education in Europe between 2016 and 2021. It also provides a comprehensive summary of evidence, including eleven recommendations for policy and practice." >
+    <meta property="og:site_name" content="JRC Publications Repository" >
+
+	<!--  google scholar meta tags -->
+    <meta name="citation_title" content="Reviewing Computational Thinking in Compulsory Education">
+    <meta name="citation_abstract" content="In recent years, many European countries have revised their statutory compulsory education curriculum, introducing basic Computer Science concepts. This has paved the way for the development of students&rsquo; Computational Thinking (CT) skills.  Further impetus in this direction is coming from  the European Commission&acute;s Digital Education Action Plan 2021-2027, where quality Computing Education is a key element  under the priority &ldquo;Enhancing digital skills and competences for the digital transformation.&rdquo; Despite increasing uptake, a range of issues and challenges are emerging for the effective integration of CT skills in compulsory education. This report updates and extends findings from the 2016 EC Computational Thinking Study, providing an updated overview in 22 EU Member States and 8 non-EU countries. The study has gathered a wide range of evidence collected via a systematic literature review, a survey with representatives of Ministries of Education, two online consultation events and in-depth case studies in nine European countries involving semi-structured interviews with experts, policy makers, school leaders, teachers, as well as focus groups with students. The report discusses significant developments concerning the integration of CT skills in compulsory education in Europe between 2016 and 2021. It also provides a comprehensive summary of evidence, including eleven recommendations for policy and practice.">
+    <meta name="citation_online_date" content="2022">
+    <meta name="citation_publication_date" content="2022">
+    
+        <meta name="citation_doi" content="10.2760/126955">
+    
+    
+    
+        <meta name="citation_isbn" content="978-92-76-47208-7">
+    
+    
+        <meta name="citation_author" content="BOCCONI, Stefania">
+    
+        <meta name="citation_author" content="CHIOCCARIELLO, Augusto">
+    
+        <meta name="citation_author" content="KAMPYLIS, Panagiotis">
+    
+        <meta name="citation_author" content="DAGIENĖ, Valentina">
+    
+        <meta name="citation_author" content="WASTIAU, Patricia">
+    
+        <meta name="citation_author" content="ENGELHARDT, Katja">
+    
+        <meta name="citation_author" content="EARP, Jeffrey">
+    
+        <meta name="citation_author" content="HORVATH, Milena Anna">
+    
+        <meta name="citation_author" content="JASUTĖ, Eglė">
+    
+        <meta name="citation_author" content="MALAGOLI, Chiara">
+    
+        <meta name="citation_author" content="MASIULIONYTĖ-DAGIENĖ, Vaida">
+    
+        <meta name="citation_author" content="STUPURIENĖ, Gabrielė">
+    
+    <meta name="citation_public_url" content="https://publications.jrc.ec.europa.eu/repository/handle/JRC128347">
+    
+        <meta name="citation_pdf_url" content="https://publications.jrc.ec.europa.eu/repository/bitstream/JRC128347/computhink_ii_-_final_report_-_upload_compressed.pdf">
+    
+    
+
+	<!--  twitter meta tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Reviewing Computational Thinking in Compulsory Education">
+    <meta name="twitter:description" content="In recent years, many European countries have revised their statutory compulsory education curriculum, introducing basic Computer Science concepts. This has paved the way for the development of students&rsquo; Computational Thinking (CT) skills.  Further impetus in this direction is coming from  the European Commission&acute;s Digital Education Action Plan 2021-2027, where quality Computing Education is a key element  under the priority &ldquo;Enhancing digital skills and competences for the digital transformation.&rdquo; Despite increasing uptake, a range of issues and challenges are emerging for the effective integration of CT skills in compulsory education. This report updates and extends findings from the 2016 EC Computational Thinking Study, providing an updated overview in 22 EU Member States and 8 non-EU countries. The study has gathered a wide range of evidence collected via a systematic literature review, a survey with representatives of Ministries of Education, two online consultation events and in-depth case studies in nine European countries involving semi-structured interviews with experts, policy makers, school leaders, teachers, as well as focus groups with students. The report discusses significant developments concerning the integration of CT skills in compulsory education in Europe between 2016 and 2021. It also provides a comprehensive summary of evidence, including eleven recommendations for policy and practice.">
+    <meta name="twitter:site" content="@EU_Commission">
+    <meta name="twitter:image" content="https://publications.jrc.ec.europa.eu/repository/cover/JRC128347_cover.jpg">
+    <meta name="twitter:creator" content="@EU_ScienceHub">
+    
+    <meta name="title" content="Reviewing Computational Thinking in Compulsory Education">
+    
+        <meta name="subtitle" content="State of play and practices from computing education">
+    
+
+    <!-- cookies consent -->
+    <script type="application/json">{
+        "utility": "cck"
+    }
+	</script>
+	
+	<!--  JSON+LD descriptor (Google) -->
+	<script type="application ld+json">    
+{
+"@context": "https://schema.org",
+"@type": "Book",
+"name": "Reviewing Computational Thinking in Compulsory Education",
+"author": [
+
+
+
+
+{
+  "@type": "Person",
+  "name": "BOCCONI, Stefania"
+}
+
+,
+
+{
+  "@type": "Person",
+  "name": "CHIOCCARIELLO, Augusto"
+}
+
+,
+
+{
+  "@type": "Person",
+  "name": "KAMPYLIS, Panagiotis"
+}
+
+,
+
+{
+  "@type": "Person",
+  "name": "DAGIENĖ, Valentina"
+}
+
+,
+
+{
+  "@type": "Person",
+  "name": "WASTIAU, Patricia"
+}
+
+,
+
+{
+  "@type": "Person",
+  "name": "ENGELHARDT, Katja"
+}
+
+,
+
+{
+  "@type": "Person",
+  "name": "EARP, Jeffrey"
+}
+
+,
+
+{
+  "@type": "Person",
+  "name": "HORVATH, Milena Anna"
+}
+
+,
+
+{
+  "@type": "Person",
+  "name": "JASUTĖ, Eglė"
+}
+
+,
+
+{
+  "@type": "Person",
+  "name": "MALAGOLI, Chiara"
+}
+
+,
+
+{
+  "@type": "Person",
+  "name": "MASIULIONYTĖ-DAGIENĖ, Vaida"
+}
+
+,
+
+{
+  "@type": "Person",
+  "name": "STUPURIENĖ, Gabrielė"
+}
+
+],
+"identifier": [
+
+
+
+
+{
+	"@type": "PropertyValue",
+	"propertyID": "DOI",
+	"value": "10.2760/126955"
+}
+
+
+
+,
+
+{
+	"@type": "PropertyValue",
+	"propertyID": "ISBN",
+	"value": "978-92-76-47208-7"
+}
+
+  ],
+"datePublished": "2022",
+"publisher": {
+	"@type": "Organization",
+	"name": "Publications Office of the European Union"
+},
+"description": "In recent years, many European countries have revised their statutory compulsory education curriculum, introducing basic Computer Science concepts. This has paved the way for the development of students&rsquo; Computational Thinking (CT) skills.  Further impetus in this direction is coming from  the European Commission&acute;s Digital Education Action Plan 2021-2027, where quality Computing Education is a key element  under the priority &ldquo;Enhancing digital skills and competences for the digital transformation.&rdquo; Despite increasing uptake, a range of issues and challenges are emerging for the effective integration of CT skills in compulsory education. This report updates and extends findings from the 2016 EC Computational Thinking Study, providing an updated overview in 22 EU Member States and 8 non-EU countries. The study has gathered a wide range of evidence collected via a systematic literature review, a survey with representatives of Ministries of Education, two online consultation events and in-depth case studies in nine European countries involving semi-structured interviews with experts, policy makers, school leaders, teachers, as well as focus groups with students. The report discusses significant developments concerning the integration of CT skills in compulsory education in Europe between 2016 and 2021. It also provides a comprehensive summary of evidence, including eleven recommendations for policy and practice.",
+"inLanguage": "en",
+"url": "https://publications.jrc.ec.europa.eu/repository/handle/JRC128347"
+}
+	</script>
+	
+
+
+</head>
+
+<!-- head-tag-handle.html end -->
+
+
+<body>
+<!-- ORCID popup -->
+<div id="orcid-popup" class="op-hidden">
+	<img id="pop-exit" src="/repository/assets/images/close.svg" width=30px height=30px onclick="popExit()"/>
+	<button id="pop-author-btn" onclick="popFindAuthor()" class="btn btn-secondary">View author publications</button>
+
+	<div id="pop-contributor"></div>
+	<div id="pop-orcid"></div>
+	<div id="pop-affiliation"></div>
+	<div id="pop-affiliation2"></div>
+</div>
+
+
+<!--  module-repository\src\main\webapp\jsp\template\header.html start -->
+
+<!--  global banner -->
+<script>
+function toggleGlobanDropdown(e) {
+	var n = document.querySelector('#globan-dropdown');
+	n.hidden = !n.hidden; 
+	var ch = document.querySelector('#globan-chevron'); 
+	(n.hidden ? ch.classList.replace('chevron-up', 'chevron-down') : ch.classList.replace('chevron-down', 'chevron-up'));
+	return false;
+}
+function toggleGlobanHighlight() {
+	var ch = document.querySelector('#globan-chevron');
+	ch.classList.toggle("globan-chevron-highlight");
+}
+</script>
+<div class="globan dark logo-flag" id="globan" style="z-index: 40;">
+    <div class="globan-center">
+        <div class="globan-content">
+            <span>An official website of the European Union</span>
+            <a  onclick="javascript: toggleGlobanDropdown(this);" 
+            	onmouseover="javascript: toggleGlobanHighlight();"
+            	onmouseout="javascript: toggleGlobanHighlight();">How do you know?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            <div id="globan-chevron" class="chevron-down"></div>
+        </div>
+	</div>
+</div>
+
+<!--  global banner popup  -->
+<div id="globan-dropdown" class="globan-dropdown" hidden>
+	<p>All official European Union website addresses are in the <strong>europa.eu</strong> domain.</p>
+	<p><a href="//europa.eu/european-union/contact/institutions-bodies_en">See all EU institutions and bodies</a></p>
+</div>
+
+<header class="ecl-site-header-harmonised--group1 ecl-site-header-harmonised">
+
+	<!-- site header -->
+    <div class="ecl-site-header-harmonised__container ecl-container">
+        <div class="ecl-site-header-harmonised__top">
+            <a class="ec-link ecl-site-header-harmonised__logo-link" href="//ec.europa.eu" aria-label="European Commission"><img alt="European Commission logo" title="EUROPEAN COMMISSION &#10;DIRECTORATE-GENERAL &#10;Directorate JRC &#10;Unit T.4" class="ecl-site-header-harmonised__logo-image" src="/repository/assets/images/logo.en.svg" ></a>
+        </div>
+    </div>
+    
+    <!--  page header -->
+    <div class="ecl-site-header-harmonised__banner ec-blue">
+        <div class="ecl-container">
+        
+        	<!--  banner -->
+            <div class="site-name header-bar">JRC Publications Repository
+                <a class="ecl-icon-btn f-0 site-menu-toggler" href="." rel="nofollow">
+                    <svg focusable="false" class="ecl-icon ecl-icon--s" viewBox="0 0 24 24">
+                        <path d="M0 19.2h24v2.402H0zm0-8.4h24v2.4H0zm0-8.402h24v2.403H0zm0 0"></path>
+                    </svg>
+                    Menu
+                </a>
+            </div>
+
+			<!-- page menu (see bundle.js) -->
+            <nav class="nav-menu f-break ec-blue hidden" id="site-menu" aria-label="Site menu">
+                <div class="header-bar">
+                    <div class="ecl-menu__title">Menu</div>
+                    <a class="ecl-icon-btn f-0 site-menu-toggler" href="." rel="nofollow">
+                        <svg class="ecl-icon ecl-icon--s" viewBox="0 0 24 24"><path d="M15.242 16.588l-3.253-3.252-3.23 3.23-1.347-1.345 3.231-3.232-3.21-3.21L8.78 7.433l3.21 3.21 3.232-3.231 1.346 1.346-3.231 3.231 3.252 3.253-1.346 1.346zM12 1C5.925 1 1 5.925 1 12s4.925 11 11 11 11-4.925 11-11S18.075 1 12 1z"></path></svg>
+                        Close
+                    </a>
+                </div>
+                <a class="ec-link" href="/repository/home" >Home</a>
+                <a class="ec-link" href="/repository/search" >Search</a>
+                <a class="ec-link" href="/repository/help" >Help</a>
+            </nav>
+        </div>
+    </div>
+    
+    <!-- breadcrumb -->
+    <div class="ecl-container">
+    	<nav class="nav-menu hidden" id="site-breadcrumb" aria-label="Site breadcrumb">
+	        <a class="ec-link" href="http://ec.europa.eu/index_en.htm">European Commission</a>
+	        <span class="bcgt">&gt;</span>
+	        <a class="ec-link" href="https://ec.europa.eu/jrc/">JRC</a>
+	        <span class="bcgt">&gt;</span>
+	        <a class="ec-link" href="./" >JRC Publications Repository</a>
+	        <span class="bcgt">&gt;</span>
+	        <span class="ec-link path">Home</span>
+    </nav></div>
+
+</header>
+
+<!-- DEV/TEST overlay -->
+<div id="ipmEnv" class="ipmEnv"></div>
+
+<!--  header.html end -->
+
+
+
+
+<section class="site-page-container f-grow f-wrap ecl-container" itemscope itemtype="http://schema.org/CreativeWork">
+
+    <!-- page title -->
+    <h1 itemprop="headline" class="ec-panel ec bold h5 f-break" id="item-title">
+    Reviewing Computational Thinking in Compulsory Education
+    </h1>
+
+    <!-- pills -->
+    <div class="ec-block f-break pills" id="item-pills" ></div>
+
+	<!--  abstract, ..., URI -->
+    <div class="ec-block f-break" id="item-view">
+    
+	    <!--  cover -->
+	    <div class="ec-panel-cover">
+			<img class="cover" alt="cover" src='/repository/cover/JRC128347_cover.jpg'>
+		</div>
+		
+		<!--  subtitle -->
+		
+			<div class="ec-panel " data-title="Subtitle" itemprop="subtitle">
+				State of play and practices from computing education
+			</div>	
+			
+		
+		<!--  abstract -->
+		<div class="ec-panel" data-title="Abstract" itemprop="abstract">
+    		In recent years, many European countries have revised their statutory compulsory education curriculum, introducing basic Computer Science concepts. This has paved the way for the development of students’ Computational Thinking (CT) skills.  Further impetus in this direction is coming from  the European Commission´s Digital Education Action Plan 2021-2027, where quality Computing Education is a key element  under the priority “Enhancing digital skills and competences for the digital transformation.” Despite increasing uptake, a range of issues and challenges are emerging for the effective integration of CT skills in compulsory education. This report updates and extends findings from the 2016 EC Computational Thinking Study, providing an updated overview in 22 EU Member States and 8 non-EU countries. The study has gathered a wide range of evidence collected via a systematic literature review, a survey with representatives of Ministries of Education, two online consultation events and in-depth case studies in nine European countries involving semi-structured interviews with experts, policy makers, school leaders, teachers, as well as focus groups with students. The report discusses significant developments concerning the integration of CT skills in compulsory education in Europe between 2016 and 2021. It also provides a comprehensive summary of evidence, including eleven recommendations for policy and practice.
+		</div>
+		
+		<!-- authors -->
+		
+			<div class="ec-panel " data-title="Authors" itemprop="author">
+				
+					BOCCONI Stefania;&nbsp;
+				
+					CHIOCCARIELLO Augusto;&nbsp;
+				
+					KAMPYLIS Panagiotis;&nbsp;
+				
+					DAGIENĖ Valentina;&nbsp;
+				
+					WASTIAU Patricia;&nbsp;
+				
+					ENGELHARDT Katja;&nbsp;
+				
+					EARP Jeffrey;&nbsp;
+				
+					HORVATH Milena Anna;&nbsp;
+				
+					JASUTĖ Eglė;&nbsp;
+				
+					MALAGOLI Chiara;&nbsp;
+				
+					MASIULIONYTĖ-DAGIENĖ Vaida;&nbsp;
+				
+					STUPURIENĖ Gabrielė;&nbsp;
+				
+			</div>
+		
+		
+		<!-- editors -->
+		
+			<div class="ec-panel " data-title="Editors" itemprop="editor">
+				
+					INAMORATO DOS SANTOS Andreia;&nbsp;
+				
+					CACHIA Romina;&nbsp;
+				
+					GIANNOUTSOU Nikoleta;&nbsp;
+				
+					PUNIE Yves;&nbsp;
+				
+			</div>
+		
+		
+		<!-- other contributors -->
+		
+		
+		<!-- citation -->
+<!-- 		<div class="ec-panel " data-title="Citation" itemprop="citation">
+			Bocconi, S., Chioccariello, A., Kampylis, P., Dagienė, V., Wastiau, P., Engelhardt, K., Earp, J., Horvath, M.A., Jasutė, E., Malagoli, C., Masiulionytė-Dagienė, V. and Stupurienė, G., Reviewing Computational Thinking in Compulsory Education, Inamorato Dos Santos, A., Cachia, R., Giannoutsou, N. and Punie, Y. editor(s), Publications Office of the European Union, Luxembourg, 2022, ISBN 978-92-76-47208-7 (online), doi:10.2760/126955 (online), JRC128347.
+		</div>		
+ -->		
+		<!-- date available -->
+		<div class="ec-panel " data-title="Date available" itemprop="publisher">
+			2022-03-03
+		</div>	
+			
+		<!-- publisher -->
+		<div class="ec-panel " data-title="Publisher" itemprop=""publisher"">
+			Publications Office of the European Union
+		</div>		
+		
+		<!-- JRC number -->
+		<div class="ec-panel " data-title="JRC number" itemprop="mainEntity">
+			JRC128347
+		</div>		
+		
+		<!-- ISBN -->
+		
+			<div class="ec-panel " data-title="ISBN" itemprop="identifier">
+				
+					978-92-76-47208-7 (online),&nbsp;&nbsp;&nbsp;
+				
+			</div>
+		
+
+		<!-- ISSN -->
+		
+
+		<!-- other identifiers -->
+		
+			<div class="ec-panel " data-title="Other identifiers" itemprop="identifier">
+				
+					OP KJ-06-22-069-EN-N (online),&nbsp;&nbsp;&nbsp;
+				
+			</div>
+		
+
+		<!-- URI -->
+		
+			<div class="ec-panel " data-title="URI" itemprop="identifier">
+				
+					https://publications.jrc.ec.europa.eu/repository/handle/JRC128347,&nbsp;&nbsp;&nbsp;
+				
+			</div>
+		
+
+		<!-- DOI -->
+		
+			<div class="ec-panel " data-title="DOI" itemprop="identifier">
+				
+					10.2760/126955 (online),&nbsp;&nbsp;&nbsp;
+				
+			</div>
+		
+		
+		<!-- attachments (downloads) -->
+		
+			<div class="ec-panel " data-title="Attachments" itemprop="attachments">
+				
+					<a href="https://publications.jrc.ec.europa.eu/repository/bitstream/JRC128347/computhink_ii_-_final_report_-_upload_compressed.pdf">https://publications.jrc.ec.europa.eu/repository/bitstream/JRC128347/computhink_ii_-_final_report_-_upload_compressed.pdf</a><br>
+				
+			</div>
+		
+
+    </div> <!-- end item-view -->
+
+    <!-- citations table -->
+    <div class="ec-block f-break" id="citations-view" itemscope itemtype="http://schema.org/CreativeWork">
+        <table class="data-list" aria-label="Citations">
+            <thead>
+            	<tr>
+            		<th scope="col" class="th-fixed">Language</th>
+            		<th scope="col" class="th-maxed">Citation</th>
+           		</tr>
+        	</thead>
+            <tbody id="citations-holder"></tbody>
+        </table>
+    </div>
+
+    <!-- affiliations table -->
+    <div class="ec-block f-break" id="affiliations-view">
+        <table class="data-list" aria-label="Contributors' affiliations">
+            <thead><tr><th scope="col" class="th-maxed">Name</th><th scope="col" class="th-fixed">Country</th><th scope="col" class="th-fixed">City</th><th scope="col" class="th-fixed">Type</th></tr></thead>
+            <tbody id="affiliations-holder"></tbody>
+        </table>
+    </div>
+
+    <!-- file download table (attachments) -->
+    <div id="file-holder" class="ec-block f-break"></div>
+    
+    <!-- datasets table -->
+    <div class="ec-block f-break" id="datasets-view" itemscope itemtype="http://schema.org/CreativeWork">
+    	<span style="font-weight: bold">Datasets</span>
+        <table style="width: 100%;" class="data-list" aria-label="Datasets">
+            <!-- <thead><tr><th scope="col" class="th-id">ID</th><th scope="col" class="th-acronym">Acronym</th><th scope="col" class="th-title">Title</th><th scope="col" class="th-url">Public URL</th></tr></thead> -->
+            <thead><tr><th scope="col" class="th-id-5">ID</th><th scope="col" class="th-title-5">Title</th><th scope="col" class="th-url-5">Public URL</th></tr></thead>
+            <tbody id="datasets-holder"></tbody>
+        </table>
+    </div>
+
+    <!-- dataset collections table -->
+    <div class="ec-block f-break" id="datasetcollections-view" itemscope itemtype="http://schema.org/CreativeWork">
+    	<span style="font-weight: bold">Dataset collections</span>
+        <table style="width: 100%;" class="data-list" aria-label="Dataset collections">
+            <thead><tr><th scope="col" class="th-id-3">ID</th><th scope="col" class="th-acronym-3">Acronym</th><th scope="col" class="th-title-3">Title</th><th scope="col" class="th-url-3">Public URL</th></tr></thead>
+            <tbody id="datasetcollections-holder"></tbody>
+        </table>
+    </div>
+
+    <!-- scripts table -->
+    <div class="ec-block f-break" id="scripts-view" itemscope itemtype="http://schema.org/CreativeWork">
+    	<span style="font-weight: bold">Scripts / source codes</span>
+        <table  style="width: 100%;" class="data-list" aria-label="Scripts / source codes">
+            <!-- <thead><tr><th scope="col" class="th-script">Script name</th><th scope="col" class="th-desc">Description</th><th scope="col" class="th-url">Public URL</th></tr></thead> -->
+            <thead><tr><th scope="col" class="th-desc">Description</th><th scope="col" class="th-url">Public URL</th></tr></thead>
+            <tbody id="scripts-holder"></tbody>
+        </table>
+    </div>
+
+    <!-- supporting files table -->
+    <div class="ec-block f-break" id="files-view" itemscope itemtype="http://schema.org/CreativeWork">
+    	<span style="font-weight: bold">Additional supporting files</span>
+        <table style="width: 100%;" class="data-list" aria-label="Additional supporting files">
+            <thead><tr><th scope="col" class="th-script">File name</th><th scope="col" class="th-desc2">Description</th><th scope="col" class="th-filetype">File type</th><th scope="col" class="th-download">&nbsp;</th></tr></thead>
+            <tbody id="support-files-holder"></tbody>
+        </table>
+    </div>
+
+    <!-- QR codes -->
+    <div id="qr-holder" class="ec-block f-break"></div>
+
+    <!-- buttons x 3 -->
+    <div class="ec-block f-break">
+    <a class="btn btn-secondary" href="JRC128347?mode=full">Show metadata record</a>&nbsp;
+    <a class="clip-url btn btn-secondary" id="clip-url" href="">Copy citation url to clipboard</a>&nbsp;
+    <a id="bibtex" class="btn btn-secondary" download type="text/plain" rel="alternate">Download BibTeX</a>
+    </div>
+
+    <div class="ec-lit-panel f-break">Items published in the JRC Publications Repository are protected by copyright, with all rights reserved, unless otherwise indicated. Additional information: <a class="ec-link" href="https://ec.europa.eu/info/legal-notice_en#copyright-notice" target="_blank" rel="noopener nofollow" title="copyright notice">https://ec.europa.eu/info/legal-notice_en#copyright-notice</a></div>
+
+	<!--  social media icons -->
+    <!--  start social-share.html -->
+<div class="ecl-social-media-share" style="padding-left: 0.5rem;">
+    <p class="ecl-social-media-share__description">Share this page</p>
+    <ul class="ecl-social-media-share__list">
+        <li class="ecl-social-media-share__item">
+        	<a id="share-twitter" href="/example" class="ecl-social-media-share__link--twitter ecl-social-media-share__link ecl-link ecl-link--standalone ecl-link--icon ecl-link--icon-before" target="_blank" rel="noopener nofollow">
+            	<svg focusable="false" aria-hidden="true" class="ecl-social-media-share__icon ecl-link__icon ecl-icon ecl-icon--xl" >
+            		<use href="/repository/assets/images/icons-social-media.svg#twitter"></use>
+        		</svg>
+        		<svg focusable="false" aria-hidden="true" class="ecl-social-media-share__icon-hover ecl-social-media-share__icon ecl-link__icon ecl-icon ecl-icon--xl">
+            		<use href="/repository/assets/images/icons-social-media.svg#twitter"></use>
+        		</svg>
+        		<span class="ecl-link__label">X</span>
+        	</a>
+        </li>
+        <li class="ecl-social-media-share__item"><a id="share-facebook" href="/example" class="ecl-social-media-share__link--facebook ecl-social-media-share__link ecl-link ecl-link--standalone ecl-link--icon ecl-link--icon-before" target="_blank" rel="noopener nofollow">
+            <svg focusable="false" aria-hidden="true" class="ecl-social-media-share__icon ecl-link__icon ecl-icon ecl-icon--xl">
+            <use href="/repository/assets/images/icons-social-media.svg#facebook"></use>
+        </svg><svg focusable="false" aria-hidden="true" class="ecl-social-media-share__icon-hover ecl-social-media-share__icon ecl-link__icon ecl-icon ecl-icon--xl">
+            <use href="/repository/assets/images/icons-social-media.svg#facebook"></use>
+        </svg><span class="ecl-link__label">Facebook</span></a></li>
+        <li class="ecl-social-media-share__item"><a id="share-linkedin" href="/example" class="ecl-social-media-share__link--linkedin ecl-social-media-share__link ecl-link ecl-link--standalone ecl-link--icon ecl-link--icon-before" target="_blank" rel="noopener nofollow">
+            <svg focusable="false" aria-hidden="true" class="ecl-social-media-share__icon ecl-link__icon ecl-icon ecl-icon--xl" >
+            <use href="/repository/assets/images/icons-social-media.svg#linkedin"></use>
+        </svg><svg focusable="false" aria-hidden="true" class="ecl-social-media-share__icon-hover ecl-social-media-share__icon ecl-link__icon ecl-icon ecl-icon--xl">
+            <use href="/repository/assets/images/icons-social-media.svg#linkedin"></use>
+        </svg><span class="ecl-link__label">Linkedin</span></a></li>
+        <li class="ecl-social-media-share__item"><a id="share-email" href="/example" class="ecl-social-media-share__link--email ecl-social-media-share__link ecl-link ecl-link--standalone ecl-link--icon ecl-link--icon-before" target="_blank" rel="noopener nofollow">
+            <svg focusable="false" aria-hidden="true" class="ecl-social-media-share__icon ecl-link__icon ecl-icon ecl-icon--xl">
+            <use href="/repository/assets/images/icons-social-media.svg#email"></use>
+        </svg><svg focusable="false" aria-hidden="true" class="ecl-social-media-share__icon-hover ecl-social-media-share__icon ecl-link__icon ecl-icon ecl-icon--xl">
+            <use href="/repository/assets/images/icons-social-media.svg#email"></use>
+        </svg><span class="ecl-link__label">E-mail</span></a></li>
+    </ul>
+    <br>
+</div>
+
+<!--  end social-share.html -->
+
+   
+
+</section>
+
+<!-- footer.html (ECL 4.5.0 Standardised site footer) start -->
+<footer class="ec-block site-footer ec-blue padding-top-20" id="site-footer" >
+    <div class="site-identity f-base ecl-container f-wrap">
+        <div class="site-owner f-grow f-col padding-btm-20">
+            <div class="">
+                <a href="#" class="ec-title ec-link f-link">JRC Publications Repository</a>
+                <br>
+                <span class="ec-block ec-description-f">
+                	This site is managed by:<br> Joint Research Centre
+               	</span>
+               	<br>
+            	<a class="ec-link f-link " href="accessibility">Accessibility</a>
+            </div>
+        </div>
+        <div class="site-services f-grow f-col">
+            <div class="site-contact">
+                <div class="ec-title padding-btm-20">Contact us</div>
+                <div class="footer-list" >
+                	<a class="ec-link f-link icon-social" href="mailto:jrc-publications@ec.europa.eu">Contact JRC Publications Repository</a>
+               	</div>
+            </div>
+        </div>
+        <div class="site-navigation  f-grow f-col">
+            <div class="site-about">
+                <div class="ec-title padding-btm-20">About us</div>
+                <div class="footer-list">
+                	<a class="ec-link f-link" href="/repository/about">About page</a>
+               	</div>
+            </div>
+        </div>
+    </div>
+    <div class="site-corporate f-base ecl-container f-wrap padding-top-20">
+        <div class="corporate-owner f-grow f-col">
+            <div>
+                <a class="ec-link f-link ecl-site-footer-harmonised__logo-link" href="//ec.europa.eu" aria-label="European Commission"><img alt="European Commission logo" title="European Commission" class="ecl-site-footer-harmonised__logo-image" src="/repository/assets/images/logo-ec--en.10f5072b.svg"></a>
+            </div>
+        </div>
+        <div class="corporate-services f-grow f-col">
+            <div class="site-links"><div class="footer-list">
+                <a class="ec-link f-link" href="https://ec.europa.eu/info/about-european-commission/contact_en">Contact the European Commission</a>
+                <a class="ec-link f-link" href="https://europa.eu/european-union/contact/social-networks_en#n:+i:4+e:1+t:+s:">Follow the European Commission on social media</a>
+                <a class="ec-link f-link" href="https://ec.europa.eu/info/resources-partners_en">Resources for partners</a>
+            </div></div>
+        </div>
+        <div class="corporate-navigation f-grow f-col">
+            <div class="site-links">
+            	<div class="footer-list">
+	                <a class="ec-link f-link" href="https://ec.europa.eu/info/language-policy_en">Language policy</a>
+	                <a class="ec-link f-link" href="https://ec.europa.eu/info/cookies_en">Cookies</a>
+	                <a class="ec-link f-link" href="/repository/assets/JPR_privacy_statement.pdf">Privacy statement (Publications Repository)</a>
+	                <a class="ec-link f-link" href="https://ec.europa.eu/info/legal-notice_en">Legal notice</a>
+	                <a class="ec-link f-link" href="/repository/gsmap">Sitemap</a>
+            	</div>
+           	</div>
+        </div>
+    </div>
+</footer>
+<!-- footer.html end -->
+
+
+<!--  standard_scripts.html -->
+<script src="/repository/assets/libs/jquery-3.6.0.min.js" ></script>
+<script src="/repository/assets/libs/bundle.js" ></script>
+
+<!-- supports cookies consent and Europa Analytics -->
+<script defer="defer" src="https://webtools.europa.eu/load.js" ></script>
+
+<!-- cookies consent -->
+<!-- <script defer type="application/json"> -->
+<script type="application/json">
+    {"utility":"cck","url":"https://ec.europa.eu/info/cookies_en"}
+</script>
+
+<!-- Europa Analytics -->
+<script type="application/json">
+{
+  "utility": "analytics",
+  "siteID": "59b15b62-e452-43f2-a022-b4370c9a66a8",
+  "siteSection": "publications",
+  "sitePath": [
+    "publications.jrc.ec.europa.eu"
+  ],
+  "instance": "ec",
+  "dimensions": [{ "id": 3, "value": "DOCUMENT_NUMBER"}]
+}
+</script>
+
+<!-- 
+{
+	"utility": "analytics",
+	"siteID": "59b15b62-e452-43f2-a022-b4370c9a66a8",
+	"sitePath": ["publications.jrc.ec.europa.eu"],
+	"instance":"ec"
+}
+ -->
+<script>
+	window._dictionaries=[ {
+  "code" : "CONTRIBUTOR",
+  "codes" : "/CONTRIBUTOR",
+  "label" : "Author",
+  "type" : "CONTRIBUTOR"
+}, {
+  "code" : "G001",
+  "codes" : "/GROUP/G001",
+  "label" : "Science for policy",
+  "type" : "GROUP"
+}, {
+  "code" : "G002",
+  "codes" : "/GROUP/G002",
+  "label" : "Scientific articles and academic literature",
+  "type" : "GROUP"
+}, {
+  "code" : "G003",
+  "codes" : "/GROUP/G003",
+  "label" : "Technical reports",
+  "type" : "GROUP"
+}, {
+  "code" : "G004",
+  "codes" : "/GROUP/G004",
+  "label" : "Scientific methods, data and information",
+  "type" : "GROUP"
+}, {
+  "code" : "G005",
+  "codes" : "/GROUP/G005",
+  "label" : "Presentations and science dissemination",
+  "type" : "GROUP"
+}, {
+  "code" : "GROUP",
+  "codes" : "/GROUP",
+  "label" : "Publication group",
+  "type" : "GROUP"
+}, {
+  "code" : "S001",
+  "codes" : "/SCIENCE_AREA/S001",
+  "label" : "Agriculture and food security",
+  "type" : "SCIENCE_AREA"
+}, {
+  "code" : "S002",
+  "codes" : "/SCIENCE_AREA/S002",
+  "label" : "Economic and monetary Union",
+  "type" : "SCIENCE_AREA"
+}, {
+  "code" : "S003",
+  "codes" : "/SCIENCE_AREA/S003",
+  "label" : "Energy and transport",
+  "type" : "SCIENCE_AREA"
+}, {
+  "code" : "S004",
+  "codes" : "/SCIENCE_AREA/S004",
+  "label" : "Environment and climate change",
+  "type" : "SCIENCE_AREA"
+}, {
+  "code" : "S005",
+  "codes" : "/SCIENCE_AREA/S005",
+  "label" : "Health and consumer protection",
+  "type" : "SCIENCE_AREA"
+}, {
+  "code" : "S006",
+  "codes" : "/SCIENCE_AREA/S006",
+  "label" : "Information society",
+  "type" : "SCIENCE_AREA"
+}, {
+  "code" : "S007",
+  "codes" : "/SCIENCE_AREA/S007",
+  "label" : "Innovation and growth",
+  "type" : "SCIENCE_AREA"
+}, {
+  "code" : "S008",
+  "codes" : "/SCIENCE_AREA/S008",
+  "label" : "Nuclear safety and security",
+  "type" : "SCIENCE_AREA"
+}, {
+  "code" : "S009",
+  "codes" : "/SCIENCE_AREA/S009",
+  "label" : "Safety and security",
+  "type" : "SCIENCE_AREA"
+}, {
+  "code" : "S010",
+  "codes" : "/SCIENCE_AREA/S010",
+  "label" : "Standards",
+  "type" : "SCIENCE_AREA"
+}, {
+  "code" : "S011",
+  "codes" : "/SCIENCE_AREA/S011",
+  "label" : "JRC corporate",
+  "type" : "SCIENCE_AREA"
+}, {
+  "code" : "S012",
+  "codes" : "/SCIENCE_AREA/S012",
+  "label" : "JRC historical",
+  "type" : "SCIENCE_AREA"
+}, {
+  "code" : "SCIENCE_AREA",
+  "codes" : "/SCIENCE_AREA",
+  "label" : "Science area",
+  "type" : "SCIENCE_AREA"
+}, {
+  "code" : "YEAR",
+  "codes" : "/YEAR",
+  "label" : "Publication year",
+  "type" : "YEAR"
+} ];
+	window._item={
+  "id" : "JRC128347",
+  "dc.publisher" : "Publications Office of the European Union",
+  "dc.format.medium" : "Online",
+  "collection.year" : 2022,
+  "document.211504.disk" : "JRC128347_211504",
+  "document.names" : "Final report on Computational Thinking II",
+  "document.211504.checksum" : "59a753dd8415686988a36d15edfdd20b",
+  "dc.subtitle" : "State of play and practices from computing education",
+  "dc.identifier.uri" : "https://publications.jrc.ec.europa.eu/repository/handle/JRC128347",
+  "dc.description.sponsorship" : "JRC.B.4 - Human Capital and Employment",
+  "search.contributors" : [ "BOCCONI Stefania", "0000-0001-6352-7414", "CHIOCCARIELLO Augusto", "0000-0003-4451-4727", "KAMPYLIS Panagiotis", "0000-0003-1760-0347", "DAGIENĖ Valentina", "WASTIAU Patricia", "0000-0002-2441-836X", "ENGELHARDT Katja", "0000-0002-9916-3015", "EARP Jeffrey", "0000-0001-7075-5992", "HORVATH Milena Anna", "0000-0002-5094-2720", "JASUTĖ Eglė", "0000-0001-5183-9058", "MALAGOLI Chiara", "0000-0001-6872-2315", "MASIULIONYTĖ-DAGIENĖ Vaida", "0000-0002-7755-0428", "STUPURIENĖ Gabrielė", "INAMORATO DOS SANTOS Andreia", "0000-0002-9348-6139", "CACHIA Romina", "0000-0002-9773-6924", "GIANNOUTSOU Nikoleta", "0000-0002-1085-3854", "PUNIE Yves", "0000-0002-3978-4928" ],
+  "collection.science_area" : "/SCIENCE_AREA/S006",
+  "collections" : [ "2022", "/SCIENCE_AREA/S006", "/GROUP/G005" ],
+  "id" : "JRC128347",
+  "collection.group" : "/GROUP/G005",
+  "data.citation.14435.language" : "ENG",
+  "data.bibtex" : "@techreport{JRC128347,\n\tnumber = {KJ-06-22-069-EN-N (online)},\n\taddress = {Luxembourg (Luxembourg)},\n\tissn = {},\n\tyear = {2022},\n\tauthor = {Bocconi S and Chioccariello A and Kampylis P and Dagienė V and Wastiau P and Engelhardt K and Earp J and Horvath MA and Jasutė E and Malagoli C and Masiulionytė-Dagienė V and Stupurienė G and Inamorato Dos Santos A and Cachia R and Giannoutsou N and Punie Y},\n\tisbn = {978-92-76-47208-7 (online)},\n\tpublisher = {Publications Office of the European Union},\n\tabstract = {In recent years, many European countries have revised their statutory compulsory education curriculum, introducing basic Computer Science concepts. This has paved the way for the development of students’ Computational Thinking (CT) skills.  Further impetus in this direction is coming from  the European Commission´s Digital Education Action Plan 2021-2027, where quality Computing Education is a key element  under the priority “Enhancing digital skills and competences for the digital transformation.” Despite increasing uptake, a range of issues and challenges are emerging for the effective integration of CT skills in compulsory education. This report updates and extends findings from the 2016 EC Computational Thinking Study, providing an updated overview in 22 EU Member States and 8 non-EU countries. The study has gathered a wide range of evidence collected via a systematic literature review, a survey with representatives of Ministries of Education, two online consultation events and in-depth case studies in nine European countries involving semi-structured interviews with experts, policy makers, school leaders, teachers, as well as focus groups with students. The report discusses significant developments concerning the integration of CT skills in compulsory education in Europe between 2016 and 2021. It also provides a comprehensive summary of evidence, including eleven recommendations for policy and practice. \n\t\t},\n\ttitle = {Reviewing Computational Thinking in Compulsory Education},\n\ttype = {Scientific analysis or review},\n\turl = {},\n\tdoi = {10.2760/126955 (online)}\n}\n",
+  "extra.collection.science_area" : "Information society",
+  "dc.description.abstract" : "In recent years, many European countries have revised their statutory compulsory education curriculum, introducing basic Computer Science concepts. This has paved the way for the development of students’ Computational Thinking (CT) skills.  Further impetus in this direction is coming from  the European Commission´s Digital Education Action Plan 2021-2027, where quality Computing Education is a key element  under the priority “Enhancing digital skills and competences for the digital transformation.” Despite increasing uptake, a range of issues and challenges are emerging for the effective integration of CT skills in compulsory education. This report updates and extends findings from the 2016 EC Computational Thinking Study, providing an updated overview in 22 EU Member States and 8 non-EU countries. The study has gathered a wide range of evidence collected via a systematic literature review, a survey with representatives of Ministries of Education, two online consultation events and in-depth case studies in nine European countries involving semi-structured interviews with experts, policy makers, school leaders, teachers, as well as focus groups with students. The report discusses significant developments concerning the integration of CT skills in compulsory education in Europe between 2016 and 2021. It also provides a comprehensive summary of evidence, including eleven recommendations for policy and practice.",
+  "dc.contributor.author" : [ "BOCCONI Stefania", "CHIOCCARIELLO Augusto", "KAMPYLIS Panagiotis", "DAGIENĖ Valentina", "WASTIAU Patricia", "ENGELHARDT Katja", "EARP Jeffrey", "HORVATH Milena Anna", "JASUTĖ Eglė", "MALAGOLI Chiara", "MASIULIONYTĖ-DAGIENĖ Vaida", "STUPURIENĖ Gabrielė" ],
+  "document.211504.name" : "Final report on Computational Thinking II",
+  "dc.date.submitted" : "2022-01-31",
+  "dc.identifier.citation" : "Bocconi, S., Chioccariello, A., Kampylis, P., Dagienė, V., Wastiau, P., Engelhardt, K., Earp, J., Horvath, M.A., Jasutė, E., Malagoli, C., Masiulionytė-Dagienė, V. and Stupurienė, G., Reviewing Computational Thinking in Compulsory Education, Inamorato Dos Santos, A., Cachia, R., Giannoutsou, N. and Punie, Y. editor(s), Publications Office of the European Union, Luxembourg, 2022, ISBN 978-92-76-47208-7 (online), doi:10.2760/126955 (online), JRC128347.",
+  "dc.date.accessioned" : "2022-03-16",
+  "dc.date.created" : "2022-03-02",
+  "document.211504.size" : 17434694,
+  "data.citation.14435.text" : "Bocconi, S., Chioccariello, A., Kampylis, P., Dagienė, V., Wastiau, P., Engelhardt, K., Earp, J., Horvath, M.A., Jasutė, E., Malagoli, C., Masiulionytė-Dagienė, V. and Stupurienė, G., Reviewing Computational Thinking in Compulsory Education, Inamorato Dos Santos, A., Cachia, R., Giannoutsou, N. and Punie, Y. editor(s), Publications Office of the European Union, Luxembourg, 2022, ISBN 978-92-76-47208-7, doi:10.2760/126955, JRC128347.",
+  "dc.date.issued" : "2022",
+  "collection.contributors" : [ "BOCCONI Stefania;0000-0001-6352-7414;Consiglio Nazionale delle Ricerche;", "CHIOCCARIELLO Augusto;0000-0003-4451-4727;Institute for Educational Technology, CNR;", "KAMPYLIS Panagiotis;0000-0003-1760-0347;Consiglio Nazionale delle Ricerche;", "DAGIENĖ Valentina;;Vilnius University;", "WASTIAU Patricia;0000-0002-2441-836X;European Schoolnet;", "ENGELHARDT Katja;0000-0002-9916-3015;European Schoolnet;", "EARP Jeffrey;0000-0001-7075-5992;Consiglio Nazionale delle Ricerche;", "HORVATH Milena Anna;0000-0002-5094-2720;European Schoolnet;", "JASUTĖ Eglė;0000-0001-5183-9058;Vilnius University;", "MALAGOLI Chiara;0000-0001-6872-2315;Consiglio Nazionale delle Ricerche;", "MASIULIONYTĖ-DAGIENĖ Vaida;0000-0002-7755-0428;Vilnius University;", "STUPURIENĖ Gabrielė;;Vilnius University;", "INAMORATO DOS SANTOS Andreia;0000-0002-9348-6139;;", "CACHIA Romina;0000-0002-9773-6924;;", "GIANNOUTSOU Nikoleta;0000-0002-1085-3854;;", "PUNIE Yves;0000-0002-3978-4928;;" ],
+  "dc.identifier.isbn" : "978-92-76-47208-7 (online)",
+  "dc.identifier.doi" : "10.2760/126955 (online)",
+  "item.handle" : 128347,
+  "item.updateTime" : "2022-03-16T08:58:04",
+  "dc.title" : "Reviewing Computational Thinking in Compulsory Education",
+  "data.citation.14435.type" : "ONLINE",
+  "ids" : [ "978-92-76-47208-7", "10.2760/126955", "OP KJ-06-22-069-EN-N" ],
+  "dc.language" : "ENG",
+  "item.pubsy_id" : 128347,
+  "dc.identifier.other" : "OP KJ-06-22-069-EN-N (online)",
+  "document.211504.checksumAlgorithm" : "MD5",
+  "dc.relation.ispartofseries" : "JRC128347",
+  "stream.document.211504" : "1",
+  "document.211504.mimetype" : "application/pdf",
+  "data.id.citations" : [ "14435" ],
+  "document.211504.cover" : "JRC128347_211504_cover.jpg",
+  "dc.contributor.editor" : [ "INAMORATO DOS SANTOS Andreia", "CACHIA Romina", "GIANNOUTSOU Nikoleta", "PUNIE Yves" ],
+  "suggest.contributors" : [ "BOCCONI STEFANIA", "0000-0001-6352-7414", "CHIOCCARIELLO AUGUSTO", "0000-0003-4451-4727", "KAMPYLIS PANAGIOTIS", "0000-0003-1760-0347", "DAGIENĖ VALENTINA", "WASTIAU PATRICIA", "0000-0002-2441-836X", "ENGELHARDT KATJA", "0000-0002-9916-3015", "EARP JEFFREY", "0000-0001-7075-5992", "HORVATH MILENA ANNA", "0000-0002-5094-2720", "JASUTĖ EGLĖ", "0000-0001-5183-9058", "MALAGOLI CHIARA", "0000-0001-6872-2315", "MASIULIONYTĖ-DAGIENĖ VAIDA", "0000-0002-7755-0428", "STUPURIENĖ GABRIELĖ", "INAMORATO DOS SANTOS ANDREIA", "0000-0002-9348-6139", "CACHIA ROMINA", "0000-0002-9773-6924", "GIANNOUTSOU NIKOLETA", "0000-0002-1085-3854", "PUNIE YVES", "0000-0002-3978-4928" ],
+  "collection.year_range" : 2020,
+  "extra.collection.group" : "Presentations and science dissemination",
+  "document.211504.filename" : "computhink_ii_-_final_report_-_upload_compressed.pdf",
+  "document.211504.main" : "Y",
+  "document.211504.type" : "DOCUMENT",
+  "document.mainCover" : "JRC128347_211504_cover.jpg",
+  "document.id" : [ "211504" ],
+  "bibtex" : "JRC128347",
+  "dc.date.available" : "2022-03-03"
+};
+</script>
+
+
+<script src="/repository/assets/libs/qrcode.js"></script>
+<script defer src="/repository/assets/scripts/shared.js"></script>
+<script defer src="/repository/assets/scripts/handle.js"></script>
+</body>
+</html>

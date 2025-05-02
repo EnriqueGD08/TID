@@ -1,0 +1,2226 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    
+    
+    <title>Computational and Software Techniques in Engineering MSc</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<meta name="VIcurrentDateTime" content="638792763581842697" />
+<script type="text/javascript" src="/layouts/system/VisitorIdentification.js"></script>
+
+
+<!-- Course Metadata -->
+<meta name="funnel" content="course" />
+    <meta name="start-date" content="September" />
+<meta name="entry-month" content="" />
+<meta name="entry-year" content="2025" />
+<meta name="study-type" content="Full-time|Part-time" />
+<meta name="campus" content="Cranfield campus" />
+<meta name="thumbnail" content="https://www.cranfield.ac.uk:443/-/media/images-for-new-website/taught-courses/manufacturing/course-pages/2016-04-istock-standardlicence-cste-grey-teaser-01.ashx" />
+<meta name="level" content="MSc" />
+<meta name="theme" content="Aerospace" />
+<meta name="course-keyword" content="Computational techniques MSc, Digital Signal Processing masters, Digital Image Processing course,  Parallel Programming postgraduate,  Distributed Computing masters,  CAE postgraduate, Computational Engineering Design MSc, Computational Engineering Design course, Engineering computing training, Image processing Software engineering,  CAE Technical computing degree, Cranfield University, Cranfield, Part time courses, Part time degrees" />
+
+<!-- Global Metadata -->
+<meta name="content-id" content="6FEB3FAC-C416-409B-83C1-038D95D8A278" />
+<meta name="title" content="Computational and Software Techniques in Engineering MSc" />
+    <meta name="description" content="Specialise in Digital Engineering Design, Computational Intelligence for Data Analytics, Computer and Machine Vision or Software Engineering" />
+<meta name="gecko_domain_verification" content="21VD00gfqx7n6k000l8bx1n14d" />
+    
+    <!-- Icons -->
+<link rel="apple-touch-icon" sizes="57x57" href="https://www.cranfield.ac.uk/~/media/brand/appleicon57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="https://www.cranfield.ac.uk/~/media/brand/appleicon60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="https://www.cranfield.ac.uk/~/media/brand/appleicon72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="https://www.cranfield.ac.uk/~/media/brand/appleicon76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="https://www.cranfield.ac.uk/~/media/brand/appleicon114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://www.cranfield.ac.uk/~/media/brand/appleicon120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="https://www.cranfield.ac.uk/~/media/brand/appleicon144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://www.cranfield.ac.uk/~/media/brand/appleicon152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="https://www.cranfield.ac.uk/~/media/brand/appleicon180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="https://www.cranfield.ac.uk/~/media/brand/androidicon192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://www.cranfield.ac.uk/~/media/brand/favicon32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="https://www.cranfield.ac.uk/~/media/brand/favicon96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://www.cranfield.ac.uk/~/media/brand/favicon16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="https://www.cranfield.ac.uk/~/media/brand/msicon144x144.png">
+    
+    
+<!-- Cascading Style Sheets -->
+<link href='https://fonts.googleapis.com/css?family=Roboto:500,900,400italic,300,700,300italic,400' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/css/nw2/main.min.css?v=2.55.4.0" media="screen" />
+</head>
+<body class="theme-grape">
+    
+    <svg
+    class="app__sprites"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    
+    <symbol id="alert" viewBox="0 0 24 24">
+        <path d="M18 16v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2zm-5 0h-2v-2h2v2zm0-4h-2V8h2v4zm-1 10c1.1 0 2-.9 2-2h-4c0 1.1.89 2 2 2z" />
+        <path fill="none" d="M0 0h24v24H0V0z" />
+    </symbol>
+    
+    <symbol id="arrow-down" viewBox="0 0 24 24">
+        <path d="M7 10l5 5 5-5z"/>
+        <path d="M0 0h24v24H0z" fill="none" stroke="none" />
+    </symbol>
+    
+    <symbol id="close" viewBox="0 0 24 24">
+        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+        <path d="M0 0h24v24H0z" fill="none" />
+    </symbol>
+
+    <symbol id="download" viewBox="0 0 24 24">
+        <path d="M12 1C5.9 1 1 5.9 1 12s4.9 11 11 11 11-4.9 11-11S18.1 1 12 1zm.1 16.7l-4.8-5h3.1V7.2h3.4v5.5h3.1l-4.8 5z" />
+        <path d="M0 0h24v24H0V0z" fill="none" />
+    </symbol>
+
+    <symbol id="face" viewbox="0 0 24 24">
+        <path fill="none" d="M0 0h24v24H0V0z" />
+        <g>
+            <path d="M10.25 13a1.25 1.25 0 1 1-2.5 0 1.25 1.25 0 0 1 2.5 0zM15 11.75a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5zm7 .25c0 5.52-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2s10 4.48 10 10zM10.66 4.12C12.06 6.44 14.6 8 17.5 8c.46 0 .91-.05 1.34-.12C17.44 5.56 14.9 4 12 4c-.46 0-.91.05-1.34.12zM4.42 9.47a8.046 8.046 0 0 0 3.66-4.44 8.046 8.046 0 0 0-3.66 4.44zM20 12c0-.78-.12-1.53-.33-2.24-.7.15-1.42.24-2.17.24a10 10 0 0 1-7.76-3.69A10.016 10.016 0 0 1 4 11.86c.01.04 0 .09 0 .14 0 4.41 3.59 8 8 8s8-3.59 8-8z" />
+        </g>
+    </symbol>
+    
+    <symbol id="graph" viewbox="0 0 24 24">
+        <path d="M0 0h24v24H0z" fill="none" />
+        <path d="M16.24 7.76A5.974 5.974 0 0 0 12 6v6l-4.24 4.24c2.34 2.34 6.14 2.34 8.49 0a5.99 5.99 0 0 0-.01-8.48zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z" />
+    </symbol>
+
+    <symbol id="language" viewbox="0 0 24 24">
+        <path fill="none" d="M0 0h24v24H0V0z" />
+        <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zm6.93 6h-2.95a15.65 15.65 0 0 0-1.38-3.56A8.03 8.03 0 0 1 18.92 8zM12 4.04c.83 1.2 1.48 2.53 1.91 3.96h-3.82c.43-1.43 1.08-2.76 1.91-3.96zM4.26 14C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2s.06 1.34.14 2H4.26zm.82 2h2.95c.32 1.25.78 2.45 1.38 3.56A7.987 7.987 0 0 1 5.08 16zm2.95-8H5.08a7.987 7.987 0 0 1 4.33-3.56A15.65 15.65 0 0 0 8.03 8zM12 19.96c-.83-1.2-1.48-2.53-1.91-3.96h3.82c-.43 1.43-1.08 2.76-1.91 3.96zM14.34 14H9.66c-.09-.66-.16-1.32-.16-2s.07-1.35.16-2h4.68c.09.65.16 1.32.16 2s-.07 1.34-.16 2zm.25 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56zM16.36 14c.08-.66.14-1.32.14-2s-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2h-3.38z" />
+    </symbol>
+    
+    <symbol id="modal" viewBox="0 0 24 24">
+        <path d="M0 0h24v24H0z" fill="none"/>
+        <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
+    </symbol>
+
+    <symbol id="person" viewbox="0 0 24 24">
+        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+        <path d="M0 0h24v24H0z" fill="none" />
+    </symbol>
+
+    <symbol id="pie-chart" viewbox="0 0 24 24">
+        <path d="M0 0h24v24H0z" fill="none" />
+        <path d="M13 2.05v3.03c3.39.49 6 3.39 6 6.92 0 .9-.18 1.75-.48 2.54l2.6 1.53c.56-1.24.88-2.62.88-4.07 0-5.18-3.95-9.45-9-9.95zM12 19c-3.87 0-7-3.13-7-7 0-3.53 2.61-6.43 6-6.92V2.05c-5.06.5-9 4.76-9 9.95 0 5.52 4.47 10 9.99 10 3.31 0 6.24-1.61 8.06-4.09l-2.6-1.53A6.95 6.95 0 0 1 12 19z" />
+    </symbol>
+    
+    <symbol id="share" viewBox="0 0 24 24">
+        <path d="M0 0h24v24H0z" fill="none" />
+        <path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81 1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9c-1.66 0-3 1.34-3 3s1.34 3 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.16c-.05.21-.08.43-.08.65 0 1.61 1.31 2.92 2.92 2.92 1.61 0 2.92-1.31 2.92-2.92s-1.31-2.92-2.92-2.92z" />
+    </symbol>
+
+    <symbol id="video" viewbox="0 0 122 122">
+        <path d="M61 1C27.835 1 1 27.835 1 61s26.835 60 60 60 60-26.835 60-60S94.165 1 61 1zm-9.543 90.709V31.236l30.236 30.236L51.457 91.71z" stroke="#fff" stroke-width="2" />
+    </symbol>
+
+</svg>
+    
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K26DZV');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe title="Google Tag Manager" src="https://www.googletagmanager.com/ns.html?id=GTM-K26DZV"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<style>
+.page-actions__item.page-actions__item--share {
+    display: none;
+}
+</style>
+
+<!-- Offer Pop Up -->
+<script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+<div class="elfsight-app-1f617cf9-eed7-4be8-9062-1a1e03bf1111" data-elfsight-app-lazy></div>
+<!-- Offer Day Pop Up -->
+
+<script async src="https://rv-vepple-embed.web.app/vepple-embed.umd.js"></script>
+<!-- Open Day Pop Up -->
+<!-- Elfsight Popup | Open Day -->
+<script src="https://static.elfsight.com/platform/platform.js" async></script>
+<div class="elfsight-app-6e66fd94-827c-4094-8926-7b55bd5b6d44" data-elfsight-app-lazy></div>
+<!-- End Open Day Pop Up -->
+    <div class="searchbar">
+    <div class="container">
+        <div class="grid-15">
+            <input class="with-btn" role="search" type="text" id="searchbar-input" area-label="Search Cranfield" placeholder="Search Cranfield">
+                <a id="searchbar-btn" href="#" class="btn btn-input" area-label="Search Site" title="Search Site">
+                    <svg class="sb-searchicon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                    </svg>
+                </a>
+            <input type="hidden" id="searchbar-url" value="https://search.cranfield.ac.uk/s/search.html?profile=_default&amp;f.Tabs%7CAllDocumentsFill=All+Results&amp;collection=cranfield%7Esp-meta&amp;query=">
+        </div>
+    </div>
+</div>
+    <progress class="progress-bar" role="progressbar" aria-label="progressbar">
+    <div class="progress-bar__container">
+        <div class="progress-bar__bar"></div>
+    </div>
+</progress>
+
+    
+    
+    
+<header class="header">
+
+    <a href="#" class="hamburger" id="hamburger">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 612 612"><path d="M0 95.625v38.25h612v-38.25H0zm0 229.5h612v-38.25H0v38.25zm0 191.25h612v-38.25H0v38.25z" /></svg>
+</a>
+
+
+<ul class="nav-mini" id="nav-mini">
+    <li>
+        <a href="/" class="cranfield-text">Cranfield University</a>
+    </li>
+    <li>
+        <a href="#" class="searchicon" title="Open Search Bar" alt="Open Search Bar">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3944.2 4000"><path d="M0 1629.5C0 2528 731 3259 1629.5 3259c401.1 0 768.8-145.8 1053-387l1128 1128 133.8-133.8-1124.8-1124.7c272.5-291.4 439.6-682.5 439.6-1112C3259.1 731 2528.1 0 1629.5 0 731 0 0 731 0 1629.5zm189.2 0c0-794.2 646.1-1440.4 1440.4-1440.4 794.2 0 1440.4 646.1 1440.4 1440.4s-646.1 1440.4-1440.4 1440.4c-794.3 0-1440.4-646.1-1440.4-1440.4z" /></svg>
+        </a>
+    </li>
+</ul>
+
+    
+
+<script>
+    var activeContainer = "";
+</script>
+<ul class="nav" id="nav-main">
+            <li class="main-label">
+                <a href="#" class="primary primary1">
+                    Study<span></span>
+                    <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z" /></svg></span>
+                </a>
+                <div id="os2b">
+                    <div class="dropdown dropdown1 dropdown-theme">
+                        <svg class="bg" xmlns="http://www.w3.org/2000/svg" viewBox="28.8 24.3 2210.2 564.7"><path d="M1554 24.3H268.1C262.5 57.6 233.5 83 198.6 83s-63.8-25.4-69.4-58.7H28.8V589H2239V24.3h-685z" /></svg>
+                        <div class="container">
+
+
+    <div class="grid-15 grid-desktop-3">
+            <h4><a href="/study/taught-degrees/why-cranfield">Taught degrees<span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z" /></svg></span></a></h4>
+                    <ul>
+                    <li><a href="/study/taught-degrees/why-cranfield"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> Why study for an MSc at Cranfield?</a></li>
+                    <li><a href="/study/application-guide"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> Application guide</a></li>
+                    <li><a href="/study/ways-to-meet-us"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> Open Days</a></li>
+                    <li><a href="/courses"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> Find a course</a></li>
+                    <li><a href="https://search.cranfield.ac.uk/s/search.html?f.Tabs%7Ccranfield%7Eds-funding=Funding&amp;profile=_default&amp;query=&amp;collection=cranfield%7Esp-meta"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> Search bursaries</a></li>
+                    <li><a href="/study/taught-degrees/fees-and-funding"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> Fees and funding</a></li>
+                    <li><a href="/about/make-a-payment"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> Make a payment</a></li>
+            </ul>
+    </div>
+
+
+    <div class="grid-15 grid-desktop-3">
+            <h4><a href="/research/research-degrees">Research degrees<span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z" /></svg></span></a></h4>
+                    <ul>
+                    <li><a href="/research/why-cranfield"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> Why study for a research degree at Cranfield?</a></li>
+                    <li><a href="/study/ways-to-meet-us"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> Open Days</a></li>
+                    <li><a href="/research/research-degrees/research-opportunities"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> Research opportunities</a></li>
+                    <li><a href="/research/research-degrees/applying-for-a-research-degree"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> Applying</a></li>
+                    <li><a href="/study/taught-degrees/fees-and-funding"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> Fees and funding</a></li>
+            </ul>
+    </div>
+
+
+    <div class="grid-15 grid-desktop-3">
+            <h4><a href="/about/apprenticeships">Apprenticeships<span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z" /></svg></span></a></h4>
+                    <ul>
+                    <li><a href="/about/apprenticeships/apprenticeship-courses"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> Apprenticeship programmes</a></li>
+                    <li><a href="/about/apprenticeships/employers-introduction"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> Employers</a></li>
+                    <li><a href="/about/apprenticeships/apprentices-introduction"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> Apprentices</a></li>
+                    <li><a href="/mku/mku-apprenticeships"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> MKU Apprenticeships</a></li>
+            </ul>
+    </div>
+
+
+    <div class="grid-15 grid-desktop-3">
+            <h4><a href="/business/develop-your-people/executive-and-professional-development">Professional development<span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z" /></svg></span></a></h4>
+                    <ul>
+                    <li><a href="/business/develop-your-people/executive-and-professional-development"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> Professional and technical development</a></li>
+                    <li><a href="/about/apprenticeships"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> Level 7 Apprenticeships</a></li>
+                    <li><a href="https://www.cranfield.ac.uk/som/open-executive-programmes"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> Open Executive Programmes</a></li>
+                    <li><a href="https://search.cranfield.ac.uk/s/search.html?f.Tabs%7Ccourses=Courses&amp;profile=_default&amp;query=&amp;f.Study+Type%7CcourseStudyType=Short+course&amp;collection=cranfield%7Esp-meta"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> Find a programme</a></li>
+            </ul>
+    </div>
+
+
+    <div class="grid-15 grid-desktop-3">
+            <h4><a href="/study/taught-degrees/why-cranfield">Studying at Cranfield<span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z" /></svg></span></a></h4>
+                    <ul>
+                    <li><a href="/study/application-guide"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> Application guide</a></li>
+                    <li><a href="/international"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> International students</a></li>
+                    <li><a href="/study/life-on-campus/life-at-cranfield"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> Life at Cranfield</a></li>
+                    <li><a href="/study/life-on-campus/life-at-shrivenham"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> Life at Shrivenham</a></li>
+                    <li><a href="/study/careers-service"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> Careers and Employability Service</a></li>
+                    <li><a href="/study/it-services"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> IT services</a></li>
+                    <li><a href="/study/library"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> Libraries</a></li>
+                    <li><a href="/study/taught-degrees/prospectus"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> View our prospectus</a></li>
+            </ul>
+    </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="main-label">
+                <a href="#" class="primary primary2">
+                    Business<span></span>
+                    <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z" /></svg></span>
+                </a>
+                <div id="os2c">
+                    <div class="dropdown dropdown2 dropdown-theme">
+                        <svg class="bg" xmlns="http://www.w3.org/2000/svg" viewBox="28.8 24.3 2210.2 564.7"><path d="M1554 24.3H268.1C262.5 57.6 233.5 83 198.6 83s-63.8-25.4-69.4-58.7H28.8V589H2239V24.3h-685z" /></svg>
+                        <div class="container">
+
+
+    <div class="grid-15 grid-desktop-3">
+            <h4><a href="/business/choose-cranfield">Choose Cranfield<span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z" /></svg></span></a></h4>
+                    <ul>
+                    <li><a href="/business/choose-cranfield/who-we-work-with"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> Who we work with</a></li>
+                    <li><a href="/business/entrepreneurship"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> Entrepreneurship</a></li>
+                    <li><a href="/business/choose-cranfield/networking-opportunities"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> Networking opportunities</a></li>
+                    <li><a href="/business/access-our-world-class-facilities"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> Access our facilities</a></li>
+                    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> Business facilities and support services</a></li>
+            </ul>
+    </div>
+
+
+    <div class="grid-15 grid-desktop-3">
+            <h4><a href="/business/develop-your-people">Develop your people<span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z" /></svg></span></a></h4>
+                    <ul>
+                    <li><a href="/business/develop-your-people/executive-and-professional-development"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> Short courses and executive development</a></li>
+                    <li><a href="/som/executive-development/custom-programmes"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> Customised programmes</a></li>
+                    <li><a href="/about/apprenticeships"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> Level 7 Apprenticeships</a></li>
+                    <li><a href="/about/apprenticeships/apprenticeship-courses"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> Apprenticeship programmes</a></li>
+                    <li><a href="/business/develop-your-people/recruit-our-students"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> Recruit our students</a></li>
+            </ul>
+    </div>
+
+
+    <div class="grid-15 grid-desktop-3">
+            <h4><a href="/business/develop-your-technology-and-products">Develop your technology and products<span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z" /></svg></span></a></h4>
+                    <ul>
+                    <li><a href="/business/develop-your-technology-and-products/access-funding"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> Access funding</a></li>
+                    <li><a href="/business/develop-your-technology-and-products/access-funding/knowledge-transfer-partnership-funding"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> Knowledge Transfer Partnerships</a></li>
+                    <li><a href="/business/develop-your-technology-and-products/work-with-our-students"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> Work with our students</a></li>
+                    <li><a href="/business/develop-your-technology-and-products/license-our-technology"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> License our technology</a></li>
+                    <li><a href="/business/access-our-world-class-facilities/business-incubation"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> Business incubation</a></li>
+                    <li><a href="/business/develop-your-technology-and-products/spin-out-and-start-up-companies"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> Cranfield spin-out and start-up companies</a></li>
+            </ul>
+    </div>
+
+
+    <div class="grid-15 grid-desktop-3">
+            <h4><a href="/research/our-research-publications-and-data">Our research publications and data<span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z" /></svg></span></a></h4>
+                    <ul>
+                    <li><a href="/case-studies"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> Case studies</a></li>
+                    <li><a href="/research-projects"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> Research projects</a></li>
+            </ul>
+    </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="main-label">
+                <a href="#" class="primary primary3">
+                    Research<span></span>
+                    <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z" /></svg></span>
+                </a>
+                <div id="os2d">
+                    <div class="dropdown dropdown3 dropdown-theme">
+                        <svg class="bg" xmlns="http://www.w3.org/2000/svg" viewBox="28.8 24.3 2210.2 564.7"><path d="M1554 24.3H268.1C262.5 57.6 233.5 83 198.6 83s-63.8-25.4-69.4-58.7H28.8V589H2239V24.3h-685z" /></svg>
+                        <div class="container">
+
+
+    <div class="grid-15 grid-desktop-3">
+            <h4><a href="/research">Research and innovation<span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z" /></svg></span></a></h4>
+                    <ul>
+                    <li><a href="/campaigns/green-economic-recovery"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> Sustainability at Cranfield</a></li>
+                    <li><a href="/academic-disciplines/hydrogen"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> Hydrogen Gateway</a></li>
+                    <li><a href="/research/why-cranfield/research-excellence-framework"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> Research Excellence Framework</a></li>
+                    <li><a href="/research/access-our-world-class-facilities"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> Access our world-class facilities</a></li>
+                    <li><a href="/research-projects"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> Current research projects</a></li>
+                    <li><a href="/case-studies"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> Case studies</a></li>
+                    <li><a href="/research/cop"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> COP</a></li>
+            </ul>
+    </div>
+
+
+    <div class="grid-15 grid-desktop-3">
+            <h4><a href="/research/research-degrees">Research degrees<span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z" /></svg></span></a></h4>
+                    <ul>
+                    <li><a href="/research/research-degrees/cranfield-doctoral-network"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> Cranfield Doctoral Network</a></li>
+                    <li><a href="/research/research-degrees/research-opportunities"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> Research opportunities</a></li>
+                    <li><a href="/research/research-degrees/applying-for-a-research-degree"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> Applying for a research degree</a></li>
+                    <li><a href="/study/application-guide/entry-requirements"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> Entry requirements</a></li>
+                    <li><a href="/study/taught-degrees/fees-and-funding"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> Fees and funding</a></li>
+            </ul>
+    </div>
+
+
+    <div class="grid-15 grid-desktop-3">
+            <h4><a href="/research/engage-with-us">Engage with us<span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z" /></svg></span></a></h4>
+                    <ul>
+                    <li><a href="/research/engage-with-us/industry-collaboration"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> Industry collaboration</a></li>
+                    <li><a href="https://search.cranfield.ac.uk/s/search.html?f.Tabs%7Ccranfield%7Eds-people=People&amp;profile=_default&amp;query=&amp;collection=cranfield%7Esp-meta"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> Find an expert</a></li>
+                    <li><a href="/business/develop-your-people/recruit-our-students"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> Recruit our students</a></li>
+                    <li><a href="/research/rio"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> Research and Innovation Office</a></li>
+                    <li><a href="/research/our-research-publications-and-data"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> Open research</a></li>
+                    <li><a href="/research/engage-with-us/fellowships"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> Fellowships</a></li>
+            </ul>
+    </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="main-label">
+                <a href="#" class="primary primary4">
+                    Explore<span></span>
+                    <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z" /></svg></span>
+                </a>
+                <div id="os2e">
+                    <div class="dropdown dropdown4 dropdown4new">
+                        <svg class="bg" xmlns="http://www.w3.org/2000/svg" viewBox="28.8 24.3 2210.2 564.7"><path d="M1554 24.3H268.1C262.5 57.6 233.5 83 198.6 83s-63.8-25.4-69.4-58.7H28.8V589H2239V24.3h-685z" /></svg>
+                        <div class="container">
+
+    <div class="grid-15 grid-desktop-2"></div>
+    <div class="grid-15 grid-desktop-13">
+        <p class="intro"></p>
+    </div>
+    <div class="grid-15 grid-desktop-2"></div>
+            <div class="grid-15 grid-desktop-4">
+                <ul class="onecol">
+    <li >
+        <a class="highlight" href="/themes/aerospace">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5">
+                <path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/>
+            </svg>
+            Aerospace
+        </a>
+    </li>
+    <li >
+        <a class="highlight" href="/themes/energy-and-sustainability">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5">
+                <path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/>
+            </svg>
+            Energy and Sustainability
+        </a>
+    </li>
+    <li >
+        <a class="highlight" href="/themes/manufacturing-and-materials">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5">
+                <path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/>
+            </svg>
+            Manufacturing and Materials
+        </a>
+    </li>
+    <li >
+        <a class="highlight" href="/themes/transport-systems">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5">
+                <path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/>
+            </svg>
+            Transport Systems
+        </a>
+    </li>
+                </ul>
+            </div>
+            <div class="grid-15 grid-desktop-4">
+                <ul class="onecol">
+    <li >
+        <a class="highlight" href="/themes/defence-and-security">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5">
+                <path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/>
+            </svg>
+            Defence and Security
+        </a>
+    </li>
+    <li >
+        <a class="highlight" href="/themes/environment-and-agrifood">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5">
+                <path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/>
+            </svg>
+            Environment and Agrifood
+        </a>
+    </li>
+    <li >
+        <a class="highlight" href="/som">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5">
+                <path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/>
+            </svg>
+            Cranfield School of Management
+        </a>
+    </li>
+    <li >
+        <a class="highlight" href="/themes/water">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5">
+                <path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/>
+            </svg>
+            Water
+        </a>
+    </li>
+                </ul>
+            </div>
+            <div class="grid-15 grid-desktop-4">
+                <ul class="onecol">
+    <li >
+        <a class="" href="/centres">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5">
+                <path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/>
+            </svg>
+            Centres and institutes
+        </a>
+    </li>
+    <li >
+        <a class="" href="http://virtualtour.cranfield.ac.uk/">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5">
+                <path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/>
+            </svg>
+            Virtual Experience
+        </a>
+    </li>
+                </ul>
+            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="main-label">
+                <a href="#" class="primary primary5">
+                    International<span></span>
+                    <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z" /></svg></span>
+                </a>
+                <div id="os2f">
+                    <div class="dropdown dropdown5 dropdown-theme">
+                        <svg class="bg" xmlns="http://www.w3.org/2000/svg" viewBox="28.8 24.3 2210.2 564.7"><path d="M1554 24.3H268.1C262.5 57.6 233.5 83 198.6 83s-63.8-25.4-69.4-58.7H28.8V589H2239V24.3h-685z" /></svg>
+                        <div class="container">
+
+
+    <div class="grid-15 grid-desktop-3">
+            <h4><a href="/international">International activity and reach<span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z" /></svg></span></a></h4>
+                    <ul>
+                    <li><a href="/international/international-partnerships"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> Partnerships</a></li>
+                    <li><a href="/international/european-partnership-programme"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> European Partnership Programme</a></li>
+                    <li><a href="/research/why-cranfield/global-impact"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> Global impact</a></li>
+            </ul>
+    </div>
+
+
+    <div class="grid-15 grid-desktop-3">
+            <h4><a href="/international">International students<span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z" /></svg></span></a></h4>
+                    <ul>
+                    <li><a href="/international/a-to-z-of-countries"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> Information for your region</a></li>
+                    <li><a href="/international/visas-and-immigration"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> Visas and immigration</a></li>
+                    <li><a href="/study/life-on-campus"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> Life on campus</a></li>
+                    <li><a href="/study/application-guide/entry-requirements/pre-sessional-english-course"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> Pre-sessional English for Academic Purposes</a></li>
+            </ul>
+    </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="main-label">
+                <a href="#" class="primary primary6">
+                    About<span></span>
+                    <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z" /></svg></span>
+                </a>
+                <div id="os2g">
+                    <div class="dropdown dropdown6 dropdown-theme">
+                        <svg class="bg" xmlns="http://www.w3.org/2000/svg" viewBox="28.8 24.3 2210.2 564.7"><path d="M1554 24.3H268.1C262.5 57.6 233.5 83 198.6 83s-63.8-25.4-69.4-58.7H28.8V589H2239V24.3h-685z" /></svg>
+                        <div class="container">
+
+
+    <div class="grid-15 grid-desktop-3">
+            <h4><a href="/about">About us<span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z" /></svg></span></a></h4>
+                    <ul>
+                    <li><a href="/about/rankings-and-awards"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> Rankings and awards</a></li>
+                    <li><a href="/community-and-public-engagement"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> Community and public engagement</a></li>
+                    <li><a href="/about/history-and-heritage"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> History and heritage</a></li>
+            </ul>
+    </div>
+
+
+    <div class="grid-15 grid-desktop-3">
+            <h4><a href="/governance-and-policies">Governance and policies<span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z" /></svg></span></a></h4>
+                    <ul>
+                    <li><a href="/about/university-management"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> University management</a></li>
+                    <li><a href="/governance-and-policies/council-and-senate"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> Council and Senate</a></li>
+                    <li><a href="/governance-and-policies/corporate-responsibility"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> Corporate responsibility</a></li>
+                    <li><a href="/our-sustainable-university"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg> Environmental credentials</a></li>
+            </ul>
+    </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </li>
+</ul>
+
+
+
+    <div class="container">
+
+        <div class="grid-15" id="nav-3rd-container">
+
+            <div id="object-slow">
+                <a href="/" class="logo" title="Return to Cranfield University Home"></a>
+            </div>
+
+                <ul class="nav-3rd" id="nav-3rd">
+
+            <li>
+<a href="https://www.cranfield.ac.uk/prospectus" class="internal" >                    <span>Prospectus</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z" /></svg>
+</a>            </li>
+            <li>
+<a href="/campaigns/redirect-to-events" class="internal" >                    <span>Events</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z" /></svg>
+</a>            </li>
+            <li>
+<a href="/press/newsroom" class="internal" >                    <span>News</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z" /></svg>
+</a>            </li>
+            <li>
+<a href="/alumni" class="internal" >                    <span>Alumni</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z" /></svg>
+</a>            </li>
+            <li>
+<a href="/study/it-services/staff-and-student-resources" class="internal" >                    <span>Staff and students</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z" /></svg>
+</a>            </li>
+            <li>
+<a href="/about/working-at-cranfield" class="internal" >                    <span>Work at Cranfield</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z" /></svg>
+</a>            </li>
+
+
+            <li>
+<a href="/som" class="external" target="_self" >                    <span>School of Management</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M14 16V5l-1 1v9H1V3h9l1-1H0v14z" /><path d="M16 0h-5l1.8 1.8L6 8.6 7.4 10l6.8-6.8L16 5z" /></svg>
+</a>            </li>
+        <li>
+            <a class="searchicon" href="#" title="Open Search Bar" alt="Open Search Bar">
+                <svg viewBox="0 0 3944.2 4000" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 1629.5C0 2528 731 3259 1629.5 3259c401.1 0 768.8-145.8 1053-387l1128 1128 133.8-133.8-1124.8-1124.7c272.5-291.4 439.6-682.5 439.6-1112C3259.1 731 2528.1 0 1629.5 0 731 0 0 731 0 1629.5zm189.2 0c0-794.2 646.1-1440.4 1440.4-1440.4 794.2 0 1440.4 646.1 1440.4 1440.4s-646.1 1440.4-1440.4 1440.4c-794.3 0-1440.4-646.1-1440.4-1440.4z"/>
+                </svg>
+            </a>
+        </li>
+
+    </ul>
+
+
+
+        </div>
+    </div>
+
+</header>
+
+    <main>
+        
+<div id="0" class="hero" style="background: url(&#39;/-/media/images-for-new-website/taught-courses/manufacturing/course-pages/2016-04-istock-standardlicence-cste-grey-hero-01.ashx&#39;) no-repeat center center; background-size:cover;">
+
+    
+        <div class="banner-copyright">
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 32 40" x="0px" y="0px"><title>Appliances</title><path d="M30.5,8H26.81l-2-4H17.19l-2,4H8V6H3V8H1.5A1.5,1.5,0,0,0,0,9.5v17A1.5,1.5,0,0,0,1.5,28h29A1.5,1.5,0,0,0,32,26.5V9.5A1.5,1.5,0,0,0,30.5,8ZM4,7H7V8H4V7ZM31,26.5a0.5,0.5,0,0,1-.5.5H1.5A0.5,0.5,0,0,1,1,26.5V9.5A0.5,0.5,0,0,1,1.5,9H15.81l2-4h6.38l2,4H30.5a0.5,0.5,0,0,1,.5.5v17Z"></path><rect x="7" y="10" width="1" height="16"></rect><path d="M21,10a8,8,0,1,0,8,8A8,8,0,0,0,21,10Zm0,15a7,7,0,1,1,7-7A7,7,0,0,1,21,25Z"></path><path d="M21,13a5,5,0,1,0,5,5A5,5,0,0,0,21,13Zm0,9a4,4,0,1,1,4-4A4,4,0,0,1,21,22Z"></path><circle cx="13" cy="11" r="1"></circle></svg>
+                <span>Photo credit: scanrail/123RF</span>
+            </a>
+        </div>
+        <!-- /copyright -->
+
+
+    <div class="darktint"></div>
+
+    <div id="os2">
+            <div class="angleleft">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="820" height="820" viewBox="-1485 1488.2 813.3 812"><linearGradient id="green" gradientUnits="userSpaceOnUse" x1="-1078.364" y1="1488.2" x2="-1078.364" y2="2300.2"><stop offset="0" stop-color="transparent" /><stop offset="1" stop-color="transparent" /></linearGradient><path fill="url(#green)" d="M-671.7 2300.2l-550.9-550.8c-14.6 12.4-33.6 19.9-54.3 19.9-46.4 0-84-37.6-84-84 0-20.7 7.5-39.7 19.9-54.3l-142.7-142.8-1.3 1.3v810.7h813.3z" /></svg>
+            </div>
+    </div>
+
+    <div class="hero-textarea">
+        
+    <div class="container">
+        <div class="grid-15 grid-desktop-9">
+            <div class="fade">
+                <ul class="breadcrumb ">
+             <li><a href="/">Home</a></li>
+             <li><a href="/courses">Our courses</a></li>
+</ul>
+                <h1>Computational and Software Techniques in Engineering MSc</h1>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <div class="secondary-nav">
+        
+        
+<div class="page-actions">
+    <div class="page-actions__container">
+        
+        <div class="page-actions__item page-actions__item--share">
+            <div class="page-actions__item-toggle js-share-toggle">
+                <div class="page-actions__item-label">Share</div>
+                <svg class="page-actions__item-icon" width="24" height="24">
+                    <use xlink:href="#share"></use>
+                </svg>
+                <div class="page-actions__item-actions">
+                    <div class="add-this-sharing">
+                        <div class="addthis_sharing_toolbox addthis_inline_share_toolbox"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="page-actions__item page-actions__item--print">
+            <a class="page-actions__item-toggle" href="/-/media/files/course-page-pdfs/aerospace/computational-and-software-techniques-in-engineering.ashx">
+                <div class="page-actions__item-label">Printable PDF</div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="page-actions__item-icon" width="24" height="24">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#download"/>
+                </svg>
+            </a>
+        </div>
+
+    </div>
+</div>
+    </div>
+
+</div>
+        <div class="main-body course-template">
+            
+<nav class="page-nav">
+    <div class="page-nav__container">
+        <div class="page-nav__toggle">
+            <div class="page-nav__toggle-label">On this page</div>
+            <svg class="page-nav__toggle-icon" width="24" height="24">
+                <use xlink:href="#arrow-down"></use>
+            </svg>
+        </div>
+        <div class="page-nav__menu">
+            <div class="page-nav__primary">
+                    <a class="page-nav-item js-slowscroll" href="#Overview">
+                        <div class="page-nav-item__title">Overview</div>
+                    </a>
+                    <a class="page-nav-item js-slowscroll" href="#Coursedetails">
+                        <div class="page-nav-item__title">Course details</div>
+                    </a>
+                    <a class="page-nav-item js-slowscroll" href="#Yourcareer">
+                        <div class="page-nav-item__title">Your career</div>
+                    </a>
+
+<a href="#Howtoapply" class="btn btn-bright" >How to apply</a>                
+            </div>
+            <div class="page-nav__secondary">
+                    <a class="page-nav-item js-slowscroll js-modal" data-micromodal-trigger="fees-modal" href="#">
+                        <div class="page-nav-item__title">Fees and funding</div>
+                        <svg class="page-nav-item__icon" width="24" height="24">
+                            <use xlink:href="#modal"></use>
+                        </svg>
+                    </a>
+                    <a class="page-nav-item js-slowscroll js-modal" data-micromodal-trigger="entry-modal" href="#">
+                        <div class="page-nav-item__title">Entry requirements</div>
+                        <svg class="page-nav-item__icon" width="24" height="24">
+                            <use xlink:href="#modal"></use>
+                        </svg>
+                    </a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="grid-15 grid-desktop-10">
+        <div class="main-content">
+            
+
+
+        <div id="Overview" class="tc tc1">
+            <div class="intro">
+Engineering software development is one of the key areas in the European information technology sector. It is a fast moving subject of crucial importance to industry and forms the basis for a wide and ever growing variety of applications.</p>
+This course with its blend of skills-based and subject-specific material, has the fundamental objective of equipping you with the generic hands-on skills and up-to-date knowledge adaptable to the wide variety of applications that this field addresses.</p>
+<strong>Choose from four specialist options:</strong></p>
+<ul>
+    <li><a href="/courses/taught/computational-intelligence-for-data-analytics">Computational Intelligence for Data Analytics</a></li>
+    <li><a href="/courses/taught/computer-and-machine-vision">Computer and Machine Vision</a></li>
+    <li><a href="/courses/taught/digital-engineering-design">Digital Engineering Design</a></li>
+    <li><a href="/courses/taught/software-engineering-for-technical-computing">Software Engineering for Technical Computing</a></li>
+</ul>
+<br />            </div>
+        </div>
+
+ <div class="content__element">
+        <h2>Overview</h2>
+
+        <ul class="snapshot ">
+                <li><span>Start date</span>September</li>
+                            <li><span>Duration</span>One year full-time, two-three years part-time</li>
+                            <li><span>Delivery</span>Taught modules 40%, group project 20%, individual research project 40%</li>
+                            <li><span>Qualification</span>MSc</li>
+                            <li><span>Study type</span>Full-time / Part-time</li>
+                            <li><span>Campus</span>Cranfield campus</li>
+        </ul>
+        
+     <div class="btn-2019__pair">
+    <button id="FeesFunding" class="btn-2019 btn-2019--icon btn-2019--secondary js-modal" data-micromodal-trigger="fees-modal">
+        <span class="btn-2019__container">
+            <div class="btn-2019__label">
+                Fees and funding
+            </div>
+            <svg class="btn-2019__icon" width="24" height="24">
+                <use xlink:href="#modal"></use>
+            </svg>
+        </span>
+    </button>
+    <button id="Entryrequirements" class="btn-2019 btn-2019--icon btn-2019--secondary js-modal" data-micromodal-trigger="entry-modal">
+        <span class="btn-2019__container">
+            <div class="btn-2019__label">
+                Entry requirements
+            </div>
+            <svg class="btn-2019__icon" width="24" height="24">
+                <use xlink:href="#modal"></use>
+            </svg>
+        </span>
+    </button>
+</div>
+
+    </div>
+
+
+
+        <div id="" class="tc tc2 sc-richtext-container">
+                <h2>Who is it for?</h2>
+            
+            <div class="who-for"><p>If you intend to make a career in software development, whether it is in the data centre, on the desktop or in the rapidly expanding mobile application space, you need to have a strong basis in software engineering. The MSc in Computational and Software Techniques in Engineering is unique in that it combines software engineering with high performance computing, giving you the tools and techniques that employers are looking for and an advantage in the job market.</p></div>
+        </div>
+
+
+     <div class="video-browser">
+         <div class="video-browser__container">
+
+                 <div class="video-browser__header">
+                     <h2 class="video-browser__heading">Videos</h2>
+                 </div>
+
+             <div class="video-browser__content">
+
+                     <div class="video-browser__item">
+                         <a href="#videomodal_ec9ac64f-10ef-4c77-926d-889d90d9f488" rel="modal:open">
+                             <figure class="iframe iframe--video">
+                                 <button class="iframe__button js-modal">
+                                     <div class="iframe__placeholder" style="background: url('/-/media/images-for-new-website/short-courses/oep/videoimagecovers/cste-group-project-video-preview.ashx') no-repeat; background-size: 100%;">
+                                         <svg class="iframe__icon" width="122" height="122">
+                                             <use xlink:href="#video"></use>
+                                         </svg>
+                                     </div>
+                                         <figcaption class="iframe__external-caption">Group Project Experience</figcaption>
+                                 </button>
+                             </figure>
+                         </a>
+                     </div>
+
+<div id="videomodal_ec9ac64f-10ef-4c77-926d-889d90d9f488" class="modal-window modal-2019--video" style="display: none">
+    <div class="modal-2019__container">
+        <iframe style="display: block; margin: 0" class="iframe__item" src="https://www.youtube.com/embed/OOYV1llQUik" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <a href="#" class="modal-2019__close modal-2019__close--overlay" rel="modal:close">
+            <svg class="modal-2019__close-icon" width="33" height="33">
+                <use xlink:href="#close"></use>
+            </svg>
+        </a>
+    </div>
+</div>
+
+                     <div class="video-browser__item">
+                         <a href="#videomodal_744be4d4-7b0f-4873-88a7-25c0b4a28139" rel="modal:open">
+                             <figure class="iframe iframe--video">
+                                 <button class="iframe__button js-modal">
+                                     <div class="iframe__placeholder" style="background: url('/-/media/images-for-new-website/short-courses/oep/videoimagecovers/why-study-an-cste-video-preview.ashx') no-repeat; background-size: 100%;">
+                                         <svg class="iframe__icon" width="122" height="122">
+                                             <use xlink:href="#video"></use>
+                                         </svg>
+                                     </div>
+                                         <figcaption class="iframe__external-caption">Why study an MSc in Computational and Software Techniques in Engineering?</figcaption>
+                                 </button>
+                             </figure>
+                         </a>
+                     </div>
+
+<div id="videomodal_744be4d4-7b0f-4873-88a7-25c0b4a28139" class="modal-window modal-2019--video" style="display: none">
+    <div class="modal-2019__container">
+        <iframe style="display: block; margin: 0" class="iframe__item" src="https://www.youtube.com/embed/0NtNLaKuDLE" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <a href="#" class="modal-2019__close modal-2019__close--overlay" rel="modal:close">
+            <svg class="modal-2019__close-icon" width="33" height="33">
+                <use xlink:href="#close"></use>
+            </svg>
+        </a>
+    </div>
+</div>
+
+
+             </div>
+
+         </div>
+     </div>
+
+
+
+        <div class="tc sc-richtext-container">
+            <h2>Why this course?</h2>
+            
+            <p>This course produces well-qualified graduates, ready to take on professional roles without additional training on the job. Due to this, our graduates are in high demand with industry leaders visiting Cranfield to showcase their graduate roles.</p>
+<p>In addition to the software/computational topics, we deliver a core module entitled Management for Technology, which focuses on those aspects of management which will enable you to fulfil a wider role in an organisation more effectively.</p>
+<p>We are very well located for visiting part-time students from all over the world, and offer a range of library and support facilities to support your studies. This enables students to complete their qualification whilst balancing work/life commitments. This MSc programme benefits from a wide range of cultural backgrounds which significantly enhances the learning experience for both staff and students.</p>
+
+        </div>
+
+
+
+        <div class="tc sc-richtext-container">
+                <h2>Informed by industry</h2>
+            
+            <p>The course is directed by an Industrial Advisory Panel who meet twice a year to ensure that it provides the right mix of hands-on skills and up-to-date knowledge suitable for to the wide variety of applications that this field addresses.</p>
+<p>A number of members also attend the annual student thesis presentations which take place at the end of July, a month or so before the end of the course. This provides a good opportunity for students to meet key employers.</p>
+<p>The Industry Advisory Panel includes:</p>
+<ul>
+    <li>Black &amp; Veatch Ltd,</li>
+    <li>Stone Rock Advisors,</li>
+    <li>Rolls-Royce,</li>
+    <li>Airbus,</li>
+    <li>Factset,</li>
+    <li>Cambridge Consultants, </li>
+    <li>Industrial Vision,</li>
+    <li>STFC,</li>
+    <li>Excelian,</li>
+    <li>SOLV3 Engineering Ltd,</li>
+    <li>Red Bull Technology,</li>
+    <li>L3 Harris, </li>
+    <li>Autonomous Devices,</li>
+    <li>Immense, </li>
+    <li>The Manufacturing Technology Centre.</li>
+</ul>
+        </div>
+
+<div>
+
+    <h2 class="heading heading--underline type--xl type--bold type--serif">Course details</h2>
+    
+        <div class="shortcuts">
+            <div class="shortcuts__container">
+                <div class="shortcuts__toggle">
+                    <div class="shortcuts__icon">
+                        <div class="burger">
+                            <span class="burger__bun--top"></span>
+                            <span class="burger__patty burger__patty--top"></span>
+                            <span class="burger__patty burger__patty--bottom"></span>
+                            <span class="burger__bun burger__bun--bottom"></span>
+                        </div>
+                    </div>
+                    <div class="shortcuts__label">In this section</div>
+                </div>
+                <div class="shortcuts__menu">
+                        <div class="shortcuts__menu-item">
+                            <a class="link-item js-slowscroll" href="#shortcut__course-overview">Overview</a>
+                        </div>
+                        <div class="shortcuts__menu-item">
+                            <a class="link-item js-slowscroll" href="#shortcut__course-delivery">Delivery</a>
+                        </div>
+                        <div class="shortcuts__menu-item">
+                            <a class="link-item js-slowscroll" href="#shortcut__course-modules">Modules</a>
+                        </div>
+                        <div class="shortcuts__menu-item">
+                            <a class="link-item js-slowscroll" href="#shortcut__course-team">Teaching team</a>
+                        </div>
+                        <div class="shortcuts__menu-item">
+                            <a class="link-item js-slowscroll" href="#shortcut__course-accreditation">Accreditation</a>
+                        </div>
+                </div>
+            </div>
+        </div>
+    
+</div>
+
+
+    <div class="course-details content__element" id="Coursedetails">
+
+        <div class="course-overview" id="shortcut__course-overview">
+            <p><p>You will complete a number of compulsory modules that are common across options, followed by specialist modules from your selected MSc option. In addition to the taught component, you will complete a group project and an individual research project. The course is delivered via a combination of structured lectures, tutorial sessions and computer-based workshops. Please refer to each option for further information.</p></p>
+        </div>
+
+        <div class="course-delivery content__element" id="shortcut__course-delivery">
+
+            <h3 class="heading heading--underline type--l type--regular type--serif">Course delivery</h3>
+
+            <p>Taught modules 40%, group project 20%, individual research project 40%</p>
+
+            <div class="accordion-2019">
+                <div class="accordion-2019__container">
+
+                    <div class="accordion-2019__item">
+                        <div class="accordion-2019__header js-accordion__toggle">
+                            <h2 class="accordion-2019__heading">Group project</h2>
+                            <svg class="accordion-2019__icon" width="42px" height="42px">
+                                <use xlink:href="#arrow-down"></use>
+                            </svg>
+                        </div>
+                        <div class="accordion-2019__content">
+                            <div class="accordion-2019__content-container">
+                                <p>The group design project is intended to provide you with invaluable experience of delivering a project within an industry structured team. The project allows you to develop a range of skills including learning how to establish team member roles and responsibilities, project management, delivering technical presentations and gaining experience of working in teams that include members with a variety of expertise and often with members who are based remotely.</p>
+<p>Part-time students are encouraged to participate in a group project as it provides a wealth of learning opportunities. However, an option of an individual dissertation is available if agreed with the Course Director.</p>
+<p>Group project subject areas include:</p>
+<ul>
+    <li>Applications of computational engineering design,</li>
+    <li>Applications of DSP and computer vision,</li>
+    <li>Applications in computational intelligence,</li>
+    <li>Applications in high-end computing.</li>
+</ul>
+<br>
+                            </div>
+                        </div>
+                    </div>
+
+                        <div class="accordion-2019__item">
+                            <div class="accordion-2019__header js-accordion__toggle">
+                                <h2 class="accordion-2019__heading">Individual project</h2>
+                                <svg class="accordion-2019__icon" width="42px" height="42px">
+                                    <use xlink:href="#arrow-down"></use>
+                                </svg>
+                            </div>
+                            <div class="accordion-2019__content">
+                                <div class="accordion-2019__content-container">
+                                    <p>The individual research project allows you to delve deeper into an area of specific interest. It is very common for industrial partners to put forward real world problems or areas of development as potential research thesis topics. It is common for part-time students to undertake their research thesis in collaboration with their place of work.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                </div>
+            </div> <!-- /accordion -->
+
+        </div>
+
+
+    </div>
+
+
+
+<h4 style="font-weight:400; margin: 0 0 20px;">Modules</h4>
+<p style="font-size:85%">Keeping our courses up-to-date and current requires constant innovation and change. The modules we offer reflect the needs of business and industry and the research interests of our staff and, as a result, may change or be withdrawn due to research developments, legislation changes or for a variety of other reasons. Changes may also be designed to improve the student learning experience or to respond to feedback from students, external examiners, accreditation bodies and industrial advisory panels.</p>
+<p style="font-size:85%">To give you a taster, we have listed the compulsory and elective (where applicable) modules which are currently affiliated with this course. All modules are indicative only, and may be subject to change for your year of entry.</p>
+<br><div class="content__element">
+    <div class="quote js-quote">
+        <div class="quote__container">
+            <div class="quote__content">
+
+                        <div class="quote-item quote-item--current" id="quote-1" data-tab="quote-1">
+                            <div class="quote-item__container">
+                                <div class="quote-item__logo-container">
+                                </div>
+                                <blockquote class="quote-item__quote">
+                                    The reason why I wanted to come to Cranfield is because it's one of the best ranked schools. I really like coding and using computational tools to solve engineering problems. I think the course is really relevant and useful for today's digital era.
+
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div class="quote-item" id="quote-2" data-tab="quote-2">
+                            <div class="quote-item__container">
+                                <div class="quote-item__logo-container">
+                                </div>
+                                <blockquote class="quote-item__quote">
+                                    I applied for this course as I wanted to be more refined in the computer software field. Beyond the course, I can apply what I have learned in the modules, so that I can achieve a sense of accomplishment in my study. In addition, there are many choices in the topic of the thesis which combines interest and professionalism.
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div class="quote-item" id="quote-3" data-tab="quote-3">
+                            <div class="quote-item__container">
+                                <div class="quote-item__logo-container">
+                                </div>
+                                <blockquote class="quote-item__quote">
+                                    While studying civil engineering, I believed that digitalisation is the future of the construction industry and decided to pursue a MSc related to computer and machine vision. This Cranfield course offered me a valuable opportunity to learn the latest artificial intelligence techniques. This well-arranged modules, high-quality course content and industry-oriented research projects helped me develop fast. The timescale was intense but extremely exciting and very fulfilling. The fact that Cranfield is highly ranked guarantees the best education and research.
+                                </blockquote>
+                            </div>
+                        </div>
+
+
+            </div>
+
+
+            <div class="quote__nav">
+
+                        <a class="quote__nav-item quote__nav-item--active" data-tab="quote-1">
+                            <div class="person">
+                                <div class="person__container">
+                                    <div class="person__image-container">
+<img src="/-/media/images-for-new-website/satm-images/ophelie-choupin-promo.ashx?h=400&amp;w=400&amp;la=en&amp;hash=288742E637422E96EC93BDD5451516DB546AEE6E" class="person__image" style="width:100% !important" alt="Ophelie Choupin promo" />                                    </div>
+                                    <div class="person__text-container">
+                                        <h3 class="person__heading heading">Ophélie Choupin</h3>
+                                        <div class="person__meta">Engineer PhD Student, Griffith University</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="quote__nav-item" data-tab="quote-2">
+                            <div class="person">
+                                <div class="person__container">
+                                    <div class="person__image-container">
+<img src="/-/media/people/ting-yu-yang.ashx?h=2005&amp;w=2005&amp;la=en&amp;hash=3815297ADD2CDDEDCC9E47BF00DDF05ACE72086E" class="person__image" style="width:100% !important" alt="Ting Yu Yang" />                                    </div>
+                                    <div class="person__text-container">
+                                        <h3 class="person__heading heading">Ting Yu Yang</h3>
+                                        <div class="person__meta">Analyst, J.P. Morgan, (Computational and Software Techniques in Engineering MSc 2019)</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="quote__nav-item" data-tab="quote-3">
+                            <div class="person">
+                                <div class="person__container">
+                                    <div class="person__image-container">
+<img src="/-/media/images-for-new-website/testimonials/wangzijianheadshot.ashx?h=400&amp;w=400&amp;la=en&amp;hash=3F0CC8FC4C3FF7E8C0B626E3BDDE6D04E7E657E2" class="person__image" style="width:100% !important" alt="" />                                    </div>
+                                    <div class="person__text-container">
+                                        <h3 class="person__heading heading">Zijian Wang</h3>
+                                        <div class="person__meta">Marie Sklodowska-Curie Early-stage Researcher, Technion Israel Institute of Technology,  (Computational and Software Techniques in Engineering MSc 2020)</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="course-team content__element" id="shortcut__course-team">
+
+    <h3 class="heading heading--underline type--l type--regular type--serif">Teaching team</h3>
+
+        <p>Cranfield University is a leader in applied mathematics and computing applications, and you will be taught by leading academic staff. The Course Director for this programme is Dr Stuart Barnes.
+</p>
+
+    <div class="person-list ">
+
+        <div class="person-list__container">
+
+                <div class="person js-slide-in">
+                    <a href="/people/dr-stuart-barnes-33640864" class="person__container">
+                        <div class="person__image-container">
+<img src="/-/media/people/33640864.ashx?h=267&amp;w=267&amp;la=en&amp;hash=5BCC869649A9258A18C9E6DCF4F1E1893A40A497" class="person__image" alt="Stuart Barnes" />                        </div>
+                        <div class="person__text-container">
+                            <h3 class="person__heading heading">Dr Stuart Barnes</h3>
+                            <div class="person__meta">Lecturer in Computational Intelligence and Data Analytics and Course Director for MSc Computational &amp; Software Techniques in Engineering</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="person js-slide-in">
+                    <a href="/people/dr-irene-moulitsas-775115" class="person__container">
+                        <div class="person__image-container">
+<img src="/-/media/people/775115.ashx?h=209&amp;w=209&amp;la=en&amp;hash=5F26BFA0BA1E20A603986D1524D72EFCDB01AD08" class="person__image" alt="Irene Moulitsas" />                        </div>
+                        <div class="person__text-container">
+                            <h3 class="person__heading heading">Dr Irene Moulitsas</h3>
+                            <div class="person__meta">Senior Lecturer in Scientific Computing</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="person js-slide-in">
+                    <a href="/people/professor-karl-jenkins-756215" class="person__container">
+                        <div class="person__image-container">
+<img src="/-/media/people/756215.ashx?h=400&amp;w=400&amp;la=en&amp;hash=9D38D335146240E1A5DAB50D5E822B5C917FD24A" class="person__image" alt="Karl Jenkins" />                        </div>
+                        <div class="person__text-container">
+                            <h3 class="person__heading heading">Professor Karl Jenkins</h3>
+                            <div class="person__meta">Professor of Computational Engineering and Head of Centre for Computational Engineering Sciences</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="person js-slide-in">
+                    <a href="/people/professor-yifan-zhao-1337015" class="person__container">
+                        <div class="person__image-container">
+<img src="/-/media/people/1337015.ashx?h=400&amp;w=400&amp;la=en&amp;hash=9077BFDB891DDF29466658E6B46A57FD9201BA49" class="person__image" alt="Yifan Zhao" />                        </div>
+                        <div class="person__text-container">
+                            <h3 class="person__heading heading">Professor Yifan Zhao</h3>
+                            <div class="person__meta">Professor of Data Science</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="person js-slide-in">
+                    <a href="/people/dr-salvatore-filippone-794215" class="person__container">
+                        <div class="person__image-container">
+<img src="/-/media/people/794215.ashx?h=400&amp;w=400&amp;la=en&amp;hash=B64D34E0C87AA2A904577B8600DCD3BF6951483F" class="person__image" alt="Salvatore Filippone" />                        </div>
+                        <div class="person__text-container">
+                            <h3 class="person__heading heading">Dr Salvatore Filippone</h3>
+                            <div class="person__meta">Lecturer in Software Engineering for Technical Computing</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="person js-slide-in">
+                    <a href="/people/dr-peter-sherar-14226755" class="person__container">
+                        <div class="person__image-container">
+<img src="/-/media/people/14226755.ashx?h=400&amp;w=400&amp;la=en&amp;hash=A85266B0542D98F6D954673791274F79C8631CB3" class="person__image" alt="Peter Sherar" />                        </div>
+                        <div class="person__text-container">
+                            <h3 class="person__heading heading">Dr Peter Sherar</h3>
+                            <div class="person__meta">Leaver returned as consultant</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="person js-slide-in">
+                    <a href="/people/dr-jun-li-28037504" class="person__container">
+                        <div class="person__image-container">
+<img src="/-/media/people/28037504.ashx?h=550&amp;w=487&amp;la=en&amp;hash=31FC9A43C4F21F1184FEFAF00B6FE18FCD2C612D" class="person__image" alt="Jun Li" />                        </div>
+                        <div class="person__text-container">
+                            <h3 class="person__heading heading">Dr Jun Li</h3>
+                            <div class="person__meta">Lecturer in Mathematics and Computer Science</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="person js-slide-in">
+                    <a href="/people/dr-seemal-asif-695915" class="person__container">
+                        <div class="person__image-container">
+<img src="/-/media/people/695915.ashx?h=400&amp;w=400&amp;la=en&amp;hash=6567C4F99E05DC19E38ABC904484A2FCEFF6400A" class="person__image" alt="Seemal Asif" />                        </div>
+                        <div class="person__text-container">
+                            <h3 class="person__heading heading">Dr Seemal Asif</h3>
+                            <div class="person__meta">Senior Lecturer in Artificial Intelligence and Robotics</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="person js-slide-in">
+                    <a href="/people/dr-tomrobin-teschner-481715" class="person__container">
+                        <div class="person__image-container">
+<img src="/-/media/people/481715.ashx?h=400&amp;w=400&amp;la=en&amp;hash=12377AF411554758586B2AC97130949FF207AD84" class="person__image" alt="Tom-Robin Teschner" />                        </div>
+                        <div class="person__text-container">
+                            <h3 class="person__heading heading">Dr Tom-Robin Teschner</h3>
+                            <div class="person__meta">Senior Lecturer in Computational Fluid Dynamics</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="person js-slide-in">
+                    <a href="/people/dr-sandeep-jagtap-28017354" class="person__container">
+                        <div class="person__image-container">
+<img src="/-/media/people/28017354.ashx?h=400&amp;w=400&amp;la=en&amp;hash=5DC9B23AF93EF0BF8E60AD824A932CB03358FE24" class="person__image" alt="Sandeep Jagtap" />                        </div>
+                        <div class="person__text-container">
+                            <h3 class="person__heading heading">Dr Sandeep Jagtap</h3>
+                            <div class="person__meta">Lecturer in Smart and Green Manufacturing</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="person js-slide-in">
+                    <a href="/som/people/dr-richard-adams-18366524" class="person__container">
+                        <div class="person__image-container">
+<img src="/-/media/people/18366524.ashx?h=400&amp;w=400&amp;la=en&amp;hash=3050085C52385DDD16643F74D425A48D990F49E0" class="person__image" alt="Richard Adams" />                        </div>
+                        <div class="person__text-container">
+                            <h3 class="person__heading heading">Dr Richard Adams</h3>
+                            <div class="person__meta">Reader in Entrepreneurship</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="person js-slide-in">
+                    <a href="/people/dr-barmak-honarvar-shakibaei-asli-21633122" class="person__container">
+                        <div class="person__image-container">
+<img src="/-/media/people/21633122.ashx?h=400&amp;w=400&amp;la=en&amp;hash=28A857F980E644DC89490FB9BC81B2CFA533795F" class="person__image" alt="Barmak Honarvar Shakibaei Asli" />                        </div>
+                        <div class="person__text-container">
+                            <h3 class="person__heading heading">Dr Barmak Honarvar Shakibaei Asli</h3>
+                            <div class="person__meta">Lecturer (Assistant Professor) in Digital Signal and Image Processing</div>
+                        </div>
+                    </a>
+                </div>
+
+        </div>
+
+    </div>
+
+</div>
+        <div class="accreditation content__element sc-richtext-container" id="shortcut__course-accreditation">
+            <h3 class="heading heading--underline type--l type--regular type--serif">Accreditation</h3>
+            <p>The Computational and Software techniques in Engineering MSc is accredited by the Institute of Engineering and Technology (IET) and BCS, The Chartered Institute for IT, on behalf of the Engineering Council as meeting the requirements for further learning for registration as a Chartered Engineer (CEng). Candidates must hold a CEng accredited BEng/BSc (Hons) undergraduate first degree to show that they have satisfied the educational base for CEng registration.</p>
+<p><em>At present, the recently introduced CIDA option is not accredited with the IET but has been nominated for accreditation later in 2025.</em></p>
+        </div>
+
+
+
+        <div id="Yourcareer" class="tc tc2 sc-richtext-container">
+                <h2>Your career</h2>
+            
+            <p>The MSc in Computational and Software Techniques in Engineering is designed to equip you with the skills required to pursue a successful career working in the UK and overseas. This course attracts enquiries from companies in the rapidly expanding engineering IT industry sector across the world who wish to recruit high-quality graduates.</p>
+<p>This course is meeting the industry demand for personnel with expertise in engineering software development and for those who have strong technical programming skills in industry standard languages and tools.</p>
+<p>Some of our graduates go on to undertake PhD degrees. Project topics are most often supplied by individual companies on in-company problems with a view to employment after graduation &ndash; an approach that is being actively encouraged by a growing number of industries.</p>
+<p>In recent years, our graduates have been employed in the following positions:</p>
+<table>
+    <tbody>
+        <tr>
+            <td>Analyst, Morgan Stanley,</td>
+            <td>Asset Management Engineering, EON UK,</td>
+        </tr>
+        <tr>
+            <td>Computer Science Engineer, Sopra Group,</td>
+            <td>Design Manager, Hindustan Aeronautics Ltd,</td>
+        </tr>
+        <tr>
+            <td>Design Manager, Hindustan Aeronautics Ltd,</td>
+            <td>Financial Software Developer, Bloomberg,</td>
+        </tr>
+        <tr>
+            <td>IT Architecture Consultant, Solucom,</td>
+            <td>Mathematical Software Engineer, Arithmetica Ltd,</td>
+        </tr>
+        <tr>
+            <td>PLM Consultant, PCO Innovation,</td>
+            <td>Research Engineer, CASSIDIAN,</td>
+        </tr>
+        <tr>
+            <td>Research Engineer, CASSIDIAN,</td>
+            <td>Research Engineer, Moodstocks SAS,</td>
+        </tr>
+        <tr>
+            <td>Software Developer, CAE Engineering,</td>
+            <td>Software Developer, Mandara Capital,</td>
+        </tr>
+        <tr>
+            <td>Software Developer, Ocado,</td>
+            <td>Software Engineer, Commerzbank,</td>
+        </tr>
+        <tr>
+            <td>Software Engineer, IBM,</td>
+            <td>Software Engineer, Oracle,</td>
+        </tr>
+        <tr>
+            <td>Software Engineer, Techtalk,</td>
+            <td>Trainee Engineer, Arcelor Mittal.</td>
+        </tr>
+    </tbody>
+</table>
+<p>&nbsp;</p>
+<p><a href="/study/careers-service">Cranfield&rsquo;s Career Service</a> is dedicated to helping you meet your career aspirations. You will have access to career coaching and advice, CV development, interview practice, access to hundreds of available jobs via our Symplicity platform and opportunities to meet recruiting employers at our careers fairs. Our strong reputation and links with potential employers provide you with outstanding opportunities to secure interesting jobs and develop successful careers. Support continues after graduation and as a Cranfield alumnus, you have free life-long access to a range of career resources to help you continue your education and enhance your career.</p>
+        </div>
+
+
+
+    <div id="Howtoapply" class="tc sc-richtext-container">
+
+        <div class="inline-cta">
+
+
+                    <div class="inline-cta__container">
+
+                        <div class="inline-cta__header">
+                            <h2 class="inline-cta__heading heading type--serif type--xl type--bold">How to apply</h2>
+                        </div>
+                        <div class="inline-cta__content">
+
+                            <p class="inline-cta__text">
+                                <p>Click on the &lsquo;Apply now&rsquo; button below to start your online application.</p>
+<p>See our <a href="/study/application-guide">Application guide</a>&nbsp;for information on our application process and entry requirements.</p>
+                            </p>
+
+                            <div class="inline-cta__actions">
+                                
+
+        <a href="https://eve.cranfield.ac.uk/prospectuslinks/course/?title=Computational%20and%20Software%20Techniques%20in%20Engineering" class="btn btn-bright">Apply now</a>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+        </div>
+
+    </div>
+
+        </div>
+    </div>
+    <div class="grid-15 grid-desktop-5 module">
+        
+    <div id="" class="module">
+        <div class="listing-simple">
+            <h3>
+                Get in touch
+            </h3>
+
+            <a href="/forms/enquiry-form" class="btn">Submit an enquiry</a>
+<p> </p>
+
+
+                <ul>
+                        <li class="small-text">
+                            Admissions
+                        </li>
+                                            <li>
+                            <a href="tel:+44 (0)1234 758082">
+                                T: +44 (0)1234 758082
+                            </a>
+                        </li>
+                                    </ul>
+        </div>
+        
+    </div>
+
+<div class="module">
+    <div class="download">
+        <div class="download__container">
+            <div class="download__header">
+                <h2 class="download__heading heading type--m type--bold type--serif">Computational engineering sciences courses brochure</h2>
+            </div>
+            <div class="download__content">
+                <div class="download__description type--s type--serif">
+                    A detailed insight into our Computational engineering sciences MSc courses
+                </div>
+                <div class="download__action">
+                
+<a href="/forms/brochure-download-satm-computational-and-software-techniques-in-engineering-form" class="btn-2019 btn-2019--icon btn-2019--primary" >                        <span class="btn-2019__container">
+                            <div class="btn-2019__label">
+                                Download brochure*
+                            </div>
+                            <svg class="btn-2019__icon" width="24" height="24">
+                                <use xlink:href="#download" />
+                            </svg>
+                        </span>
+</a>                    <div class="download__footnote type--xxs type--sans">* Some information required</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="module-related-content">
+        <a href="/events/open-day" class="teaser teaser2" target="">
+<img src="/-/media/images-for-new-website/events/opendaypromo.ashx?bc=white&amp;iar=true&amp;w=400&amp;h=400&amp;la=en&amp;hash=C97EA2D7630657B94F5823BCE82144866D192DF6" alt="" />            <div class="teaser-textarea">
+                <span class="label">Event</span>
+                <span class="heading">Cranfield Open Day </span>
+                <span class="desc">Speak with our current students and staff and find out more about studying at Cranfield</span>
+            </div>
+        </a>
+    </div>
+
+    <div class="module-related-content">
+        <a href="/courses/taught/computational-and-software-techniques-in-engineering" class="teaser teaser2" target="">
+<img src="/-/media/images-for-new-website/taught-courses/manufacturing/course-pages/2016-04-istock-standardlicence-cste-grey-teaser-01.ashx?bc=white&amp;iar=true&amp;w=400&amp;h=400&amp;la=en&amp;hash=0B7E410B4AE29BCAD99338B9C0734EE7960CD811" alt="2016 04 iStock StandardLicence CSTE Grey Teaser 01" />            <div class="teaser-textarea">
+                <span class="label">Course</span>
+                <span class="heading">Computational and Software Techniques in Engineering MSc </span>
+                <span class="desc">Specialise in Digital Engineering Design, Computational Intelligence for Data Analytics, Computer and Machine Vision or Software Engineering</span>
+            </div>
+        </a>
+    </div>
+
+    <div class="module international-teaser">
+        <div class="content">
+            <h2>QS rankings </h2>
+            <p>Cranfield University has been ranked amongst the world’s top universities in the latest QS World University Rankings by Subject.</p>
+<p><a href="/about/rankings-and-awards"><span style="color: #384a50;">In Engineering – Mechanical, Aeronautical and Manufacturing, Cranfield has been ranked 27th in the world and attaining top scores in Employer and Academic Reputation.</span></a></p>
+<p><img alt="" src="/-/media/images-for-new-website/logos/qs-ranking-2024-eng-mech-aero.ashx?h=250&amp;w=250&amp;la=en&amp;hash=45135FCC19CD541ED5CD04D32C95C0FB755A1EDF" style="height: 250px; width: 250px;" /></p>
+            
+        </div>
+    </div>
+
+
+
+        <div class="module">
+            <div class="listing-simple">
+                    <h3><span>Related</span> courses</h3>
+                <ul>
+                            <li>
+                                <a href="/courses/taught/computer-and-machine-vision">
+                                    <span>Computer and Machine Vision option in Computational and Software Techniques in Engineering MSc</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z" /></svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/courses/taught/digital-engineering-design">
+                                    <span>Digital Engineering Design option in Computational and Software Techniques in Engineering MSc</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z" /></svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/courses/taught/software-engineering-for-technical-computing">
+                                    <span>Software Engineering for Technical Computing option in Computational and Software Techniques in Engineering MSc</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z" /></svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/courses/taught/computational-intelligence-for-data-analytics">
+                                    <span>Computational Intelligence for Data Analytics option in Computational and Software Techniques in Engineering MSc</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z" /></svg>
+                                </a>
+                            </li>
+                </ul>
+            </div>
+            
+            
+        </div>
+
+
+     <div class="module-related-content">
+         <a href="/themes/aerospace/courses" class="teaser-white" target="">
+             <img src="/-/media/images-for-new-website/satm-images/nflc-saab-340b-promo.ashx?h=400&amp;w=400&amp;la=en&amp;hash=F1C8D327119426A1AD1D8833BFD87EDAC795EC96" alt=" " />
+             <div class="textarea">
+                 <span class="label"></span>
+                 <h3 class="heading">Aerospace postgraduate courses</h3>
+                 <span class="desc">Discover more about studying Aerospace</span>
+             </div>
+         </a>
+     </div>
+
+
+     <div class="module-related-content">
+         <a href="/study/life-on-campus/life-at-cranfield" class="teaser-white" target="">
+             <img src="/-/media/images-for-new-website/about/campus-aerial-view-promo.ashx?h=400&amp;w=400&amp;la=en&amp;hash=7923AC1B594649415213FDBD5478CBC171E2C786" alt="" />
+             <div class="textarea">
+                 <span class="label"></span>
+                 <h3 class="heading">Life at Cranfield</h3>
+                 <span class="desc">Cranfield University offers a peaceful location in the English countryside</span>
+             </div>
+         </a>
+     </div>
+
+
+     <div class="module-related-content">
+         <a href="/study/careers-service" class="teaser-white" target="">
+             <img src="/-/media/images-for-new-website/media-centre/media-relations/corporate/graduation-2016/201605photoshopthrowinghatsgreenteaser05.ashx?h=400&amp;w=400&amp;la=en&amp;hash=75550008636C4E67D142F27A74F09AB8E5F74915" alt="Graduation 2016" />
+             <div class="textarea">
+                 <span class="label"></span>
+                 <h3 class="heading">Careers and Employability Service</h3>
+                 <span class="desc">The Careers and Employability Service at Cranfield has a global reputation for delivering excellence</span>
+             </div>
+         </a>
+     </div>
+
+<style>
+
+.blog-post-snippet { border-bottom: 2px #0099C4 solid; margin-bottom: 20px; }
+.imgandtitle { position: relative; height: 250px; background-image: url('https://blogs.cranfield.ac.uk/wp-content/uploads/2020/10/Yashwant-CSTE-Cranfield-2.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center; relative; }
+.imgandtitle h2 { position: absolute; bottom: 0px; padding-bottom: 20px; padding-left: 20px; padding-right: 20px; margin: 0 auto; text-align: left; color: white; font-weight: normal; font-size: 24px;}
+.imgandtitle:before { content: ""; position: absolute; height: 100%; width: 100%; background: rgba(39 55 111 / 0.8);}
+.imgandtitle h2:after { display: none; }
+.snippetandinfo { background-color: rgba(244,244,244,.5); }
+.blogname { padding: 10px 0px 0px 0px; color: #0080a9; font-weight: 500; font-size: 16px; margin: 0px; margin-left: 20px; margin-right: 20px; }
+.blogauthor { padding: 0px; color: #333; font-weight: 400; font-size: 15px; margin: 0px; margin-left: 20px; margin-right: 20px; }
+.blogexcerpt { padding: 20px 0px; color: #333; font-weight: 400; font-size: 15px; margin: 0px; margin-left: 20px; margin-right: 20px; }
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+  .module{width:100%;}
+  .blog-post-snippet { border-bottom: 2px #0099C4 solid; margin-bottom: 20px;clear:both;}
+  }
+
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+  .module{width:100%;}
+  .blog-post-snippet { border-bottom: 2px #0099C4 solid; margin-bottom: 20px;clear:both;}
+}
+
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+  .module{width:100%;}
+  .blog-post-snippet { border-bottom: 2px #0099C4 solid; margin-bottom: 20px;clear:both;}
+}
+
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+  .module{width:100%;}
+  .blog-post-snippet { border-bottom: 2px #0099C4 solid; margin-bottom: 20px;clear:both;}
+}
+</style>
+
+  <div class="module">
+      <div class="blog-post-snippet">
+      <a href="https://blogs.cranfield.ac.uk/aerospace/computational-and-software-techniques-for-engineering-msc/my-cranfield-msc-new-normalising-my-journey" target="_blank">
+        <div class="content">
+            <div class="imgandtitle">
+              <h2>Computational and Software Techniques in Engineering MSc: My journey so far.</h2>
+            </div>
+            <div class="snippetandinfo">
+              <p class="blogname">Cranfield University blog</p>
+              <p class="blogauthor">by Yashwant Gurbani</p>
+              <p class="blogexcerpt">I chose the Computational Intelligence for Data Analytics option to put me in a position towards achieving my targets . </p>
+            </div>
+        </div>
+            </a>
+    </div>
+  </div>
+
+
+<style>
+
+.blog-post-snippet { border-bottom: 2px #0099C4 solid; margin-bottom: 20px; }
+.imgandtitle2 { position: relative; height: 250px; background-image: url('https://blogs.cranfield.ac.uk/wp-content/uploads/2021/04/Enara-Martin-Feature-Image.png'); background-repeat: no-repeat; background-size: cover; background-position: center center; relative; }
+.imgandtitle2 h2 { position: absolute; bottom: 0px; padding-bottom: 20px; padding-left: 20px; padding-right: 20px; margin: 0 auto; text-align: left; color: white; font-weight: normal; font-size: 24px;}
+.imgandtitle2:before { content: ""; position: absolute; height: 100%; width: 100%; background: rgba(39 55 111 / 0.8);}
+.imgandtitle2 h2:after { display: none; }
+.snippetandinfo { background-color: rgba(244,244,244,.5); }
+.blogname { padding: 10px 0px 0px 0px; color: #0080a9; font-weight: 500; font-size: 16px; margin: 0px; margin-left: 20px; margin-right: 20px; }
+.blogauthor { padding: 0px; color: #333; font-weight: 400; font-size: 15px; margin: 0px; margin-left: 20px; margin-right: 20px; }
+.blogexcerpt { padding: 20px 0px; color: #333; font-weight: 400; font-size: 15px; margin: 0px; margin-left: 20px; margin-right: 20px; }
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+  .module{width:100%;}
+  .blog-post-snippet { border-bottom: 2px #0099C4 solid; margin-bottom: 20px;clear:both;}
+  }
+
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+  .module{width:100%;}
+  .blog-post-snippet { border-bottom: 2px #0099C4 solid; margin-bottom: 20px;clear:both;}
+}
+
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+  .module{width:100%;}
+  .blog-post-snippet { border-bottom: 2px #0099C4 solid; margin-bottom: 20px;clear:both;}
+}
+
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+  .module{width:100%;}
+  .blog-post-snippet { border-bottom: 2px #0099C4 solid; margin-bottom: 20px;clear:both;}
+}
+</style>
+
+  <div class="module">
+      <div class="blog-post-snippet">
+      <a href="https://blogs.cranfield.ac.uk/aerospace/my-cranfield-msc-from-spain-to-england-my-experience-so-far" target="_blank">
+        <div class="content">
+            <div class="imgandtitle2">
+              <h2>My Cranfield MSc – From Spain to England, my experience so far</h2>
+            </div>
+            <div class="snippetandinfo">
+              <p class="blogname">Cranfield University blog</p>
+              <p class="blogauthor">by Enara Martin Garro</p>
+              <p class="blogexcerpt"> Enara Martin is a Spanish student studying Computational and Software Techniques in Engineering MSc at Cranfield University. She was also the recipient of the ‘Promoting Women in STEM Award’ in 2020.</p>
+            </div>
+        </div>
+            </a>
+    </div>
+  </div>
+
+
+    </div>
+</div>
+
+        </div>
+        
+
+
+<div class="modal-2019 modal-2019--default micromodal-slide" id="fees-modal" aria-hidden="true">
+    <div class="modal-2019__overlay" tabindex="-1" data-micromodal-close="">
+        <section class="modal-2019__container" role="dialog" aria-modal="true" aria-labelledby="fees-modal-title">
+
+                <button class="btn-2019 btn-2019--transparent modal-2019__close modal-2019__close--header btn-2019--transparent" aria-label="Close modal" data-micromodal-close="">
+                    <svg class="btn-2019__icon modal-2019__close-icon" width="33" height="33">
+                        <use xlink:href="#close"></use>
+                    </svg>
+                </button>
+
+            <div class="modal-2019__content">
+
+                <h2 class="modal-2019__title" id="fees-modal-title">
+                    Fees and funding
+                </h2>
+                
+
+                <div class="modal-2019__box">
+
+                    <h3>Course fees</h3>
+                    <div class="tabs-2019 js-tabs ">
+                        <div class="tabs-2019__container">
+
+                                    <a class="tab-item tab-item--dark-background tab-item--active" href="##" data-tab="box-tab-1">
+                                        Home fees
+                                    </a>
+                                    <a class="tab-item tab-item--dark-background " href="##" data-tab="box-tab-2">
+                                        Overseas fees
+                                    </a>
+
+                        </div>
+                    </div>
+
+                            <div class="tabs-2019__content tabs-2019__content--current" id="box-tab-1" data-tab="box-tab-1">
+
+                                <h4 class="tabs-2019__mobile-heading">Home fees</h4>
+
+                                <table class="modal-2019__box-table">
+                                    <tbody>
+                                            <tr class="modal-2019__box-table-row">
+                                                <td>MSc Full-time</td>
+                                                <td>
+                                                    &#163;12,505
+                                                    <span>
+
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr class="modal-2019__box-table-row">
+                                                <td>MSc Part-time</td>
+                                                <td>
+                                                    &#163;12,505
+                                                    <span>
+*
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                            <div class="tabs-2019__content " id="box-tab-2" data-tab="box-tab-2">
+
+                                <h4 class="tabs-2019__mobile-heading">Overseas fees</h4>
+
+                                <table class="modal-2019__box-table">
+                                    <tbody>
+                                            <tr class="modal-2019__box-table-row">
+                                                <td>MSc Full-time</td>
+                                                <td>
+                                                    &#163;27,910
+                                                    <span>
+
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <tr class="modal-2019__box-table-row">
+                                                <td>MSc Part-time</td>
+                                                <td>
+                                                    &#163;27,910
+                                                    <span>
+*
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+
+
+                            <ul style="margin-top: 20px;">
+                                    <li>
+                                        <span>
+*
+                                        </span>
+                                        Fees can be paid in full up front, or in equal annual instalments. Students who complete their course before the initial end date will be invoiced the outstanding fee balance and must pay in full prior to graduation.
+<br>
+                                    </li>
+                            </ul>
+
+                    
+                        <h4 style="margin-bottom: 20px;">Fee notes</h4>
+                        <div class="sc-richtext-container">
+                            <ul>
+    <li>The fees outlined apply to all students whose initial date of registration falls on or between 1 August 2025 and 31 July 2026.</li>
+    <li>All students pay the tuition fee set by the University for the full duration of their registration period.</li>
+    <li>For self-funded students a non-refundable deposit is required, which is offset against the tuition fee. Home students will pay a &pound;500 deposit. Overseas students will pay a &pound;1,000 deposit.</li>
+    <li>Additional fees for extensions to the agreed registration period may be charged.</li>
+    <li>Eligibility for Home fee status is determined with reference to UK Department for Education rules. As a guiding principle UK or Irish nationals who are ordinarily resident in either the UK or Republic of Ireland pay Home tuition fees. All other students (including those from the Channel Islands and Isle of Man) pay Overseas fees.</li>
+</ul>
+                        </div>
+
+                </div>
+
+                        <h3>Funding Opportunities</h3>
+                    <div class="sc-richtext-container">
+                        <p>To help students find appropriate funding, we have created a funding finder where you can search for suitable sources of funding by filtering the results to suit your needs. <a href="https://search.cranfield.ac.uk/s/search.html?collection=cranfield-meta&amp;f.Tabs|cranfield-funding=Funding" target="_self">Visit the funding finder</a>.<span style="font-weight: lighter;">&nbsp;</span></p>
+<p><a href="/funding/funding-opportunities/cranfield-scholarship">The Cranfield Scholarship</a><br />
+We have a limited number of scholarships available for candidates from around the world. Scholarships are awarded to applicants who show both aptitude and ability for the subject they are applying. </p>
+<p><a href="/funding/funding-opportunities/masters-loan-from-student-finance-england">Master's Loan from Student Finance England</a><br />
+A Master's Loan is now available for UK applicants to help you pay for your master&rsquo;s course. You can apply for a loan at&nbsp;<a rel="noopener noreferrer" rel="noopener noreferrer" href="http://www.gov.uk/postgraduate-loan" target="_blank">GOV.UK</a>.</p>
+<p><a href="/funding/funding-opportunities/great-scholarships">Cranfield University GREAT Scholarship</a><br />
+In partnership with the British Council and the GREAT Britain Campaign, Cranfield University is offering 3 scholarships of financial support to the value of &pound;10,000, to students from Bangladesh, Thailand and Vietnam. </p>
+
+<p><a href="/funding/funding-opportunities/commonwealth-scholarships">Commonwealth Scholarships for Developing Countries</a><br />
+Students from developing countries who would not otherwise be able to study in the UK can apply for a Commonwealth Scholarship which includes tuition fees, travel and monthly stipend for master&rsquo;s study.<span style="font-weight: lighter;">&nbsp;</span></p>
+<p><a href="/funding/funding-opportunities/british-chevening-scholarships">Chevening Scholarships</a><br />
+Chevening Scholarships are awarded to outstanding emerging leaders to pursue a one-year master&rsquo;s at Cranfield University. The scholarship includes<strong> </strong>tuition fees, travel and monthly stipend for master&rsquo;s study.
+</p>
+<p><a href="/funding/funding-opportunities/lendwise-postgraduate-student-loan">Lendwise Postgraduate Student Loan</a><br />
+The Lendwise Postgraduate Student Loan provides tuition fee and maintenance loans of between &pound;5,000 and &pound;100,000 for eligible applicants studying at Cranfield University.</p>
+                    </div>
+
+                    <div class="modal-2019__close modal-2019__close--footer">
+                        <button class="btn-2019 btn-2019--transparent" aria-label="Close modal" data-micromodal-close="">
+                            <svg class="btn-2019__icon modal-2019__close-icon" width="33" height="33">
+                                <use xlink:href="#close"></use>
+                            </svg>
+                            Back to course information
+                        </button>
+                    </div>
+
+            </div>
+        </section>
+
+    </div>
+</div>
+    <div class="modal-2019 modal-2019--default micromodal-slide" id="entry-modal" aria-hidden="true">
+        <div class="modal-2019__overlay" tabindex="-1" data-micromodal-close="">
+            <section class="modal-2019__container" role="dialog" aria-modal="true" aria-labelledby="entry-modal-title">
+                <button class="btn-2019 btn-2019--transparent modal-2019__close modal-2019__close--header btn-2019--transparent" aria-label="Close modal" data-micromodal-close="">
+                    <svg class="btn-2019__icon modal-2019__close-icon" width="33" height="33">
+                        <use xlink:href="#close"></use>
+                    </svg>
+                </button>
+                <div class="modal-2019__content">
+
+                    <h2 class="modal-2019__title" id="entry-modal-title">
+                        Entry requirements
+                    </h2>
+                    <div class="sc-richtext-container">
+                        <p>We welcome applications from talented individuals of all backgrounds and each application is considered on its individual merit. Usually applicants must hold:</p>
+
+<div style="border-left:10px solid; border-color: #0398c6;">
+<p style="margin-left:1em;"><strong>A UK lower second-class (2:2) undergraduate degree with honours, as a minimum, or equivalent international qualification.</strong></p>
+</div>
+
+<p>Ideally applicants will have studied in applied mathematics, aeronautical, mechanical or electrical engineering or a computer science discipline.</p>
+
+<p>Find information about equivalent qualifications in your country on our <a href="/study/application-guide/entry-requirements-a-to-z">International entry requirements page</a>.</p>
+
+<p>
+Applicants who do not fulfil the standard entry requirements can apply for the <a href="/courses/taught/pre-masters-in-engineering">Pre-master's course</a>, successful completion of which will qualify them for entry to this course for a second year of study.</p>
+                    </div>
+                        <div class="modal-2019__box">
+                            <h3>English language</h3>
+                            <div class="sc-richtext-container">
+                                <style>
+    ul.a {
+    list-style-type: circle;
+    }
+</style>
+<p>To study for a formal award at Cranfield you will need to demonstrate that you can communicate effectively in English in an academic environment. Full details of how you can meet this requirement can be found on our <a href="/study/application-guide/entry-requirements">English language requirements page</a>.</p>
+<p><strong>Approved English tests for Computational and Software Techniques in Engineering MSc</strong></p>
+<p>Please note that:</p>
+<ul>
+    <li>We verify all test scores with the test providers. </li>
+    <li>We are only able to accept tests taken within two years of the course start date.</li>
+    <li>All elements of the test results must be demonstrated in one test, we are unable to accept a combination of scores across two or more tests.</li>
+    <li>In extremely rare circumstances we may reject a test score if one element of the test has a very low score. This would only occur if we believed this would impact on your ability to study with us or if the score did not meet UK Visas and Immigration (UKVI) requirements to study in the UK.</li>
+    <li>Not all English tests are suitable for obtaining a Student visa for pre-sessional study. You can check entry requirements on the Pre-sessional English for Academic Purposes (EAP) course page.</li>
+</ul>
+<hr />
+
+<p><strong>IELTS</strong><br />
+<a rel="noopener noreferrer" target="_blank" href="http://www.ielts.org/what-is-ielts/ielts-for-study"><strong>IELTS Academic</strong></a>, <a rel="noopener noreferrer" target="_blank" href="https://www.ielts.org/for-test-takers/ielts-online"><strong>IELTS Online</strong></a>, <a rel="noopener noreferrer" target="_blank" href="https://www.ielts.org/about-ielts/ielts-for-migration/united-kingdom"><strong>IELTS for UKVI Academic</strong></a>, <a rel="noopener noreferrer" target="_blank" href="https://www.ielts.org/for-test-takers/ielts-online"><strong>IELTS Indicator</strong></a><sup>1</sup> (we also accept <a rel="noopener noreferrer" target="_blank" href="https://ielts.org/take-a-test/booking-your-test/one-skill-retake">IELTS One Skill Retake</a> tests) - 6.5 overall and 5.5 in all skill components.</p>
+
+<p><strong>TOEFL</strong><br />
+<a rel="noopener noreferrer" target="_blank" href="https://www.ets.org/toefl/test-takers/ibt/about/"><strong>TOEFL iBT</strong></a> (we accept TOEFL iBT, TOEFL iBT Home Edition and TOEFL iBT Paper Edition) - 92 total and minimum skill component scores of 18 reading, 17 listening, 20 speaking and 17 writing.</p>
+
+<p><strong>Cambridge Assessment English</strong><br />
+Any Cambridge Assessment English test meeting the required scores will be accepted. The following are recommended as being within the scale score range: <a rel="noopener noreferrer" href="https://www.cambridgeenglish.org/exams-and-tests/advanced/" target="_blank"><strong>Cambridge C1 Advanced</strong></a>, <a rel="noopener noreferrer" href="https://www.cambridgeenglish.org/exams-and-tests/proficiency/" target="_blank"><strong>Cambridge C2 Proficiency</strong></a>, <a rel="noopener noreferrer" href="https://www.cambridgeenglish.org/exams-and-tests/linguaskill/" target="_blank"><strong>Linguaskill General</strong></a> - Cambridge English Scale score of 180 overall and 160 in all skill components.</p>
+
+<p><strong>Duolingo</strong><br />
+<a rel="noopener noreferrer" href="https://englishtest.duolingo.com/" target="_blank"><strong>Duolingo English Test</strong></a> - 120 overall and minimum subscores of 95 speaking, 95 writing, 95 reading and 95 listening.</p>
+
+<p><strong>Kaplan</strong><br />
+<a rel="noopener noreferrer" href="https://www.kaplanenglishtest.com/" target="_blank"><strong>Kaplan Test of English</strong></a><sup>2</sup> - 495 overall and 425 in all skill components. Cranfield applicants and offer holders are entitled to a 25% discount. Register for a test using this <a rel="noopener noreferrer" href="https://kicpathways.formstack.com/forms/cranfield_university_kite_test" target="_blank">form</a> to benefit from the discount.</p>
+<p style="margin-bottom:7px;"><strong>LanguageCert</strong><br />
+<a rel="noopener noreferrer" href="https://www.languagecert.org/en/language-exams/english/languagecert-academic/academic" target="_blank"><strong>LanguageCert Academic</strong></a> (approved by UKVI as a SELT exam) - 70 overall and 60 in all skill components.<br />
+<a rel="noopener noreferrer" href="https://www.languagecert.org/en/language-exams/english/languagecert-international-esol/b2-communicator-2281" target="_blank"><strong>International ESOL B2 Communicator</strong></a> (two separate exams are available: Written (Listening, Reading, Writing) and Spoken (Speaking). These exams can be taken together or independently, however both exams must be taken to meet our requirements):</p>
+<ul style="margin-bottom:7px; margin-left:20px;">
+    <li style="margin-bottom:7px;">Written and Spoken exams together - High Pass overall and 33 in all skill components.</li>
+    <li style="margin-bottom:7px;">Written exam - High Pass overall and 33 in each skill components.</li>
+    <li style="margin-bottom:7px;">Spoken exam - Pass overall and 33 in speaking skill component.</li>
+</ul>
+<br />
+<p><strong>Password</strong><br />
+<a rel="noopener noreferrer" target="_blank" href="https://passwordplus.englishlanguagetesting.co.uk/test-takers/"><strong>Password Skills Plus at-home test</strong></a> - 6.5 overall and 5.5 in all skill components.</p>
+
+<p><strong>Pearson PTE</strong><br />
+<a rel="noopener noreferrer" target="_blank" href="https://www.pearsonpte.com/pte-academic/"><strong>PTE Academic</strong></a>, <a rel="noopener noreferrer" href="https://www.pearsonpte.com/pte-academic-online" target="_blank"><strong>PTE Academic Online</strong></a>, <a rel="noopener noreferrer" href="https://www.pearsonpte.com/selt-tests/pte-academic-ukvi" target="_blank"><strong>PTE Academic UKVI</strong></a> - 65 overall and 59 in all skill components.</p>
+
+<p><strong>Trinity College London</strong><br />
+<a rel="noopener noreferrer" title="New Window" target="_blank" href="http://www.trinitycollege.co.uk/site/?id=3192" style="font-weight: lighter;"><strong>Integrated Skills in English - ISE III (C1)</strong></a> - Overall Pass outcome.</p>
+<p><sup>1</sup> Only available in China.
+<br />
+
+<sup>2</sup> Formerly Kaplan International Tools for English (KITE).</p>
+<hr />
+<p><strong>Pre-sessional English for Academic Purposes (EAP)</strong></p>
+<p>Applicants who do not already meet the English language entry requirement above can apply for one of our <a href="/study/application-guide/entry-requirements/pre-sessional-english-course">Pre-sessional English for Academic Purposes (EAP) courses</a>.</p>
+<p>Please be aware that not all English tests are suitable for obtaining a Student visa for pre-sessional study. You can check entry requirements on the Pre-sessional EAP course page.</p>
+                            </div>
+                        </div>
+
+                    <div class="modal-2019__close modal-2019__close--footer">
+                        <button class="btn-2019 btn-2019--transparent" aria-label="Close modal" data-micromodal-close="">
+                            <svg class="btn-2019__icon modal-2019__close-icon" width="33" height="33">
+                                <use xlink:href="#close"></use>
+                            </svg>
+                            Back to course information
+                        </button>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+    </div>
+
+
+    </main>
+    
+    
+    <footer>
+    <div class="container">
+        <div class="grid-15 grid-desktop-11">
+            <div class="grid-15 grid-desktop-7">
+                
+
+        <div class="social">
+            <ul>
+                    <li>
+                        <a target="_blank" href="http://www.linkedin.com/company/cranfield-university">
+  <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 612 612">
+    <path d="M133.572 172.485H17.64c-7.93 0-14.365 6.435-14.365 14.364v405.27c0 7.928 6.435 14.363 14.364 14.363h115.947c7.93 0 14.364-6.436 14.364-14.363V186.85c-.013-7.944-6.434-14.365-14.378-14.365zm-14.364 405.27h-87.22v-376.54h87.22v376.54zM456.824 167.56c-56.294 0-93.123 24.29-114.512 45.418l-2.643-27.507c-.72-7.382-6.925-12.984-14.294-12.984h-.287l-105.692 2.025c-3.878.073-7.556 1.71-10.2 4.54-2.656 2.83-4.05 6.607-3.877 10.472 1.323 29.59 1.28 64.18 1.222 104.226l-.015 300.413c0 7.93 6.436 14.364 14.364 14.364h115.95c7.93 0 14.364-6.434 14.364-14.363V359.88c0-11.964 1.034-20.612 3.088-25.77 7.226-18.4 31.07-37.418 58.448-37.418 35.465 0 56.623 26.976 56.623 72.18V594.16c0 7.93 6.436 14.363 14.364 14.363h113.908c7.93 0 14.364-6.434 14.364-14.363V354.164c0-116.853-58.017-186.605-155.176-186.605zM583.27 579.796h-85.18V368.873c0-61.307-33.51-100.91-85.35-100.91-41.14 0-74.594 28.672-85.15 55.576-3.492 8.718-5.115 20.282-5.115 36.34v219.917h-87.22l.016-286.006c.044-34.014.087-64.12-.703-90.838l77.782-1.494 4.467 46.325c.718 7.37 6.91 12.985 14.307 12.985h2.44c4.957 0 9.554-2.542 12.183-6.75 8.475-13.546 41.526-57.73 111.092-57.73 80.367 0 126.447 57.542 126.447 157.877v225.633h-.016zM80.47 3.477C33.842 3.477 0 35.61 0 79.894c0 44.256 33.167 76.374 78.86 76.374 47.1 0 81.286-32.118 81.286-76.72-1.048-44.786-33.813-76.07-79.678-76.07zm-1.61 124.063c-29.518 0-50.13-19.593-50.13-47.646 0-28.527 20.8-47.69 51.74-47.69 30.265 0 50.274 18.847 50.95 47.69 0 28.5-21.13 47.646-52.56 47.646z">
+    </path>
+  </svg>
+  <p>
+    <span>LinkedIn</span><span>Connect with our network</span></p>
+</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/CranfieldUni/">
+  <svg xmlns="http://www.w3.org/2000/svg" width="792" height="792" viewbox="0 0 792 792">
+    <path d="M454.406 792h-138.4c-10.455 0-18.94-8.484-18.94-18.938V448.005h-96.85c-10.454 0-18.938-8.484-18.938-18.938V295.02c0-10.453 8.484-18.937 18.938-18.937h96.85V196.2C297.067 75.148 370.36 0 488.382 0c52.725 0 95.185 4.053 105.903 5.492 9.432 1.25 16.438 9.28 16.438 18.787v119.84c0 10.455-8.483 18.94-18.937 18.94l-70.905.075c-40.944 0-47.535 13.635-47.535 46.323v66.663h113.82c5.453 0 10.643 2.35 14.202 6.44 3.6 4.053 5.266 9.507 4.584 14.923l-17.273 134.045c-1.212 9.47-9.28 16.552-18.786 16.552h-96.547v325.058c0 10.416-8.483 18.862-18.937 18.862zm-119.463-37.877h100.524V429.066c0-10.454 8.484-18.938 18.938-18.938h98.82l12.424-96.17H454.405c-10.454 0-18.938-8.483-18.938-18.937v-85.6c0-36.134 8.863-84.2 85.412-84.2l52.005-.038v-83.82c-19.355-1.668-50.452-3.486-84.503-3.486-96.093 0-153.438 59.164-153.438 158.324v98.82c0 10.454-8.484 18.938-18.938 18.938h-96.85v96.17h96.85c10.454 0 18.938 8.483 18.938 18.937v325.058z">
+    </path>
+  </svg>
+  <p>
+    <span>Facebook</span><span>Like our page</span></p>
+</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.twitter.com/CranfieldUni/">
+   <svg width="100" height="100" viewbox="0 0 300 300" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <path d="M178.57 127.15 290.27 0h-26.46l-97.03 110.38L89.34 0H0l117.13 166.93L0 300.25h26.46l102.4-116.59 81.8 116.59h89.34M36.01 19.54H76.66l187.13 262.13h-40.66"></path> </svg>
+  <p>
+    <span>X</span><span>X</span></p>
+</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="http://www.youtube.com/user/CranfieldUni">
+<svg xmlns="http://www.w3.org/2000/svg" width="612" height="612" viewBox="0 0 612 612">
+<path d="M489.6 81.6H122.4C54.917 81.6 0 136.516 0 204v204c0 67.482 54.917 122.4 122.4 122.4h367.2c67.483 0 122.4-54.918 122.4-122.4V204c0-67.484-54.917-122.4-122.4-122.4zM584.8 408c0 52.496-42.704 95.2-95.2 95.2H122.4c-52.496 0-95.2-42.704-95.2-95.2V204c0-52.496 42.704-95.2 95.2-95.2h367.2c52.496 0 95.2 42.704 95.2 95.2v204zm-367.2 13.068l199.308-115.055L217.6 190.93v230.138zm27.2-183.027l117.708 67.974L244.8 373.96V238.04z">
+</path>
+</svg>
+<p>
+<span>Youtube</span><span>Watch our videos</span></p>
+</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="http://instagram.com/cranfielduni">
+  <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 48 48">
+    <path d="M5.583 13c-.553 0-1-.447-1-1V3c0-.553.447-1 1-1s1 .447 1 1v9c0 .553-.447 1-1 1zM8.958 13c-.553 0-1-.447-1-1V2.25c0-.553.447-1 1-1s1 .447 1 1V12c0 .553-.447 1-1 1zM12.333 13c-.553 0-1-.447-1-1V2.25c0-.553.447-1 1-1s1 .447 1 1V12c0 .553-.447 1-1 1z">
+    </path>
+    <path d="M37.292 48H11.917C4.344 48 0 44.014 0 37.062V12.125C0 4.873 4.27 0 10.625 0H38.21C42.917 0 48 4.524 48 11.834v25.083C48 43.132 43.297 48 37.292 48zM10.625 2C4.26 2 2 7.454 2 12.125v24.938C2 44.45 7.393 46 11.917 46h25.375C42.257 46 46 42.095 46 36.917V11.834C46 5.76 41.956 2 38.21 2H10.624z">
+    </path>
+    <path d="M24 15.25c-4.235 0-7.668 3.434-7.668 7.668s3.433 7.666 7.667 7.666c4.232 0 7.666-3.432 7.666-7.666S28.232 15.25 24 15.25zm0 11.5c-2.118 0-3.835-1.716-3.835-3.833s1.717-3.834 3.834-3.834 3.833 1.717 3.833 3.834S26.116 26.75 24 26.75z">
+    </path>
+    <path d="M24 35.084c-6.71 0-12.168-5.458-12.168-12.167S17.29 10.75 24 10.75s12.166 5.458 12.166 12.167S30.708 35.084 24 35.084zm0-22.334c-5.607 0-10.168 4.56-10.168 10.167 0 5.606 4.56 10.167 10.167 10.167 5.605 0 10.166-4.56 10.166-10.167 0-5.606-4.56-10.167-10.167-10.167z">
+    </path>
+    <path d="M33 14.92h14v2.16H33zM1.5 14.95h13.25v2.1H1.5zM41.333 10.133c0 1.215-.985 2.2-2.202 2.2h-3.263c-1.217 0-2.202-.985-2.202-2.2V6.867c0-1.215.985-2.2 2.202-2.2h3.264c1.218 0 2.203.985 2.203 2.2v3.266z">
+    </path>
+  </svg>
+  <p>
+    <span>Instagram</span><span>Follow us</span></p>
+</a>
+                    </li>
+                    <li>
+                        <a href="http://blogs.cranfield.ac.uk/">
+<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 442.833 442.833">
+<path d="M361.062 18.19H81.772C36.682 18.19 0 54.87 0 99.96v170.042c0 45.092 36.683 81.773 81.772 81.773h192.803l69.686 69.676c2.085 2.09 4.874 3.194 7.712 3.194 1.402 0 2.822-.268 4.168-.828 4.076-1.684 6.732-5.666 6.732-10.072v-61.99c44.256-.97 79.96-37.27 79.96-81.752V99.962c0-45.093-36.68-81.773-81.77-81.773zM421.028 270c0 33.062-26.9 59.968-59.968 59.968h-9.094c-6.02 0-10.9 4.877-10.9 10.902v46.553l-54.268-54.262c-2.043-2.042-4.817-3.192-7.707-3.192H81.773c-33.065 0-59.967-26.906-59.967-59.967V99.96c0-33.07 26.902-59.966 59.967-59.966h279.29c33.065 0 59.967 26.896 59.967 59.967V270z">
+</path>
+<path d="M119.2 161.248c-13.55 0-24.532 10.988-24.532 24.532 0 13.554 10.982 24.532 24.53 24.532 13.544 0 24.533-10.98 24.533-24.532 0-13.544-10.988-24.532-24.53-24.532zM221.415 161.248c-13.55 0-24.532 10.988-24.532 24.532 0 13.554 10.983 24.532 24.532 24.532 13.543 0 24.532-10.98 24.532-24.532 0-13.544-10.99-24.532-24.532-24.532zM323.632 161.248c-13.55 0-24.533 10.988-24.533 24.532 0 13.554 10.983 24.532 24.532 24.532 13.543 0 24.53-10.98 24.53-24.532 0-13.544-10.987-24.532-24.53-24.532z">
+</path>
+</svg>
+<p>
+<span>Blog</span><span>Hear from our experts</span>
+</p>
+</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="http://www.wechat.com/">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#009DC3;}
+</style>
+<path class="st0" d="M173.6,61.4c-72.1,5.4-133.1,50.1-150.7,110.5c-4.9,16.6-6.3,36-3.8,52.7c1.7,11.7,6.6,27.3,11.7,37.6
+	c9.3,18.6,25.2,37.6,43.7,52.3c3.5,2.8,6.5,5.3,6.7,5.6c0.3,0.3-2.4,9.2-6.9,22.9c-4,12.3-7.3,23-7.3,23.8c0,3.5,3.6,7,7.4,7
+	c1.4,0,8.1-3.1,30-14.1l28.2-14.1l12.2,2.4c23,4.6,32.8,5.6,49.3,5.2c11-0.3,13.2-0.6,14.7-2.5c0.6-0.7,1.1,0,4.5,6.8
+	c6.5,13.2,13.7,23.1,24.3,33.7c23.6,23.5,53.8,37.8,90,42.6c4.9,0.7,9.8,0.9,19.2,0.9c14.6,0,20.8-0.8,37.2-4.5
+	c5.2-1.2,10.2-2.3,11-2.4c1.3-0.2,4.4,1.3,23.1,11.5c12.9,7,22.2,11.9,23.3,12c2.2,0.3,5.8-1.6,6.9-3.6c0.5-0.9,0.9-2.4,0.9-3.5
+	c0-1.1-2.3-9.5-5.4-20l-5.4-18.1l1.4-1.2c0.8-0.7,3.5-3,6-5.1c23.1-19.7,39.5-44,45.6-67.9c7.8-30.3-0.3-63.8-22.3-92.2
+	c-3.9-5.1-16.4-17.6-21.9-22.1c-22-17.5-50.5-29.4-78.7-32.8c-6.9-0.8-7.8-1-7.6-1.4c0.6-1-2.7-12.9-5.8-20.8
+	c-14.8-38-48.4-69.7-92.2-87.4C235,64,203.6,59.1,173.6,61.4L173.6,61.4z M211,77.1c23.5,3.2,43.2,9.3,62.3,19.3
+	c31.9,16.7,56.4,42.6,67.6,71.5c1.8,4.7,4.5,13.5,4.5,14.8c0,0.4-1.8,0.7-5.2,0.9c-22.1,1.4-40.8,5.7-58.8,13.7
+	c-47.5,21-77.8,62-79.7,107.9c-0.4,10.3,0.4,17.4,3.6,32.3c0.1,0.6,0.1,1-0.2,0.9c-0.2-0.1-3.9,0-8.2,0.2
+	c-14.3,0.9-28.6-0.6-52.3-5.5c-6.5-1.3-12.5-2.4-13.4-2.4c-1.2,0-7.7,3-22.6,10.5c-11.5,5.8-21.1,10.4-21.2,10.2
+	c-0.1-0.1,2.2-7.5,5.2-16.4s5.4-17,5.4-17.9c0-2.2-1.4-4.4-3.7-6.1c-12-8.7-19.1-14.8-27-23c-17.4-18-27.9-37.2-32.3-58.8
+	c-2.9-14.1-2.7-31.3,0.5-46.2c3.4-15.9,12.6-34.8,23.7-48.8c4.2-5.2,13.8-15,19.4-19.8c24.9-21,57.6-34.3,93.1-37.8
+	C178.2,75.8,204.6,76.2,211,77.1L211,77.1z M360.9,198.9c27.3,2.5,52.4,12,73.6,27.9c7,5.3,19,17.1,23.9,23.7
+	c13.6,18.2,20.5,37.9,20.5,58.4c0,10.3-1.5,18.7-5.2,28.6c-3.8,10.3-11.5,23-19.7,32.8c-5.6,6.6-16.8,17.4-24,23.3
+	c-6.6,5.3-7.9,6.8-7.8,9.8c0,1.1,1.6,7.3,3.6,13.7c1.9,6.5,3.5,11.8,3.5,11.8c-0.1,0-6.8-3.6-14.9-8.1c-8.4-4.6-15.5-8.2-16.5-8.3
+	c-1-0.1-4.1,0.4-7.5,1.3c-27.5,7-43.7,8.3-64.4,5.2c-44.8-6.7-81.9-31.7-99.5-67.1c-3.7-7.5-6.9-17.4-8.7-26.6
+	c-1.2-6.2-1.4-20.8-0.5-27.9c4.5-33.9,26.7-63.6,61.7-82.3c15.5-8.3,35.9-14.2,55-16C340.4,198.3,354.5,198.3,360.9,198.9
+	L360.9,198.9z M155.8,157.7c0,13.5-10.9,24.4-24.4,24.4c-13.5,0-24.4-10.9-24.4-24.4c0-13.5,10.9-24.4,24.4-24.4
+	C144.9,133.3,155.8,144.2,155.8,157.7z M271.8,157.7c0,13.5-10.9,24.4-24.4,24.4s-24.4-10.9-24.4-24.4c0-13.5,10.9-24.4,24.4-24.4
+	S271.8,144.2,271.8,157.7z M323.9,272.5c0,10.4-8.4,18.8-18.8,18.8c-10.4,0-18.8-8.4-18.8-18.8c0-10.4,8.4-18.8,18.8-18.8
+	C315.5,253.8,323.9,262.2,323.9,272.5z M413,272.5c0,10.4-8.4,18.8-18.8,18.8c-10.4,0-18.8-8.4-18.8-18.8c0-10.4,8.4-18.8,18.8-18.8
+	C404.7,253.8,413,262.2,413,272.5z"></path>
+
+
+</svg>
+<p>
+<span>Wechat</span><span>Chat to us</span></p>
+</a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="http://www.weibo.com/cranfielduni">
+<svg xmlns="http://www.w3.org/2000/svg" width="792" height="792" viewbox="0 0 512 512">
+<path class="st0" d="M404.4,261.3c-8.3-5.2-17.5-9.4-27.8-12.7c-2.2-0.7-3.7-1.3-4.6-1.6c-0.9-0.4-2-1-3.2-2c-1.3-1-1.7-2.1-1.2-3.4
+	c0.5-1.3,0.9-3.1,1.2-5.4c8.1-20.7,8.1-36.7,0-48c-8.3-11-22-16.4-41.3-16.4c-19.2,0-41.3,5.3-66.3,15.9l-1.6,0.5
+	c-1.1,0.4-2.3,0.7-3.6,1c-1.4,0.3-2.6,0.3-3.9,0.1c-1.3-0.2-2.2-0.8-2.7-1.9c-0.5-1.1-0.5-2.9,0.3-5.4c8.1-26.1,6.3-44.9-5.4-56.4
+	c-13.3-13.3-35.5-13.9-66.5-1.9c-31,12-61.7,33.3-92.1,63.6c-23,23-40.8,46.2-53.2,69.6c-12.5,23.4-18.7,45.4-18.7,66.1
+	c0,19.4,5.8,37.3,17.5,53.8c11.7,16.4,27.1,30,46.2,40.7c19.1,10.7,40.8,19.1,64.8,25.1c24.1,6,48.8,9,74.1,9
+	c25.4,0,49.7-2.8,72.9-8.4c23.3-5.6,43.6-13,60.9-22.4c17.3-9.3,32.5-19.9,45.4-31.7c12.9-11.8,22.8-24.1,29.4-36.9
+	c6.7-12.8,10-25.4,10-37.6c0-11.5-3.1-22-9.2-31.4C419.9,273.9,412.7,266.5,404.4,261.3L404.4,261.3z M316.4,385
+	c-26.3,21.3-59.5,34-99.6,38.2c-26.2,2.5-50.9,0.6-74-5.7c-23.1-6.3-41.8-16.1-56.2-29.4c-14.4-13.3-22.4-28.6-24-45.8
+	c-2.5-26.2,9.4-50,35.7-71.3c26.3-21.3,59.5-34,99.6-38.2c26.2-2.5,50.9-0.6,74,5.7c23.1,6.3,41.9,16.1,56.2,29.4
+	c14.4,13.3,22.4,28.6,24,45.8C354.6,339.9,342.7,363.7,316.4,385L316.4,385z M316.4,385 M224.6,273.2c-19.1-4.8-38-3.1-56.8,5.1
+	c-18.8,8.3-32.4,20.8-40.9,37.5c-8.5,17.1-9,33.9-1.7,50.6c7.3,16.6,20.5,28,39.8,34.1c20,6.5,40.1,5.4,60.4-3.2
+	c20.3-8.6,34.5-22.1,42.6-40.4c8.1-18,7.9-35.1-0.7-51.4C258.8,289.1,244.5,278.4,224.6,273.2L224.6,273.2z M195.7,360.6
+	c-4,6.1-9.6,10.4-16.9,12.8s-14,2.2-20.1-0.7c-6.1-2.9-10-7.4-11.6-13.6c-1.6-6.2-0.4-12.3,3.5-18.5c3.8-5.9,9.2-10.1,16.2-12.4
+	c7-2.3,13.6-2.2,19.7,0.3c6.3,2.7,10.3,7.2,12.1,13.5C200.5,348.2,199.5,354.4,195.7,360.6L195.7,360.6z M221.1,327.9
+	c-1.2,2.3-3.2,4-5.9,5c-2.7,1-5.3,1-7.8,0.1c-5.4-2.5-6.6-6.6-3.5-12.1c1.2-2.3,3.2-4,5.8-5c2.6-1,5.2-1,7.7-0.1
+	c2.3,0.9,3.9,2.6,4.7,5C222.8,323.2,222.5,325.6,221.1,327.9L221.1,327.9z M221.1,327.9 M399,209.7c2,3.9,5,6.5,9.2,8
+	c4.1,1.3,8.1,0.9,12-1.1c3.9-2,6.5-5,8-9.2c3.4-10.1,4-20.6,1.7-31.7c-2.2-11.1-7.1-20.8-14.7-29.2c-7.5-8.5-16.6-14.4-27.2-17.7
+	c-10.6-3.3-21.3-3.8-32.1-1.5c-4.3,0.9-7.6,3.2-10,6.9c-2.3,3.7-3.1,7.7-2.2,12c0.7,4.3,3,7.6,6.7,10c3.8,2.3,7.8,3.1,12.1,2.2
+	c11.3-2.3,20.9,0.8,28.9,9.4c7.9,8.6,10.1,18.6,6.5,29.9C396.7,201.8,397.1,205.8,399,209.7L399,209.7z M399,209.7 M494.4,162.5
+	c-4.6-22.7-14.7-42.7-30.3-60c-15.6-17.4-34.3-29.5-56.1-36.3c-21.8-6.8-43.7-7.8-65.8-3.1c-5,1.1-9,3.7-11.7,8
+	c-2.8,4.2-3.6,8.9-2.6,13.9c1.1,5,3.8,9,8.1,11.7c4.3,2.8,9,3.6,14,2.6c15.6-3.2,31.2-2.5,46.7,2.3c15.5,4.8,28.8,13.3,39.9,25.7
+	c11.2,12.2,18.3,26.4,21.6,42.6c3.2,16.2,2.3,31.6-2.7,46.4c-1.4,4.9-1,9.5,1.4,14c2.3,4.5,5.9,7.5,10.8,9.2c4.8,1.6,9.5,1.3,14-1.1
+	c4.5-2.3,7.5-5.9,9.2-10.8C497.7,207,498.9,185.3,494.4,162.5L494.4,162.5z M494.4,162.5">
+</path>
+</svg>
+<p>
+<span>Weibo</span><span>Follow us</span></p>
+</a>
+                    </li>
+            </ul>
+        </div>
+
+            </div>
+            <div class="grid-12 grid-desktop-5">
+                
+
+        <div class="addresses">
+                <div class="address">
+                    <h3><a href="/About/How-to-find-Cranfield">Cranfield Campus</a></h3>
+<p>College Road</p>
+<p>Cranfield</p>
+<p>MK43 0AL</p>
+<p>UK</p>
+<p>T: +44 (0)1234 750111</p>
+<a class="directions" href="/About/How-to-find-Cranfield">
+<svg class="location" baseprofile="tiny" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 559 540.3">
+<path stroke-width="28" stroke-miterlimit="10" d="M279.5 375.7c14.5 0 135.9-150.7 135.9-225.8 0-75-60.8-135.9-135.9-135.9-75.1 0-135.9 60.8-135.9 135.9 0 75 121.9 225.8 135.9 225.8zm-87.8-230.6c0-48.5 39.3-87.8 87.8-87.8s87.8 39.3 87.8 87.8-39.3 87.8-87.8 87.8-87.8-39.3-87.8-87.8z"></path>
+<path stroke-width="18" stroke-miterlimit="10" d="M528.1 315.8c0-12.9-10.5-23.4-23.4-23.4h-85.2c-1.8 0-3.8-.1-6.1 3.7-4.5 7.5-4.1 6.9-8.3 13.9-2 3.3 1 4.4 2.2 4.4h97.4c.8 0 1.5.7 1.5 1.5L528.1 508c0 .8-.7 1.5-1.5 1.5H32.4c-.8 0-1.5-.7-1.5-1.5l21.9-192.1c0-.8.7-1.5 1.5-1.5H151c2 0 5.1-1.2 1.6-7-4.2-6.8-2.6-4.8-7-12.4-1.7-2.8-4-2.5-7.1-2.5H54.4C41.5 292.5 31 303 31 315.9l-22 192c0 12.9 10.5 23.4 23.4 23.4h494.3c12.9 0 23.4-10.5 23.4-23.4l-22-192.1z"></path>
+</svg>
+<span>Directions to Cranfield</span>
+</a>
+                </div>
+                <div class="address">
+                    <h3><a href="/About/How-to-find-Cranfield/How-to-find-Shrivenham">Cranfield University at Shrivenham</a></h3>
+<p>Shrivenham</p>
+<p>Swindon</p>
+<p>SN6 8LA</p>
+<p>UK</p>
+<a class="directions" href="/About/How-to-find-Cranfield/How-to-find-Shrivenham">
+<svg class="location" baseprofile="tiny" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 559 540.3">
+<path stroke-width="28" stroke-miterlimit="10" d="M279.5 375.7c14.5 0 135.9-150.7 135.9-225.8 0-75-60.8-135.9-135.9-135.9-75.1 0-135.9 60.8-135.9 135.9 0 75 121.9 225.8 135.9 225.8zm-87.8-230.6c0-48.5 39.3-87.8 87.8-87.8s87.8 39.3 87.8 87.8-39.3 87.8-87.8 87.8-87.8-39.3-87.8-87.8z"></path>
+<path stroke-width="18" stroke-miterlimit="10" d="M528.1 315.8c0-12.9-10.5-23.4-23.4-23.4h-85.2c-1.8 0-3.8-.1-6.1 3.7-4.5 7.5-4.1 6.9-8.3 13.9-2 3.3 1 4.4 2.2 4.4h97.4c.8 0 1.5.7 1.5 1.5L528.1 508c0 .8-.7 1.5-1.5 1.5H32.4c-.8 0-1.5-.7-1.5-1.5l21.9-192.1c0-.8.7-1.5 1.5-1.5H151c2 0 5.1-1.2 1.6-7-4.2-6.8-2.6-4.8-7-12.4-1.7-2.8-4-2.5-7.1-2.5H54.4C41.5 292.5 31 303 31 315.9l-22 192c0 12.9 10.5 23.4 23.4 23.4h494.3c12.9 0 23.4-10.5 23.4-23.4l-22-192.1z"></path>
+</svg>
+<span>Directions to Shrivenham</span>
+</a>
+                </div>
+        </div>
+
+
+            </div>
+            <div class="grid-12 grid-desktop-3">
+                
+
+        <div class="usefullinks">
+            <div class="listing-links">                
+                    <h3>Useful links</h3>
+                <ul>
+                        <li>
+<a href="/people" target="Active Browser" >                                <span>People and contacts</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg>
+</a>                        </li>
+                        <li>
+<a href="/working-at-cranfield" target="Active Browser" title="Vacancies" >                                <span>Vacancies</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg>
+</a>                        </li>
+                        <li>
+<a href="/governance-and-policies/policies-and-regulations/accessibility-statement" >                                <span>Accessibility statement</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg>
+</a>                        </li>
+                        <li>
+<a href="/governance-and-policies/policies-and-regulations/cookie-report" target="Active Browser" >                                <span>Cookies</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg>
+</a>                        </li>
+                        <li>
+<a href="/governance-and-policies/policies-and-regulations/privacy-policy" target="Active Browser" >                                <span>Privacy policy</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg>
+</a>                        </li>
+                        <li>
+<a href="/governance-and-policies/policies-and-regulations/modern-slavery-and-human-trafficking-statement" >                                <span>Modern Slavery and Human Trafficking Statement</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 16.5"><path stroke-width="2" stroke-miterlimit="10" d="M2.4 1l14.1 14.1L30.6 1z"/></svg>
+</a>                        </li>
+                </ul>
+            </div>
+        </div>
+
+            </div>
+                    <div class="uni-logo">
+                        <?xml version="1.0" encoding="utf-8" ?>
+<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 61.4 61.4" enable-background="new 0 0 61.4 61.4" xml:space="preserve">
+<g>
+	<defs>
+		<path id="SVGID_4_" d="M31.2,33.2l-0.1,0.3l0.4,0.1c0.1,0,0.1,0.1,0.1,0.2v2.6c0,0.1,0,0.1-0.1,0.1l-0.5,0v0.3h1.7v-0.3l-0.5-0.1
+			c-0.1,0-0.1,0-0.1-0.1v-3.2H31.2z M35.3,33.2l-0.1,0.3l0.5,0.1l-1.1,2.9l-1.1-2.9l0.5-0.1v-0.3h-1.4l-0.1,0.3l0.3,0.1
+			c0.1,0,0.1,0,0.2,0.1l1.2,3.2h0.5l1.2-3.2c0-0.1,0.1-0.1,0.2-0.1l0.2,0v-0.3H35.3z M46,33.2l-0.1,0.3l0.4,0.1
+			c0.1,0,0.1,0.1,0.1,0.2v2.6c0,0.1,0,0.1-0.1,0.1l-0.5,0v0.3h1.7v-0.3L47,36.5c-0.1,0-0.1,0-0.1-0.1v-3.2H46z M52.7,33.2l-0.1,0.3
+			l0.5,0.1l-1.1,2.7l-1-2.7l0.5-0.1v-0.3h-1.4l-0.1,0.3l0.3,0.1c0.1,0,0.1,0,0.2,0.1l1.3,3.1l-0.5,1.1c0,0.1-0.1,0.1-0.2,0.2
+			l-0.5,0.1v0.3h1.8v-0.3L51.8,38l1.8-4.4c0-0.1,0.1-0.1,0.2-0.1l0.2,0v-0.3H52.7z M27.7,33.6L27.7,33.6l-0.1-0.5h-0.8l-0.1,0.3
+			l0.4,0.1c0.1,0,0.1,0.1,0.1,0.2v2.6c0,0.1,0,0.1-0.1,0.1l-0.4,0v0.3h1.5v-0.3l-0.4-0.1c-0.1,0-0.1,0-0.1-0.1v-2.3
+			c0.2-0.2,0.7-0.5,1.3-0.5c0.5,0,0.7,0.3,0.7,1.1v1.7c0,0.1,0,0.1-0.1,0.1l-0.4,0v0.3h1.5v-0.3l-0.4-0.1c-0.1,0-0.1,0-0.1-0.1v-1.9
+			c0-0.8-0.3-1.4-1.1-1.4C28.6,33.1,28.1,33.4,27.7,33.6 M38.2,33.5c0.5,0,0.9,0.3,0.9,1.2h-2C37.2,33.8,37.7,33.5,38.2,33.5
+			 M36.6,35c0,1.1,0.4,1.9,1.7,1.9c0.5,0,0.9-0.1,1.2-0.3l-0.2-0.4c-0.3,0.2-0.6,0.3-1,0.3c-0.9,0-1.2-0.6-1.2-1.4h2.5
+			c0-0.1,0-0.2,0-0.3c0-1.2-0.6-1.7-1.4-1.7C37.3,33.1,36.6,33.7,36.6,35 M41,33.6L41,33.2h-0.8l-0.1,0.3l0.4,0.1
+			c0.1,0,0.1,0.1,0.1,0.2v2.6c0,0.1,0,0.1-0.1,0.1l-0.4,0v0.3h1.7v-0.3l-0.6-0.1c-0.1,0-0.1,0-0.1-0.1v-2.3c0.2-0.2,0.6-0.5,1-0.5
+			c0.1,0,0.1,0,0.1,0.1l0.1,0.5l0.4,0v-1c-0.1,0-0.3-0.1-0.5-0.1C41.6,33.1,41.3,33.4,41,33.6 M43,34.2c0,0.8,0.6,0.9,1.2,1
+			c0.5,0.1,0.9,0.2,0.9,0.7c0,0.4-0.3,0.6-0.9,0.6c-0.4,0-0.7-0.1-0.8-0.1c-0.1,0-0.1,0-0.1-0.1l-0.1-0.5l-0.4,0v0.9
+			c0.1,0.1,0.7,0.2,1.3,0.2c0.7,0,1.4-0.3,1.4-1.1c0-0.8-0.6-0.9-1.2-1.1c-0.5-0.1-0.9-0.2-0.9-0.7c0-0.3,0.2-0.6,0.8-0.6
+			c0.3,0,0.5,0.1,0.6,0.1c0.1,0,0.1,0.1,0.1,0.1l0.1,0.5l0.4,0v-0.9c-0.1-0.1-0.6-0.2-1.1-0.2C43.6,33.1,43,33.4,43,34.2 M48.5,32.3
+			c-0.1,0.7-0.2,0.9-0.8,1v0.3h0.5c0.1,0,0.1,0,0.1,0.1V36c0,0.6,0.3,0.9,0.9,0.9c0.3,0,0.7-0.1,0.9-0.2L50,36.4
+			c-0.2,0.1-0.5,0.1-0.7,0.1c-0.4,0-0.5-0.2-0.5-0.6v-2.3h1.1v-0.4h-1.1c-0.1,0-0.1,0-0.1-0.1v-0.8H48.5z M24.8,31.6V32l0.5,0
+			c0.1,0,0.1,0,0.1,0.1v3c0,1-0.5,1.4-1.3,1.4c-0.9,0-1.4-0.4-1.4-1.4v-3c0-0.1,0-0.1,0.1-0.1l0.5-0.1v-0.3h-1.6V32l0.5,0
+			c0.1,0,0.1,0,0.1,0.1v3c0,1.2,0.5,1.8,1.8,1.8c1.2,0,1.9-0.6,1.9-1.8v-3c0-0.1,0-0.1,0.1-0.1l0.5-0.1v-0.3H24.8z M31.4,31.9
+			c0,0.2,0.1,0.4,0.4,0.4c0.2,0,0.4-0.1,0.4-0.4c0-0.2-0.1-0.4-0.4-0.4C31.6,31.5,31.4,31.7,31.4,31.9 M46.2,31.9
+			c0,0.2,0.1,0.4,0.4,0.4c0.2,0,0.4-0.1,0.4-0.4c0-0.2-0.1-0.4-0.4-0.4C46.3,31.5,46.2,31.7,46.2,31.9 M27.9,26.6L27.9,26.6L27.7,26
+			h-1.3l-0.1,0.6l0.4,0.1c0.1,0,0.1,0.1,0.1,0.2v2.2c0,0.1,0,0.1-0.1,0.1l-0.3,0v0.6h2.4v-0.6l-0.7-0.1c-0.1,0-0.1,0-0.1-0.1v-2
+			c0.1-0.1,0.3-0.3,0.5-0.3c0.1,0,0.1,0,0.1,0.1l0.1,0.4l0.9,0V26c-0.1,0-0.5-0.1-0.6-0.1C28.4,25.9,28.1,26.2,27.9,26.6 M30.9,28.7
+			c0-0.3,0.2-0.4,0.6-0.4l0.5,0v0.6c-0.2,0.1-0.4,0.3-0.7,0.3C31.1,29.1,30.9,29,30.9,28.7 M29.9,27.1l1,0.1c0-0.4,0.2-0.5,0.5-0.5
+			c0.5,0,0.5,0.2,0.5,0.6v0.4l-0.9,0.1c-0.9,0.1-1.4,0.4-1.4,1.1c0,0.5,0.1,1.1,1.1,1.1c0.6,0,1-0.2,1.2-0.5l0,0l0.1,0.4h1.4v-0.6
+			l-0.4-0.1c-0.1,0-0.1,0-0.1-0.1v-1.8c0-1-0.5-1.3-1.6-1.3C30.9,25.9,29.9,26.1,29.9,27.1 M35.3,26.4L35.3,26.4L35.2,26h-1.3
+			l-0.1,0.6l0.4,0.1c0.1,0,0.1,0.1,0.1,0.2v2.2c0,0.1,0,0.1-0.1,0.1l-0.3,0v0.6h2v-0.6l-0.4-0.1c-0.1,0-0.1,0-0.1-0.1v-2
+			c0.2-0.1,0.5-0.3,0.8-0.3c0.4,0,0.4,0.3,0.4,0.7v2.4h1.6v-0.6l-0.4-0.1c-0.1,0-0.1,0-0.1-0.1v-1.9c0-0.8-0.3-1.3-1.1-1.3
+			C36.1,25.9,35.7,26.1,35.3,26.4 M45.2,26.7c0.3,0,0.5,0.2,0.6,0.8h-1.2C44.6,26.9,44.9,26.7,45.2,26.7 M43.4,27.9
+			c0,1.2,0.5,2,1.9,2c0.6,0,1.1-0.2,1.5-0.4l-0.3-0.7c-0.5,0.2-0.8,0.3-1.1,0.3c-0.6,0-0.8-0.3-0.9-0.9h2.3c0-0.1,0-0.4,0-0.5
+			c0-1.3-0.7-1.8-1.6-1.8C44.2,25.9,43.4,26.6,43.4,27.9 M21.4,27.1c0,1.7,0.8,2.8,2.6,2.8c0.7,0,1.4-0.1,1.9-0.4v-1.4H25l-0.1,0.7
+			c0,0.1,0,0.1-0.1,0.2c-0.2,0.1-0.5,0.1-0.7,0.1c-0.9,0-1.5-0.6-1.5-1.9c0-1.3,0.6-1.9,1.5-1.9c0.2,0,0.5,0,0.7,0.1
+			c0.1,0,0.1,0.1,0.1,0.1l0.1,0.7l0.8,0.1v-1.5c-0.4-0.3-1.1-0.4-1.7-0.4C22.3,24.4,21.4,25.6,21.4,27.1 M47.4,24.3l-0.1,0.6
+			l0.4,0.1c0.1,0,0.1,0.1,0.1,0.2v3.9c0,0.1,0,0.1-0.1,0.1l-0.4,0.1v0.6h2.1v-0.6L49,29.2c-0.1,0-0.1,0-0.1-0.1v-4.8H47.4z
+			 M50.9,27.9c0-0.7,0.2-1.2,0.8-1.2c0.2,0,0.5,0.1,0.6,0.2v1.7c-0.2,0.2-0.5,0.3-0.7,0.3C51.1,29.1,50.9,28.7,50.9,27.9 M51.9,24.3
+			l-0.1,0.6l0.4,0.1c0.1,0,0.1,0.1,0.1,0.2v1.1c-0.3-0.2-0.6-0.4-1-0.4c-0.8,0-1.6,0.6-1.6,2.1c0,1.4,0.6,2,1.4,2
+			c0.5,0,0.9-0.2,1.2-0.5l0.1,0l0.1,0.4h1.4v-0.6l-0.4-0.1c-0.1,0-0.1,0-0.1-0.1v-4.8H51.9z M39.1,25.6V26h-0.6v0.7H39
+			c0.1,0,0.1,0,0.1,0.1V29c0,0.1,0,0.2-0.1,0.2l-0.4,0.1v0.6h2.3v-0.6l-0.5-0.1c-0.1,0-0.1,0-0.1-0.2v-2.3h1.2c0.1,0,0.1,0,0.1,0.1
+			v3h1.6v-0.6l-0.4-0.1c-0.1,0-0.1,0-0.1-0.1V26h-2.3c-0.1,0-0.1,0-0.1-0.1v-0.5c0-0.4,0.2-0.6,0.7-0.6c0.5,0,0.6,0.1,0.6,0.6
+			l1.1-0.1c0-1-0.7-1.2-1.6-1.2C39.7,24.2,39.1,24.5,39.1,25.6 M21,7.7c-3,1.3-5.7,3.1-7.9,5.4c-2.3,2.3-4.1,5-5.4,7.9
+			c-1.3,3-2,6.3-2,9.7c0,3.5,0.7,6.7,2,9.7c1.3,3,3.1,5.7,5.4,7.9c2.3,2.3,5,4.1,7.9,5.4c3,1.3,6.3,2,9.7,2s6.7-0.7,9.7-2
+			c3-1.3,5.7-3.1,7.9-5.4l-7.1-7.1c-1.4,1.4-3,2.5-4.8,3.2c-1.8,0.8-3.8,1.2-5.8,1.2s-4-0.4-5.8-1.2c-1.8-0.8-3.4-1.9-4.8-3.2
+			c-1.4-1.4-2.5-3-3.2-4.8c-0.8-1.8-1.2-3.8-1.2-5.8c0-2.1,0.4-4,1.2-5.8c0.8-1.8,1.9-3.4,3.2-4.8c1.4-1.4,3-2.5,4.8-3.2
+			c1.8-0.8,3.8-1.2,5.8-1.2s4,0.4,5.8,1.2c1.8,0.8,3.4,1.9,4.8,3.2l7.1-7.1c-2.3-2.3-5-4.1-7.9-5.4c-3-1.3-6.3-2-9.7-2
+			S24,6.4,21,7.7 M1.4,30.7c0-16.1,13.1-29.3,29.3-29.3C46.8,1.4,60,14.5,60,30.7C60,46.8,46.8,60,30.7,60
+			C14.5,60,1.4,46.8,1.4,30.7 M0,30.7c0,16.9,13.8,30.7,30.7,30.7s30.7-13.8,30.7-30.7C61.4,13.8,47.6,0,30.7,0S0,13.8,0,30.7"/>
+	</defs>
+	<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="8.9993" y1="8.9985" x2="52.3797" y2="52.3789">
+		<stop  offset="0" style="stop-color:#0C4270"/>
+		<stop  offset="0.25" style="stop-color:#0C4270"/>
+		<stop  offset="1" style="stop-color:#091932"/>
+	</linearGradient>
+	<use xlink:href="#SVGID_4_"  overflow="visible" fill="url(#SVGID_1_)"/>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_4_"  overflow="visible"/>
+	</clipPath>
+</g>
+</svg>
+
+                    </div>
+                    <!-- /uni-logo -->
+
+            <div class="grid-15 grid-desktop-15">
+                <p class="copyright">
+<span>© 2025 Cranfield University. All rights reserved. All design, text and Images on this website are subject to copyright, more details can be viewed on <a href="/governance-and-policies/policies-and-regulations/notice-and-takedown-policy">our notice and takedown policy</a>. Use of this site indicates your agreement to our terms of usage and <a href="/governance-and-policies/policies-and-regulations/privacy-policy">privacy policy</a>.</span></p>
+<p> </p>
+<br />
+
+
+
+            </div>
+        </div>
+    </div>
+</footer>
+    
+    
+    
+<script> var enableCarousel = true;</script>
+
+<script src="/js/nw2/vendor/jquery.min.js?v=2.55.4.0"></script>
+<script>
+    var $j = jQuery.noConflict();
+    if (activeContainer != "")
+        $j('#' + activeContainer).prev('a.primary').addClass('active');
+</script>
+
+
+
+<script src="/js/nw2/vendor/jquery.ui.min.js?v=2.55.4.0"></script>
+
+<script src="/js/nw2/bundle.min.js?v=2.55.4.0"></script>
+
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5788f672a3142a0a"></script>
+
+    
+</body>
+</html>
