@@ -1,16 +1,33 @@
 # Tratamiento Inteligente de Datos
 
-En este repositorio se encuentran las prácticas individuales de la asignatura "Tratamiento Inteligente de Datos".
-A continuacion se enumeran las prácticas que se pueden encontrar dentro del repositorio y los objetivos que se debían de cumplir en cada una:
+En este repositorio se encuentran las prácticas individuales de la asignatura "Tratamiento Inteligente de Datos". Cada carpeta agrupa el material, los datos y la implementación correspondiente a una práctica concreta.
 
-## Práctica 1: Clasificación
-> **Tareas:**
-> - **a) Preparar los datos.** Desarrollar las tareas de preparación necesarias para disponer de una base de datos apropiada para la tarea de clasificación. Entre las labores a realizar se encuentran la visualización y comprensión de las variables, cambio de tipos, transformación e identificación de *outliers* y datos faltantes. También debe quedar claro si nos enfrentamos a una clasificación con clases balanceadas o no.
->
-> - **b) Analizar los datos.** Analizar los datos. Construir un clasificador k-NN, un árbol de clasificación y un clasificador naive Bayes. Se propone considerar varios escenarios. En el primero, independientemente de que existan o no datos faltantes o outliers, se aplicará el correspondiente algoritmo de inducción sin tener en cuenta estos hechos. En el segundo escenario, se aplicarán técnicas para tratar con los outliers y los datos faltantes y se construirán los anteriores clasificadores. Debe evaluarse también el uso de técnicas para tratar con clases desbalanceadas y el efecto que tienen estas técnicas en la calidad de los clasificadores obtenidos.
+## Práctica 1: Aprobación de préstamos
 
-## Práctica 2: Agrupamiento
-> **Tareas:**
-> - **a) Aplicando el algoritmo k-means**, identificar un buen agrupamiento de los clientes fijando adecuadamente el valor de k.
-> - **b) Construir los dendrogramas de los agrupamientos jerárquicos** que se obtienen usando los métodos single, centroid y ward. Comparar los dendrogramas obtenidos para identificar el que preserva mejor las distancias originales. Usar este dendrograma para agrupar a los clientes.
-> - **c) Repetir las tareas anteriores considerando por separado a los clientes con género male y female**. ¿Hay diferencias entre los grupos de clientes encontrados al separar por el género? En caso afirmativo, enumerar las diferencias.
+Archivos principales: [P01_Individual/homeLoanAproval.ipynb](P01_Individual/homeLoanAproval.ipynb) y [P01_Individual/homeLoanAproval.csv](P01_Individual/homeLoanAproval.csv).
+
+Esta práctica aborda un problema de clasificación supervisada sobre aprobación de préstamos. El objetivo es explorar los datos, prepararlos para el modelado y construir un flujo de trabajo que permita predecir la variable objetivo a partir de las características disponibles.
+
+## Práctica 2: Agrupamiento de clientes
+
+Archivos principales: [P02_individual/agrupamiento.ipynb](P02_individual/agrupamiento.ipynb) y [P02_individual/mallCustomers.csv](P02_individual/mallCustomers.csv).
+
+En esta práctica se trabaja con técnicas de clustering para segmentar clientes a partir de sus atributos. Se analiza el conjunto de datos, se aplican métodos de agrupamiento y se estudian los grupos obtenidos para interpretar el comportamiento de los clientes.
+
+## Práctica 3: Agrupación de páginas web mediante texto
+
+Archivos principales: [P03_individual/clusterizacion.py](P03_individual/clusterizacion.py) y la carpeta [P03_individual/corpus](P03_individual/corpus).
+
+Esta práctica aplica procesamiento de texto para representar páginas web mediante bolsa de palabras y TF-IDF. Después se usa clustering para agrupar documentos similares y revisar qué términos caracterizan a cada grupo.
+
+## Práctica 4: Generalización con dígitos escritos a mano
+
+Archivos principales: [P04_individual/generalization.ipynb](P04_individual/generalization.ipynb), [P04_individual/test_generalization.ipynb](P04_individual/test_generalization.ipynb) y [P04_individual/optdigits.tra](P04_individual/optdigits.tra).
+
+En esta práctica se estudia la capacidad de generalización de modelos sobre reconocimiento de dígitos. Se entrenan y evalúan distintas configuraciones para comparar resultados y analizar el comportamiento del modelo frente a datos nuevos.
+
+## Práctica 5: Generalización con SOM y perceptrón
+
+Archivo principal: [P05_individual/código.py](P05_individual/código.py) y [P05_individual/optdigits.tra](P05_individual/optdigits.tra).
+
+Esta práctica implementa una red de mapas autoorganizados (SOM) combinada con un perceptrón para clasificar dígitos manuscritos. El flujo incluye preparación de datos, entrenamiento del SOM, visualización de prototipos, evaluación del perceptrón y ajuste de la arquitectura para buscar una mejor generalización.
